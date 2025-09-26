@@ -157,7 +157,7 @@ body {
       rgba(11, 107, 107, 0.5),
       /* lighter overlay */ rgba(11, 107, 107, 0.4) /* even lighter */
     ),
-    url("/src/assets/background.jpeg") center/cover no-repeat;
+    url("assets/background.jpeg") center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 150px 0;
@@ -671,7 +671,7 @@ body {
     rgba(11, 107, 107, 0.1) 100%
   );
   border: 1px solid gray;
-  background: url("/src/assets/value.jpeg") center/cover no-repeat;
+  background: url("assets/value.jpeg") center/cover no-repeat;
 }
 
 .value-card {
@@ -735,7 +735,7 @@ body {
 }
 
 .issues-section {
-   background:  url("/src/assets/issue.jpeg") center/cover no-repeat;
+   background:  url("assets/issue.jpeg") center/cover no-repeat;
  
   padding: 100px 0;
   margin: 80px 0;
