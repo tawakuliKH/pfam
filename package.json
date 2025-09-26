@@ -43,7 +43,12 @@
       "last 1 safari version"
     ]
   },
+  
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  }
+  },
+  
+  "homepage": "https://tawakulikh.github.io/pfam",
+  "name": "pfam"
+
 }
