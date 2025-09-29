@@ -118,7 +118,6 @@
       }
     }
   },
-  
   "story": {
     "title": "How We Started",
     "imageAlt": "Our beginnings",
@@ -127,7 +126,6 @@
     "paragraph1": "In early 2022, a group of dedicated activists—including exiled fighters, human rights advocates, women's rights campaigners, journalists, employees of international organizations, and former military personnel, both women and men—came together to formally launch the Progressive Forces of Afghanistan.",
     "paragraph2": "Under the leadership of Mawloda Tawana, and guided by a shared vision of human commitment, we founded this movement to defend women's rights, promote gender equality, achieve justice, eradicate violence, and ensure that girls and women have access to education, employment, and meaningful participation in social and political life."
   },
-  
   "issues": {
     "title": "Issues We Address",
     "items": {
@@ -153,7 +151,6 @@
       }
     }
   },
-  
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us for collaboration, information, or support",
@@ -182,13 +179,12 @@
       }
     }
   },
-  
   "donate": {
     "title": "Empower Women Through Your Support",
     "subtitle": "Every donation creates lasting change in the lives of women and girls worldwide",
     "impact": {
       "women": "Women Supported",
-      "programs": "Programs Launched", 
+      "programs": "Programs Launched",
       "countries": "Countries Reached"
     },
     "chooseImpact": "Choose Your Impact",
@@ -201,7 +197,7 @@
       },
       {
         "amount": 50,
-        "impact": "Weekly advocacy support", 
+        "impact": "Weekly advocacy support",
         "icon": "📢",
         "display": "$50"
       },
@@ -233,13 +229,13 @@
           "description": "Workshops, training materials, and educational resources for women"
         },
         {
-          "category": "Legal Support", 
+          "category": "Legal Support",
           "percentage": 25,
           "description": "Legal aid, counseling, and representation for women in need"
         },
         {
           "category": "Emergency Aid",
-          "percentage": 20, 
+          "percentage": 20,
           "description": "Immediate support for women in crisis situations"
         },
         {
@@ -259,7 +255,7 @@
     "donorInfo": {
       "name": "Full Name *",
       "namePlaceholder": "Enter your full name",
-      "email": "Email Address *", 
+      "email": "Email Address *",
       "emailPlaceholder": "Enter your email"
     },
     "paymentMethod": "Payment Method",
@@ -270,20 +266,20 @@
         "icon": "fa-credit-card"
       },
       {
-        "id": "paypal", 
+        "id": "paypal",
         "label": "PayPal",
         "icon": "fa-paypal"
       },
       {
         "id": "bankTransfer",
-        "label": "Bank Transfer", 
+        "label": "Bank Transfer",
         "icon": "fa-university"
       }
     ],
     "donationSummary": {
       "amount": "Donation Amount:",
       "fee": "Processing Fee:",
-      "free": "Free", 
+      "free": "Free",
       "total": "Total Amount:"
     },
     "donateButton": "Donate Now",
@@ -295,18 +291,268 @@
         "description": "Set up monthly donations to provide sustained support for our ongoing programs."
       },
       {
-        "icon": "fas fa-building", 
+        "icon": "fas fa-building",
         "title": "Corporate Matching",
         "description": "Many employers match charitable contributions. Double your impact today."
       }
     ],
     "alerts": {
       "requiredFields": "Please fill in all required fields",
-      "validAmount": "Please enter a valid donation amount", 
+      "validAmount": "Please enter a valid donation amount",
       "thankYou": "Thank you for your donation of ${{amount}}! We will process your payment shortly."
     }
+  },
+  "gallery": {
+    "title": "Our Gallery",
+    "subtitle": "A visual journey through our work for women's rights and education in Afghanistan",
+    "photoGallery": "Photo Gallery",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "videos": {
+      "title": "Our Videos",
+      "subtitle": "Watch our latest content on YouTube and stay updated with our work",
+      "watchButton": "Watch on YouTube",
+      "subscribeTitle": "Subscribe to our YouTube Channel",
+      "subscribeDescription": "Stay updated with our latest videos and documentaries",
+      "visitChannel": "Visit Our Channel"
+    },
+    "photos": {
+      "ir1": {
+        "title": "Active members of the movement, Tehran - Iran",
+        "description": "PFAM members raised their hands for justice in Tehran, Iran"
+      },
+      "ir2": {
+        "title": "Active members of the movement, Tehran - Iran",
+        "description": "PFAM members raised their hands for justice in Tehran, Iran"
+      },
+      "kbl1": {
+        "title": "Movement members, advocacy program",
+        "description": "Movement members, advocacy program, closed location. Kabul Afghanistan 2024"
+      },
+      "pkl": {
+        "title": "Protest in Pakistan, Islamabad",
+        "description": "2024"
+      },
+      "pkl2": {
+        "title": "Commemoration and Advocacy for Afghan Women",
+        "description": "March 8, 2023 Islamabad, Pakistan"
+      },
+      "alb": {
+        "title": "Women Empowerment Summit in Albania",
+        "description": "2024"
+      },
+      "cnf": {
+        "title": "WFA Conference on Gender Justice and Accountability",
+        "description": "2024"
+      },
+      "pkl4": {
+        "title": "Protest and advocacy program against the Taliban's misogynistic decrees on women",
+        "description": "2024"
+      },
+      "pklkh1": {
+        "title": "Celebrating the elimination of violence against women",
+        "description": "Islamabad, Pakistan, 2023"
+      },
+      "pklkh2": {
+        "title": "Celebrating the elimination of violence against women",
+        "description": "Islamabad, Pakistan, 2023"
+      },
+      "pklkh3": {
+        "title": "Celebrating the elimination of violence against women",
+        "description": "Islamabad, Pakistan, 2023"
+      },
+      "mrf1": {
+        "title": "Celebrating the International Day for the Elimination of Violence against Women",
+        "description": "Official of the Ministry of Education of Afghanistan, Celebrating the International Day for the Elimination of Violence against Women at the Ministry of Education, 2019"
+      },
+      "mrf2": {
+        "title": "Celebrating the International Day for the Elimination of Violence against Women",
+        "description": "Official of the Ministry of Education of Afghanistan, Celebrating the International Day for the Elimination of Violence against Women at the Ministry of Education, 2019"
+      },
+      "islm1": {
+        "title": "Protest on the second anniversary of the collapse of Afghanistan",
+        "description": "Islamabad, Pakistan, 2024"
+      },
+      "islm2": {
+        "title": "Protest on the second anniversary of the collapse of Afghanistan",
+        "description": "Islamabad, Pakistan, 2024"
+      },
+      "prot": {
+        "title": "The protest of Taliban opponents",
+        "description": "2024"
+      },
+      "glb1": {
+        "title": "Global Call to Save Afghan Women And Girl",
+        "description": "Islamabad, 2023"
+      },
+      "glb2": {
+        "title": "Global Call to Save Afghan Women And Girl",
+        "description": "Islamabad, 2023"
+      },
+      "irr1": {
+        "title": "Movement Members Protest in Tehran, Iran",
+        "description": "2025"
+      },
+      "irr2": {
+        "title": "Movement Members Protest in Tehran, Iran",
+        "description": "2025"
+      },
+      "irr3": {
+        "title": "Movement Members Protest in Tehran, Iran",
+        "description": "2025"
+      },
+      "hmb1": {
+        "title": "Fourth anniversary of the collapse of Afghanistan",
+        "description": "Hamburg, Germany, 2025"
+      },
+      "geneva": {
+        "title": "United Nations headquarters",
+        "description": "Geneva, 2024"
+      },
+      "prt1": {
+        "title": "Protest on the fourth anniversary of Afghanistan's surrender, Pakistan Islamabad 2024",
+        "description": "Islamabad, 2024"
+      },
+      "off1": {
+        "title": "My office, Kabul, Afghanistan Public Protection Directorate",
+        "description": "Kabul, 2020"
+      },
+      "adv1": {
+        "title": "Pakistan Advocacy Program",
+        "description": "Islamabad, 2022"
+      },
+      "adv2": {
+        "title": "The process of appreciation by Afghanistan Civil Society Organization",
+        "description": "Islamabad, 2024"
+      },
+      "three1": {
+        "title": "Protest against three years of Taliban rule",
+        "description": "Islamabad, 2022"
+      },
+      "islam1": {
+        "title": "Mass protest",
+        "description": "Islamabad, 2022"
+      },
+      "dakh1": {
+        "title": "Official of the Ministry of Interior of Afghanistan, Proceedings of the Plan Meeting, Gender Policy of the Ministry of Interior",
+        "description": "Kabul, 2018"
+      },
+      "adova1": {
+        "title": "Advocates to rights of women in Afghanistan",
+        "description": "Islamabad, 2024"
+      },
+      "prot2": {
+        "title": "The protest of Taliban opponents",
+        "description": "2024"
+      },
+      "prot3": {
+        "title": "The protest of Taliban opponents",
+        "description": "2024"
+      },
+      "apa1": {
+        "title": "Mass protest against gender apartheid in Afghanistan",
+        "description": "Islamabad, 2022"
+      },
+      "prot4": {
+        "title": "The protest of Taliban opponents",
+        "description": "Islamabad, 2024"
+      }
+    },
+    "videos": {
+      "title": "Our Videos",
+      "subtitle": "Watch our latest content on YouTube and stay updated with our work",
+      "watchButton": "Watch on YouTube",
+      "subscribeTitle": "Subscribe to our YouTube Channel",
+      "subscribeDescription": "Stay updated with our latest videos and documentaries",
+      "visitChannel": "Visit Our Channel",
+      "video1": {
+        "title": "Speech by Ms. Mawloda Tawana at the UN Summit, Geneva 2024 WFA Conference on Gender Justice and Accountability (November 28, 2024)",
+        "description": "The Women's Forum on Afghanistan (WFA), with the support of the Permanent Missions of Chile and Spain in Geneva,"
+      },
+      "video2": {
+        "title": "Public protest on the two-year anniversary of the collapse of Afghanistan",
+        "description": "Speech by Ms. Mawlada Tawana, founder of the Afghanistan Progressive Force Movement, in Islamabad in August 2022, a public protest on the two-year anniversary of the collapse of Afghanistan"
+      },
+      "video3": {
+        "title": "Celebrating the International Day for the Elimination of Violence against Women, Islamabad 2025",
+        "description": ""
+      },
+      "video4": {
+        "title": "Celebrating March 8 and protesting against Taliban rule, Islamabad 2023",
+        "description": ""
+      }
+    }
+  },
+  "news": {
+  "loading": "Loading...",
+  "by": "By",
+  "moreNewsStories": "More News & Stories",
+  "latestNews": "Latest News",
+  "inspiringStories": "Inspiring Stories",
+  "news1": {
+    "title": "Protest by members of the movement in Tehran, Iran",
+    "date": "March 15, 2025",
+    "author": "PFA News Team",
+    "content": [
+      "In March 2025, members of the Progressive Forces of Afghanistan Movement (PFAM) in Tehran orchestrated a poignant, symbolic protest against the Taliban's increasingly draconian regime. The demonstration was a quiet but powerful visual statement, featuring participants holding carefully crafted placards that highlighted specific, recent injustices.",
+      "The slogans targeted new decrees such as the 'Code of Conduct,' which mandated the permanent closure of all women's bathhouses, arguing they were sites of potential moral corruption, and a directive that barred women from entering any shop selling male clothing or goods. Signs reading 'Bread, Dignity, Freedom,' 'Our Bodies Are Not Your Battlefield,' and 'You Ban, We Build' served as a direct rebuttal to the regime's attempts to systematically erase women from society.",
+      "This deliberate and focused display was not meant for loud chants but for the penetrating silence of photography, creating a stark visual record of resistance that was widely disseminated to counter the Taliban's narrative of total control and compliance.",
+      "The protest highlighted the Taliban's recent 'Code of Conduct' that mandated the permanent closure of women's bathhouses and barred women from shops selling male goods. These measures represent a systematic effort to erase women from public life and confine them to their homes.",
+      "Through this symbolic action, PFAM members demonstrated that resistance continues despite the regime's oppressive measures, and that the voice of Afghan women cannot be silenced even through the most severe restrictions."
+    ]
+  },
+  "news2": {
+    "title": "Appreciation from Afghan Civil Society for PFAM Founder's Activities in Pakistan",
+    "date": "May 28, 2023",
+    "author": "PFAM News Team",
+    "content": [
+      "In a moving testament to her unwavering dedication, the Afghan Civil Society Organization (ACSO) extends its profound gratitude and deepest appreciation to Ms. Mawloda Tawana, the esteemed founder of the Progressive Forces of Afghanistan Movement (PFAM), for her exceptional and courageous activities throughout Pakistan in May 2023.",
+      "During a period of escalating crisis, when hope was a scarce commodity for many displaced Afghans, Ms. Tawana embarked on a pivotal mission, tirelessly traveling between Islamabad, Peshawar, and Quetta to mobilize support and shine a light on the plight of those most vulnerable.",
+      "She orchestrated a series of critical coordination meetings with Afghan diaspora leaders, human rights defenders, and international aid agencies, successfully establishing a vital network for channeling humanitarian assistance to refugee families facing dire conditions.",
+      "Furthermore, her powerful advocacy at roundtable discussions with Pakistani civil society groups and foreign diplomats was instrumental in raising awareness about the systematic gender apartheid and human rights violations being perpetrated by the Taliban regime.",
+      "Perhaps most impactful was her personal engagement with Afghan women and youth in refugee settlements, where she listened to their harrowing stories, documented human rights abuses, and, with immense compassion, helped establish underground digital literacy programs to empower them with skills for the future.",
+      "The ACSO recognizes that Ms. Tawana's efforts have not only provided immediate solace and practical support to countless individuals but have also fortified the very foundations of our collective resistance, demonstrating that the spirit of Afghanistan remains unbroken."
+    ]
+  },
+  "news3": {
+    "title": "Protest on the occasion of the International Day for the Elimination of Violence against Women, Pakistan",
+    "date": "Nov, 2022",
+    "author": "PFAM News Team",
+    "content": [
+      "On November 25, 2022, marking the International Day for the Elimination of Violence against Women, members of the Progressive Forces of Afghanistan Movement (PFAM), led by founder Ms. Mawloda Tawana, joined hands with Pakistani human rights organizations in a powerful demonstration in Islamabad.",
+      "The protest served as a stark reminder of the escalating violence against Afghan women under Taliban rule, highlighting specific cases of forced disappearances, arbitrary detentions, and public floggings that have become increasingly common since the regime's takeover.",
+      "Ms. Tawana delivered an impassioned speech condemning the Taliban's systematic gender apartheid, drawing parallels between the struggles of women across the region and emphasizing the need for international accountability mechanisms.",
+      "Protesters carried banners featuring names of Afghan women activists currently imprisoned by the Taliban and displayed symbolic empty chairs representing the millions of girls barred from schools and universities.",
+      "The demonstration successfully garnered significant media attention, with Ms. Tawana giving interviews to international press outlets, ensuring that the plight of Afghan women remained visible on the global stage during this important international observance.",
+      "This solidarity event strengthened cross-border alliances between Afghan and Pakistani women's rights activists, creating a unified front against religious extremism and gender-based violence in the region."
+    ]
+  },
+  "story1": {
+    "title": "Day of the Elimination of Violence against Women, Kabul",
+    "date": "Nov 25, 2018",
+    "author": "Interview by Zohal Rad",
+    "content": [
+      "The participation of Ms. Mawloda Tawana, then a dedicated official within the Ministry of Education in Kabul, in the 2018 commemoration of the International Day for the Elimination of Violence against Women, was a pivotal moment that foreshadowed her future as the founder of the Progressive Forces of Afghanistan Movement (PFAM).",
+      "Her presence at this official event was a testament to her deep-seated commitment to addressing the systemic injustices faced by Afghan women, a commitment forged through her firsthand experiences within the government system. Having worked on initiatives aimed at increasing girls' enrollment, she witnessed the chasm between policy promises and the grim realities on the ground.",
+      "Ms. Tawana saw how cultural impediments, institutional corruption, and the rising threat of extremism consistently undermined efforts to protect women and girls. It was this profound frustration with the system's inability to enact meaningful change, coupled with her direct encounters with the stories of survivors, that crystallized her resolve.",
+      "The 2018 event, rather than being a celebration of progress, highlighted for her the escalating dangers and the insufficient official response. This realization, that true advocacy required operating beyond the constraints of a compromised bureaucracy, was the crucial catalyst.",
+      "The Taliban's subsequent takeover in 2021 confirmed her deepest fears and accelerated her determination, leading her to establish PFAM. The movement became the embodiment of the principle she had long advocated for: that the elimination of violence against women requires relentless, grassroots resistance."
+    ]
+  },
+  "story2": {
+    "title": "Ms. Mawloda Tawana Participates in Pakistani Cultural Celebration, Strengthening Cross-Border Ties",
+    "date": "March 23, 2022",
+    "author": "PFAM team",
+    "content": [
+      "In a significant gesture of cross-border solidarity and cultural diplomacy, Ms. Mawloda Tawana, founder of the Progressive Forces of Afghanistan Movement (PFAM), participated in a major event celebrating Pakistani culture and cultural programs held in Islamabad.",
+      "The event, which coincided with Pakistan Day celebrations, featured traditional music, dance performances, poetry recitals, and exhibitions showcasing the rich cultural heritage of various regions across Pakistan. Ms. Tawana's presence underscored PFAM's commitment to building bridges of understanding between the peoples of Afghanistan and Pakistan.",
+      "In her address to the gathering, Ms. Tawana emphasized the shared historical and cultural ties between the two neighboring nations, noting that 'culture and art have always been the most powerful tools against extremism and division.' She highlighted how the Taliban's regime has systematically targeted cultural diversity and artistic expression in Afghanistan as part of their oppressive agenda.",
+      "Ms. Tawana's participation was particularly meaningful given the current tensions between the two countries, serving as a reminder that the aspirations for peace, beauty, and creative expression transcend political boundaries and governmental policies.",
+      "The event provided an important platform for Ms. Tawana to engage with Pakistani intellectuals, artists, and civil society leaders, fostering relationships that would later prove crucial in PFAM's humanitarian efforts for Afghan refugees in Pakistan.",
+      "This cultural engagement demonstrated PFAM's holistic approach to activism, recognizing that the fight for women's rights and democracy must be accompanied by efforts to preserve and celebrate the diverse cultural tapestry that extremists seek to destroy."
+    ]
   }
-
 }
-
-
+}

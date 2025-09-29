@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Donate from './Donate';
@@ -28,7 +29,18 @@ import irr2 from '../assets/gallery/irr2.jpeg'
 import irr3 from '../assets/gallery/irr3.jpeg'
 import hmb1 from '../assets/gallery/hmb1.jpeg'
 import geneva from '../assets/gallery/geneva.jpeg'
-
+import prt1 from '../assets/gallery/prt1.jpeg'
+import off1 from '../assets/gallery/off1.jpeg'
+import adv1 from '../assets/gallery/adv1.jpeg'
+import adv2 from '../assets/gallery/adv2.jpeg'
+import three1 from '../assets/gallery/three1.jpeg'
+import islam1 from '../assets/gallery/islam1.jpeg'
+import apa1 from '../assets/gallery/apa1.jpeg'
+import dakh1 from '../assets/gallery/dakh1.jpeg'
+import adova1 from '../assets/gallery/adova1.jpeg'
+import prot2 from '../assets/gallery/prot2.jpeg'
+import prot3 from '../assets/gallery/prot3.jpeg'
+import prot4 from '../assets/gallery/prot4.jpeg'
 
 const Gallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,205 +50,285 @@ const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalCurrentSlide, setModalCurrentSlide] = useState(0);
   const navigate = useNavigate();
-  
+  const { t } = useTranslation();
 
-  // Sample photo data with descriptions (same as before)
-   // Sample photo data with descriptions
+  // Photo data with translations
   const photoData = [
     {
       id: 1,
-      title: "Active members of the movement, Tehran - Iran",
-      description: "PFAM members raised their hands for justice in Tehran, Iran",
+      title: t('gallery.photos.ir1.title'),
+      description: t('gallery.photos.ir1.description'),
       image: ir1,
       category: "Activity"
     },
     {
       id: 2,
-      title: "Active members of the movement, Tehran - Iran",
-      description: "PFAM members raised their hands for justice in Tehran, Iran",
+      title: t('gallery.photos.ir2.title'),
+      description: t('gallery.photos.ir2.description'),
       image: ir2,
       category: "Activity"
     },
     {
       id: 3,
-      title: "Movement members, advocacy program",
-      description: "Movement members, advocacy program, closed location. Kabul Afghanistan 2024",
+      title: t('gallery.photos.kbl1.title'),
+      description: t('gallery.photos.kbl1.description'),
       image: kbl1,
       category: "Activity"
     },
     {
       id: 4,
-      title: "Protest in Pakistan, Islamabad",
-      description: "2024",
+      title: t('gallery.photos.pkl.title'),
+      description: t('gallery.photos.pkl.description'),
       image: pkl,
       category: "Activity"
     },
     {
       id: 5,
-      title: "Commemoration and Advocacy for Afghan Women",
-      description: "March 8, 2023 Isalmabad, Pakistan",
+      title: t('gallery.photos.pkl2.title'),
+      description: t('gallery.photos.pkl2.description'),
       image: pkl2,
       category: "Activity"
     },
     {
       id: 6,
-      title: "Women Empowerment Summit in Albania",
-      description: "2024",
+      title: t('gallery.photos.alb.title'),
+      description: t('gallery.photos.alb.description'),
       image: alb,
       category: "Activity"
     },
     {
       id: 7,
-      title: "WFA Conference on Gender Justice and Accountability",
-      description: "2024",
+      title: t('gallery.photos.cnf.title'),
+      description: t('gallery.photos.cnf.description'),
       image: cnf,
       category: "Activity"
     },
     {
       id: 8,
-      title: "Protest and advocacy program against the Taliban's misogynistic decrees on women",
-      description: "2024",
+      title: t('gallery.photos.pkl4.title'),
+      description: t('gallery.photos.pkl4.description'),
       image: pkl4,
       category: "Activity"
     },
     {
       id: 9,
-      title: "celebrating the elimination of violence against women",
-      description: "Islamabad, Pakistan, 2023",
+      title: t('gallery.photos.pklkh1.title'),
+      description: t('gallery.photos.pklkh1.description'),
       image: pklkh1,
       category: "Activity"
     },
     {
       id: 10,
-      title: "celebrating the elimination of violence against women",
-      description: "Islamabad, Pakistan, 2023",
+      title: t('gallery.photos.pklkh2.title'),
+      description: t('gallery.photos.pklkh2.description'),
       image: pklkh2,
       category: "Activity"
     },
     {
       id: 11,
-      title: "celebrating the elimination of violence against women",
-      description: "Islamabad, Pakistan, 2023",
+      title: t('gallery.photos.pklkh3.title'),
+      description: t('gallery.photos.pklkh3.description'),
       image: pklkh3,
       category: "Activity"
     },
     {
       id: 12,
-      title: "Celebrating the International Day for the Elimination of Violence against Women",
-      description: "Official of the Ministry of Education of Afghanistan, Celebrating the International Day for the Elimination of Violence against Women at the Ministry of Education, 2019",
+      title: t('gallery.photos.mrf1.title'),
+      description: t('gallery.photos.mrf1.description'),
       image: mrf1,
       category: "Activity"
     },
     {
       id: 13,
-      title: "Celebrating the International Day for the Elimination of Violence against Women",
-      description: "Official of the Ministry of Education of Afghanistan, Celebrating the International Day for the Elimination of Violence against Women at the Ministry of Education, 2019",
+      title: t('gallery.photos.mrf2.title'),
+      description: t('gallery.photos.mrf2.description'),
       image: mrf2,
       category: "Activity"
     },
     {
       id: 14,
-      title: "Protest on the second anniversary of the collapse of Afghanistan",
-      description: "Islamabad, Pakistan, 2024",
+      title: t('gallery.photos.islm1.title'),
+      description: t('gallery.photos.islm1.description'),
       image: islm1,
       category: "Activity"
     },
     {
-      id: 14,
-      title: "Protest on the second anniversary of the collapse of Afghanistan",
-      description: "Islamabad, Pakistan, 2024",
+      id: 15,
+      title: t('gallery.photos.islm2.title'),
+      description: t('gallery.photos.islm2.description'),
       image: islm2,
       category: "Activity"
     },
     {
-      id: 15,
-      title: "The protest of Taliban opponents",
-      description: "2024",
+      id: 16,
+      title: t('gallery.photos.prot.title'),
+      description: t('gallery.photos.prot.description'),
       image: prot,
       category: "Activity"
     },
     {
-      id: 16,
-      title: "Global Call to Save Afghan Women And Girl",
-      description: "Islamabad, 2023",
+      id: 17,
+      title: t('gallery.photos.glb1.title'),
+      description: t('gallery.photos.glb1.description'),
       image: glb1,
       category: "Activity"
     },
     {
-      id: 17,
-      title: "Global Call to Save Afghan Women And Girl",
-      description: "Islamabad, 2023",
+      id: 18,
+      title: t('gallery.photos.glb2.title'),
+      description: t('gallery.photos.glb2.description'),
       image: glb2,
       category: "Activity"
     },
     {
-      id: 18,
-      title: "Movement Members Protest in Tehran, Iran",
-      description: "2025",
+      id: 19,
+      title: t('gallery.photos.irr1.title'),
+      description: t('gallery.photos.irr1.description'),
       image: irr1,
       category: "Activity"
     },
     {
-      id: 19,
-      title: "Movement Members Protest in Tehran, Iran",
-      description: "2025",
+      id: 20,
+      title: t('gallery.photos.irr2.title'),
+      description: t('gallery.photos.irr2.description'),
       image: irr2,
       category: "Activity"
     },
     {
-      id: 20,
-      title: "Movement Members Protest in Tehran, Iran",
-      description: "2025",
+      id: 21,
+      title: t('gallery.photos.irr3.title'),
+      description: t('gallery.photos.irr3.description'),
       image: irr3,
       category: "Activity"
     },
     {
-      id: 21,
-      title: "Fourth anniversary of the collapse of Afghanistan, ",
-      description: "Hamburg, Germany, 2025",
+      id: 22,
+      title: t('gallery.photos.hmb1.title'),
+      description: t('gallery.photos.hmb1.description'),
       image: hmb1,
       category: "Activity"
     },
     {
-      id: 22,
-      title: "United Nations headquarters",
-      description: "Geneva, 2024",
+      id: 23,
+      title: t('gallery.photos.geneva.title'),
+      description: t('gallery.photos.geneva.description'),
       image: geneva,
       category: "Activity"
     },
-   
-
-   
+    {
+      id: 24,
+      title: t('gallery.photos.prt1.title'),
+      description: t('gallery.photos.prt1.description'),
+      image: prt1,
+      category: "Activity"
+    },
+    {
+      id: 25,
+      title: t('gallery.photos.off1.title'),
+      description: t('gallery.photos.off1.description'),
+      image: off1,
+      category: "Activity"
+    },
+    {
+      id: 26,
+      title: t('gallery.photos.adv1.title'),
+      description: t('gallery.photos.adv1.description'),
+      image: adv1,
+      category: "Activity"
+    },
+    {
+      id: 27,
+      title: t('gallery.photos.adv2.title'),
+      description: t('gallery.photos.adv2.description'),
+      image: adv2,
+      category: "Activity"
+    },
+    {
+      id: 28,
+      title: t('gallery.photos.three1.title'),
+      description: t('gallery.photos.three1.description'),
+      image: three1,
+      category: "Activity"
+    },
+    {
+      id: 29,
+      title: t('gallery.photos.islam1.title'),
+      description: t('gallery.photos.islam1.description'),
+      image: islam1,
+      category: "Activity"
+    },
+    {
+      id: 30,
+      title: t('gallery.photos.dakh1.title'),
+      description: t('gallery.photos.dakh1.description'),
+      image: dakh1,
+      category: "Activity"
+    },
+    {
+      id: 31,
+      title: t('gallery.photos.adova1.title'),
+      description: t('gallery.photos.adova1.description'),
+      image: adova1,
+      category: "Activity"
+    },
+    {
+      id: 32,
+      title: t('gallery.photos.prot2.title'),
+      description: t('gallery.photos.prot2.description'),
+      image: prot2,
+      category: "Activity"
+    },
+    {
+      id: 33,
+      title: t('gallery.photos.prot3.title'),
+      description: t('gallery.photos.prot3.description'),
+      image: prot3,
+      category: "Activity"
+    },
+    {
+      id: 34,
+      title: t('gallery.photos.apa1.title'),
+      description: t('gallery.photos.apa1.description'),
+      image: apa1,
+      category: "Activity"
+    },
+    {
+      id: 35,
+      title: t('gallery.photos.prot4.title'),
+      description: t('gallery.photos.prot4.description'),
+      image: prot4,
+      category: "Activity"
+    }
   ];
 
-  // Sample video data
+  // Video data with translations
   const videoData = [
     {
       id: 1,
-      title: "Speech by Ms. Mawloda Tawana at the UN Summit, Geneva 2024 WFA Conference on Gender Justice and Accountability (November 28, 2024)",
-      description: "The Women’s Forum on Afghanistan (WFA), with the support of the Permanent Missions of Chile and Spain in Geneva,",
-      youtubeId: "zG2-bjfVVFE", // Placeholder ID
+      title: t('gallery.videos.video1.title'),
+      description: t('gallery.videos.video1.description'),
+      youtubeId: "zG2-bjfVVFE",
       thumbnail: "https://img.youtube.com/vi/zG2-bjfVVFE/hqdefault.jpg"
     },
     {
       id: 2,
-      title: "Public protest on the two-year anniversary of the collapse of Afghanistan",
-      description: "Speech by Ms. Mawlada Tawana, founder of the Afghanistan Progressive Force Movement, in Islamabad in August 2022, a public protest on the two-year anniversary of the collapse of Afghanistan",
-      youtubeId: "qou9ZRuGlHQ", // Placeholder ID
+      title: t('gallery.videos.video2.title'),
+      description: t('gallery.videos.video2.description'),
+      youtubeId: "qou9ZRuGlHQ",
       thumbnail: "https://img.youtube.com/vi/qou9ZRuGlHQ/hqdefault.jpg"
     },
     {
       id: 3,
-      title: "Celebrating the International Day for the Elimination of Violence against Women, Islamabad 2025",
-      description: "",
-      youtubeId: "myfiT9zb1h0", // Placeholder ID
+      title: t('gallery.videos.video3.title'),
+      description: t('gallery.videos.video3.description'),
+      youtubeId: "myfiT9zb1h0",
       thumbnail: "https://img.youtube.com/vi/myfiT9zb1h0/hqdefault.jpg"
     },
     {
       id: 4,
-      title: "Celebrating March 8 and protesting against Taliban rule, Islamabad 2023",
-      description: "",
-      youtubeId: "joHXE-e2oWw", // Placeholder ID
+      title: t('gallery.videos.video4.title'),
+      description: t('gallery.videos.video4.description'),
+      youtubeId: "joHXE-e2oWw",
       thumbnail: "https://img.youtube.com/vi/joHXE-e2oWw/hqdefault.jpg"
     }
   ];
@@ -248,7 +340,7 @@ const Gallery = () => {
   useEffect(() => {
     const slideInterval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % featuredPhotos.length);
-    }, 7000); // Increased to 7 seconds
+    }, 7000);
 
     return () => clearInterval(slideInterval);
   }, [featuredPhotos.length]);
@@ -313,7 +405,6 @@ const Gallery = () => {
   const handlePhotoClick = (photo) => {
     setSelectedPhoto(photo);
     setIsModalOpen(true);
-    // Find the index of the clicked photo in the full photoData array
     const photoIndex = photoData.findIndex(p => p.id === photo.id);
     setModalCurrentSlide(photoIndex);
   };
@@ -345,7 +436,7 @@ const Gallery = () => {
     
     if (isModalOpen) {
       document.addEventListener('keydown', handleEscape);
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
     }
@@ -363,9 +454,9 @@ const Gallery = () => {
       {/* Featured Slideshow Section */}
       <section className="featured-slideshow-section">
         <div className="container">
-          <h1 className="page-title text-center mb-4">Our Gallery</h1>
+          <h1 className="page-title text-center mb-4">{t('gallery.title')}</h1>
           <p className="page-subtitle text-center mb-5">
-            A visual journey through our work for women's rights and education in Afghanistan
+            {t('gallery.subtitle')}
           </p>
           
           <div className="image-gallery">
@@ -408,7 +499,7 @@ const Gallery = () => {
       {/* Photo Gallery Section */}
       <section className="photo-gallery-section">
         <div className="container">
-          <h2 className="section-title">Photo Gallery</h2>
+          <h2 className="section-title">{t('gallery.photoGallery')}</h2>
           
           <div className="row">
             {currentPhotos.map((photo) => (
@@ -460,7 +551,7 @@ const Gallery = () => {
                     onClick={() => paginate(currentPage - 1)}
                     disabled={currentPage === 1}
                   >
-                    Previous
+                    {t('gallery.pagination.previous')}
                   </button>
                 </li>
                 
@@ -481,7 +572,7 @@ const Gallery = () => {
                     onClick={() => paginate(currentPage + 1)}
                     disabled={currentPage === totalPages}
                   >
-                    Next
+                    {t('gallery.pagination.next')}
                   </button>
                 </li>
               </ul>
@@ -493,9 +584,9 @@ const Gallery = () => {
       {/* Video Section */}
       <section className="video-section">
         <div className="container">
-          <h2 className="section-title">Our Videos</h2>
+          <h2 className="section-title">{t('gallery.videos.title')}</h2>
           <p className="section-subtitle text-center mb-5">
-            Watch our latest content on YouTube and stay updated with our work
+            {t('gallery.videos.subtitle')}
           </p>
           
           <div className="row">
@@ -521,7 +612,7 @@ const Gallery = () => {
                       rel="noopener noreferrer"
                       className="btn btn-outline-primary btn-sm"
                     >
-                      Watch on YouTube
+                      {t('gallery.videos.watchButton')}
                     </a>
                   </div>
                 </div>
@@ -530,15 +621,15 @@ const Gallery = () => {
           </div>
           
           <div className="youtube-channel text-center mt-5">
-            <h4>Subscribe to our YouTube Channel</h4>
-            <p className="mb-3">Stay updated with our latest videos and documentaries</p>
+            <h4>{t('gallery.videos.subscribeTitle')}</h4>
+            <p className="mb-3">{t('gallery.videos.subscribeDescription')}</p>
             <a 
               href="https://www.youtube.com/channel/UCZPxJeeIQqO-ZxT1IZY_0Kg" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-danger"
             >
-              <i className="fab fa-youtube me-2"></i> Visit Our Channel
+              <i className="fab fa-youtube me-2"></i> {t('gallery.videos.visitChannel')}
             </a>
           </div>
         </div>
