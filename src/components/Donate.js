@@ -112,7 +112,6 @@ const Donate = () => {
                               className={`donation-option ${selectedAmount === item.amount ? 'selected' : ''}`}
                               onClick={() => handleAmountSelect(item.amount)}
                             >
-                              <div className="option-icon">{item.icon}</div>
                               <h5>{item.display}</h5>
                             </div>
                           </div>
