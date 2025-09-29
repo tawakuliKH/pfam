@@ -31,10 +31,11 @@ body {
   text-align: center;
   margin-bottom: 3rem;
   font-weight: 700;
-  color: var(--primary-dark);
+  color:black;
   position: relative;
   padding-bottom: 15px;
 }
+
 
 .section-title::after {
   content: "";
@@ -132,6 +133,68 @@ body {
 .donate-btn:hover {
   background-color: #d35400 !important;
   transform: translateY(-2px);
+}
+
+/* Custom Language Switcher Styles */
+.language-switcher {
+  margin-left: 10px;
+  position: relative;
+}
+
+.language-container {
+  position: relative;
+}
+
+.language-toggle {
+  transition: all 0.3s ease !important;
+  border: none !important;
+}
+
+.language-toggle:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  min-width: 140px;
+  z-index: 1000;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.language-option {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+  color: #333;
+}
+
+.language-option:hover {
+  background: #f8f9fa;
+}
+
+/* Mobile responsive */
+@media (max-width: 991px) {
+  .language-switcher {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .language-dropdown {
+    right: auto;
+    left: 0;
+  }
 }
 
 /* Hero Section */
@@ -382,6 +445,7 @@ body {
   line-height: 1.6;
   color: var(--dark-text);
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .read-more-btn {
@@ -892,19 +956,49 @@ body {
 
 /* Donate Section */
 .donate-section {
-  background: linear-gradient(
-      135deg,
-      rgba(11, 107, 107, 0.9),
-      rgba(11, 107, 107, 0.8)
-    ),
-    url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80")
-      center/cover no-repeat;
-  padding: 100px 0;
+  background: linear-gradient(135deg, rgba(11, 107, 107, 0.9), rgba(11, 107, 107, 0.8)),
+              url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  padding: 80px 0;
+}
+
+.donate-section.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #ffffff, #e8f4f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.impact-badge {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.impact-item {
+  color: white;
+  text-align: center;
+}
+
+.impact-item h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.impact-item small {
+  opacity: 0.9;
 }
 
 .donation-card {
-  border-radius: 15px;
+  border-radius: 20px;
+  border: none;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
 }
 
 .donation-card .card-title {
@@ -919,139 +1013,247 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50px;
-  height: 3px;
+  width: 60px;
+  height: 4px;
   background: var(--gradient-primary);
   border-radius: 2px;
-}
-
-.donation-card ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.donation-card ul li {
-  margin-bottom: 10px;
-  padding-left: 25px;
-  position: relative;
-}
-
-.donation-card ul li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.donation-options {
-  margin-top: 30px;
 }
 
 .donation-option {
   background: #f8f9fa;
   border: 2px solid #e9ecef;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 15px;
+  padding: 20px 15px;
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(11, 107, 107, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.donation-option:hover::before {
+  left: 100%;
 }
 
 .donation-option:hover {
   border-color: var(--primary-color);
   transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(11, 107, 107, 0.15);
 }
 
 .donation-option.selected {
   border-color: var(--primary-color);
-  background: rgba(11, 107, 107, 0.1);
+  background: linear-gradient(135deg, rgba(11, 107, 107, 0.1), rgba(11, 107, 107, 0.05));
   transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(11, 107, 107, 0.2);
+}
+
+.option-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .donation-option h5 {
   color: var(--primary-dark);
-  margin-bottom: 5px;
+  margin-bottom: 8px;
+  font-weight: 600;
 }
 
 .donation-option small {
   color: #6c757d;
+  line-height: 1.4;
 }
 
-.custom-amount input {
-  border-radius: 8px;
-  padding: 10px 15px;
+.custom-amount .input-group {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.custom-amount .form-control {
   border: 2px solid #e9ecef;
-  transition: all 0.3s ease;
+  border-left: none;
+  padding: 12px 15px;
 }
 
-.custom-amount input:focus {
+.custom-amount .input-group-text {
+  background: var(--primary-color);
+  color: white;
+  border: 2px solid var(--primary-color);
+  font-weight: 600;
+}
+
+.custom-amount .form-control:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 0.25rem rgba(11, 107, 107, 0.25);
+}
+
+.spending-breakdown {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.breakdown-item {
+  padding: 10px 0;
+}
+
+.breakdown-category {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.breakdown-percentage {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.progress {
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.transparency-note {
+  background: rgba(11, 107, 107, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: var(--primary-dark);
 }
 
 .payment-method {
   background: #f8f9fa;
   border: 2px solid #e9ecef;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .payment-method:hover {
   border-color: var(--primary-color);
+  transform: translateY(-2px);
 }
 
 .payment-method.selected {
   border-color: var(--primary-color);
-  background: rgba(11, 107, 107, 0.1);
+  background: linear-gradient(135deg, rgba(11, 107, 107, 0.1), rgba(11, 107, 107, 0.05));
+  transform: translateY(-2px);
 }
 
-.payment-method .form-check-input:checked {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+.payment-method .form-check-input {
+  margin-top: 0.3em;
 }
 
-.payment-method label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.payment-icons i {
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
-.payment-options .btn-primary {
-  background: var(--gradient-primary);
+.donation-summary {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.summary-item {
+  margin-bottom: 10px;
+  color: #6c757d;
+}
+
+.summary-total {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.donate-btn-2 {
+  background: linear-gradient(135deg, var(--primary-color), #0a5c5c);
   border: none;
-  padding: 12px;
+  padding: 15px 30px;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.donate-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(11, 107, 107, 0.4);
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
 
-.payment-options .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(11, 107, 107, 0.4);
+.info-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
-.donate-section .impact-stat {
-  background: rgba(255, 255, 255, 0.2);
+.info-card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffd700;
 }
 
-.donate-section .impact-stat:hover {
-  background: rgba(255, 255, 255, 0.3);
+.info-card h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 
-.donate-section .impact-stat h3 {
-  color: white;
+.info-card p {
+  opacity: 0.9;
+  margin-bottom: 0;
 }
 
-.donate-section .impact-stat p {
-  color: rgba(255, 255, 255, 0.9);
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donate-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .impact-badge {
+    padding: 20px;
+  }
+  
+  .impact-item h4 {
+    font-size: 1.5rem;
+  }
+  
+  .donation-option {
+    padding: 15px 10px;
+  }
+  
+  .option-icon {
+    font-size: 1.5rem;
+  }
 }
-
 /* Footer */
 footer {
   background: var(--dark-text) !important;
@@ -1950,5 +2152,338 @@ footer a:hover {
 
   .modal-info p {
     font-size: 1rem;
+  }
+}
+
+/* Persian RTL Direction for All Sections */
+.font-persian .employee-section,
+.font-persian .who-we-are-section,
+.font-persian .mission-section,
+.font-persian .vision-section,
+.font-persian .values-section,
+.font-persian .story-section,
+.font-persian .issues-section,
+.font-persian .contact-section,
+.font-persian .donate-section {
+  direction: rtl !important;
+}
+
+/* RTL text alignment for Persian content */
+.font-persian .employee-bio,
+.font-persian .mission-card p,
+.font-persian .value-card p,
+.font-persian .story-section p,
+.font-persian .issue-description,
+.font-persian .vision-item p,
+.font-persian .contact-info p,
+.font-persian .news-content p,
+.font-persian .modal-bio p,
+.font-persian .lead,
+.font-persian .impact-stat p,
+.font-persian .card-text,
+.font-persian .transparency-note,
+.font-persian .breakdown-item,
+.font-persian .donation-summary,
+.font-persian .info-card p {
+  text-align: right !important;
+}
+
+/* RTL for employee cards */
+.font-persian .employee-card {
+  text-align: right;
+}
+
+.font-persian .employee-name,
+.font-persian .employee-position {
+  text-align: center; /* Keep names and positions centered */
+}
+
+/* RTL for mission and value cards */
+.font-persian .mission-card,
+.font-persian .value-card {
+  text-align: right;
+}
+
+.font-persian .mission-card h5,
+.font-persian .value-card h5 {
+  text-align: right;
+}
+
+/* RTL for vision items */
+.font-persian .vision-item {
+  text-align: right;
+}
+
+.font-persian .vision-item h4 {
+  text-align: right;
+}
+
+/* RTL for who we are section */
+.font-persian .who-we-are-section .col-md-6 {
+  text-align: right;
+}
+
+/* RTL for impact stats */
+.font-persian .impact-stat {
+  text-align: center; /* Keep numbers centered */
+}
+
+/* RTL for modal content */
+.font-persian .modal-content {
+  direction: rtl;
+  text-align: right;
+}
+
+.font-persian .modal-bio p {
+  text-align: justify;
+  text-align-last: right;
+}
+
+.font-persian .modal-title,
+.font-persian .modal-subtitle {
+  text-align: center; /* Keep modal titles centered */
+}
+
+/* RTL for back button in modal */
+.font-persian .back-arrow {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+/* Keep centered elements centered */
+.font-persian .hero h1,
+.font-persian .hero p,
+.font-persian .section-title,
+.font-persian .text-center {
+  text-align: center !important;
+}
+
+/* RTL for container alignment */
+.font-persian .container {
+  direction: rtl;
+}
+
+/* RTL for row alignment */
+.font-persian .row {
+  direction: rtl;
+}
+
+/* RTL for column content */
+.font-persian [class*="col-"] {
+  direction: rtl;
+}
+
+/* RTL for card bodies */
+.font-persian .card-body {
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL for contact details */
+.font-persian .contact-detail {
+  text-align: right;
+  direction: rtl;
+}
+
+.font-persian .icon-box {
+  margin-right: 0 !important;
+  margin-left: 15px !important;
+}
+
+/* RTL for donation options */
+.font-persian .donation-option {
+  text-align: right;
+  direction: rtl;
+}
+
+.font-persian .breakdown-category,
+.font-persian .breakdown-percentage {
+  text-align: right;
+}
+
+/* RTL for summary items */
+.font-persian .summary-item,
+.font-persian .summary-total {
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL for payment methods */
+.font-persian .payment-method {
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL for form controls */
+.font-persian .form-control,
+.font-persian .form-label {
+  text-align: right;
+  direction: rtl;
+}
+
+/* RTL for custom amount input */
+.font-persian .custom-amount .input-group {
+  direction: rtl;
+}
+
+.font-persian .custom-amount .input-group-text {
+  border-left: none;
+  border-right: 2px solid #e9ecef;
+}
+
+.font-persian .custom-amount .form-control {
+  border-right: none;
+  border-left: 2px solid #e9ecef;
+}
+
+/* Mobile responsive RTL adjustments */
+@media (max-width: 768px) {
+  .font-persian .employee-card,
+  .font-persian .mission-card,
+  .font-persian .value-card,
+  .font-persian .vision-item {
+    text-align: right;
+  }
+  
+  .font-persian .who-we-are-section .row {
+    direction: rtl;
+  }
+}
+
+/* Force navbar to always be LTR regardless of language */
+.navbar,
+.navbar *,
+.navbar-nav,
+.navbar-brand,
+.navbar-collapse,
+.navbar-toggler,
+.navbar-container {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Specifically override Persian RTL for navbar */
+.font-persian .navbar,
+.font-persian .navbar *,
+.font-persian .navbar-nav,
+.font-persian .navbar-brand,
+.font-persian .navbar-collapse,
+.font-persian .navbar-toggler,
+.font-persian .navbar-container {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Ensure navbar brand stays LTR */
+.font-persian .navbar-brand {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+
+.font-persian .navbar-brand img {
+  margin-right: 10px !important;
+  margin-left: 0 !important;
+}
+
+/* Keep navbar items LTR */
+.font-persian .ms-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.font-persian .me-1 {
+  margin-right: 0.25rem !important;
+  margin-left: 0 !important;
+}
+
+.font-persian .me-2 {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+.font-persian .me-3 {
+  margin-right: 1rem !important;
+  margin-left: 0 !important;
+}
+
+.font-persian .ms-1 {
+  margin-left: 0.25rem !important;
+  margin-right: 0 !important;
+}
+
+/* Language dropdown LTR positioning */
+.font-persian .language-dropdown {
+  right: 0 !important;
+  left: auto !important;
+}
+
+/* Language switcher button LTR */
+.font-persian .language-toggle {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Donate button LTR */
+.font-persian .donate-btn {
+  direction: ltr !important;
+  text-align: center !important;
+}
+
+/* Navbar links LTR */
+.font-persian .nav-link {
+  direction: ltr !important;
+  text-align: left !important;
+}
+
+/* Mobile menu LTR */
+@media (max-width: 991px) {
+  .font-persian .navbar-nav {
+    text-align: left !important;
+    direction: ltr !important;
+  }
+  
+  .font-persian .language-switcher {
+    margin-left: 10px !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Values Section RTL for Persian */
+.font-persian .values-section {
+  direction: rtl;
+}
+
+.font-persian .values-section .container {
+  direction: rtl;
+}
+
+.font-persian .value-card {
+  text-align: right;
+  direction: rtl;
+}
+
+.font-persian .value-card h5 {
+  text-align: right;
+}
+
+.font-persian .value-card p {
+  text-align: right;
+  text-align-last: right;
+}
+
+/* Ensure icons stay properly positioned in RTL */
+.font-persian .card-icon-container {
+  text-align: center; /* Keep icons centered */
+}
+
+/* RTL for value cards layout */
+.font-persian .values-section .row {
+  direction: rtl;
+}
+
+/* Mobile responsive RTL for values */
+@media (max-width: 768px) {
+  .font-persian .value-card {
+    text-align: right;
   }
 }

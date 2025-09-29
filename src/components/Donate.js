@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Donate = () => {
   const [selectedAmount, setSelectedAmount] = useState(25);
@@ -6,6 +7,9 @@ const Donate = () => {
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
   const [donorName, setDonorName] = useState('');
   const [donorEmail, setDonorEmail] = useState('');
+  const [showSpendingBreakdown, setShowSpendingBreakdown] = useState(true);
+  
+  const { t } = useTranslation();
 
   const handleAmountSelect = (amount) => {
     setSelectedAmount(amount);
@@ -23,19 +27,19 @@ const Donate = () => {
     
     // Validate form
     if (!donorName || !donorEmail) {
-      alert('Please fill in all required fields');
+      alert(t('donate.alerts.requiredFields'));
       return;
     }
     
     const amount = selectedAmount === 'custom' ? customAmount : selectedAmount;
     
     if (!amount || amount <= 0) {
-      alert('Please enter a valid donation amount');
+      alert(t('donate.alerts.validAmount'));
       return;
     }
     
-    // Process donation (this would connect to your payment processor)
-    alert(`Thank you for your donation of $${amount}! We will process your payment shortly.`);
+    // Process donation
+    alert(t('donate.alerts.thankYou', { amount: amount }));
     
     // Reset form
     setSelectedAmount(25);
@@ -44,288 +48,272 @@ const Donate = () => {
     setDonorEmail('');
   };
 
-  // Initialize donation option functionality
-  useEffect(() => {
-    const donationOptions = document.querySelectorAll(".donation-option");
-    const paymentMethods = document.querySelectorAll(".payment-method");
-    
-    // Add click handlers
-    donationOptions.forEach(option => {
-      option.addEventListener("click", function() {
-        donationOptions.forEach(opt => opt.classList.remove("selected"));
-        this.classList.add("selected");
-        
-        if (this.dataset.amount === "custom") {
-          document.querySelector(".custom-amount").style.display = "block";
-        } else {
-          document.querySelector(".custom-amount").style.display = "none";
-        }
-      });
-    });
-    
-    paymentMethods.forEach(method => {
-      method.addEventListener("click", function() {
-        paymentMethods.forEach(m => m.classList.remove("selected"));
-        this.classList.add("selected");
-        this.querySelector("input[type='radio']").checked = true;
-      });
-    });
-    
-    // Cleanup
-    return () => {
-      donationOptions.forEach(option => {
-        option.removeEventListener("click", () => {});
-      });
-      paymentMethods.forEach(method => {
-        method.removeEventListener("click", () => {});
-      });
-    };
-  }, []);
+  const donationOptions = t('donate.donationOptions', { returnObjects: true });
+  const spendingCategories = t('donate.spendingBreakdown.categories', { returnObjects: true });
+  const paymentOptions = t('donate.paymentOptions', { returnObjects: true });
+  const additionalInfo = t('donate.additionalInfo', { returnObjects: true });
+
+  // Add colors for spending breakdown (not in translations since they're design elements)
+  const spendingColors = ['#0b6b6b', '#ff6b6b', '#4ecdc4', '#45b7d1', '#96ceb4'];
 
   return (
     <section id="donate" className="donate-section py-5">
       <div className="container">
-        <h2 className="section-title text-white">Support Our Cause</h2>
-        <p className="lead text-center text-white mb-5">
-          Your contribution helps us fight for women's rights and create change
-        </p>
+        <div className="text-center mb-5">
+          <h2 className="section-title text-white mb-3">{t('donate.title')}</h2>
+          <p className="lead text-white mb-4">
+            {t('donate.subtitle')}
+          </p>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="impact-badge">
+                <div className="row">
+                  <div className="col-md-4">
+                    <div className="impact-item">
+                      <i className="fas fa-users fa-2x mb-2"></i>
+                      <h4 className="mb-1">500+</h4>
+                      <small>{t('donate.impact.women')}</small>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="impact-item">
+                      <i className="fas fa-graduation-cap fa-2x mb-2"></i>
+                      <h4 className="mb-1">10</h4>
+                      <small>{t('donate.impact.programs')}</small>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="impact-item">
+                      <i className="fas fa-globe fa-2x mb-2"></i>
+                      <h4 className="mb-1">8</h4>
+                      <small>{t('donate.impact.countries')}</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="row justify-content-center">
           <div className="col-lg-10">
-            <form onSubmit={handleDonateSubmit}>
-              <div className="card shadow donation-card">
-                <div className="card-body p-5">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <h4 className="card-title mb-4">Make a Donation</h4>
-                      <p className="mb-4">
-                        Your support enables us to continue our vital work:
-                      </p>
-                      <ul className="mb-4">
-                        <li>Educational workshops and training programs</li>
-                        <li>Awareness campaigns and advocacy efforts</li>
-                        <li>Legal and social support for women at risk</li>
-                        <li>Organizing protests and international lobbying</li>
-                        <li>Emergency aid for women in crisis situations</li>
-                      </ul>
+            <div className="card shadow donation-card">
+              <div className="card-body p-4">
+                <div className="row">
+                  {/* Donation Amount Selection */}
+                  <div className="col-lg-6">
+                    <h4 className="card-title mb-4">{t('donate.chooseImpact')}</h4>
+                    
+                    <div className="donation-options mb-4">
+                      <div className="row g-3">
+                        {donationOptions.map((item, index) => (
+                          <div className="col-6" key={index}>
+                            <div
+                              className={`donation-option ${selectedAmount === item.amount ? 'selected' : ''}`}
+                              onClick={() => handleAmountSelect(item.amount)}
+                            >
+                              <div className="option-icon">{item.icon}</div>
+                              <h5>{item.display}</h5>
+                              <small>{item.impact}</small>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
 
-                      <div className="donation-options mb-4">
-                        <h5 className="mb-3">Select Amount</h5>
-                        <div className="row">
-                          <div className="col-4 mb-3">
-                            <div
-                              className={`donation-option ${selectedAmount === 25 ? 'selected' : ''}`}
-                              onClick={() => handleAmountSelect(25)}
-                              data-amount="25"
-                            >
-                              <h5>$25</h5>
-                              <small>Provides educational materials</small>
-                            </div>
-                          </div>
-                          <div className="col-4 mb-3">
-                            <div
-                              className={`donation-option ${selectedAmount === 50 ? 'selected' : ''}`}
-                              onClick={() => handleAmountSelect(50)}
-                              data-amount="50"
-                            >
-                              <h5>$50</h5>
-                              <small>Supports a week of advocacy</small>
-                            </div>
-                          </div>
-                          <div className="col-4 mb-3">
-                            <div
-                              className={`donation-option ${selectedAmount === 100 ? 'selected' : ''}`}
-                              onClick={() => handleAmountSelect(100)}
-                              data-amount="100"
-                            >
-                              <h5>$100</h5>
-                              <small>Funds legal assistance</small>
-                            </div>
-                          </div>
-                          <div className="col-4 mb-3">
-                            <div
-                              className={`donation-option ${selectedAmount === 250 ? 'selected' : ''}`}
-                              onClick={() => handleAmountSelect(250)}
-                              data-amount="250"
-                            >
-                              <h5>$250</h5>
-                              <small>Sponsors a workshop</small>
-                            </div>
-                          </div>
-                          <div className="col-8 mb-3">
-                            <div
-                              className={`donation-option ${selectedAmount === 'custom' ? 'selected' : ''}`}
-                              onClick={() => handleAmountSelect('custom')}
-                              data-amount="custom"
-                            >
-                              <h5>Custom Amount</h5>
-                              <small>Enter any amount you wish to donate</small>
-                            </div>
-                          </div>
-                        </div>
-
-                        {selectedAmount === 'custom' && (
-                          <div className="custom-amount mt-3">
-                            <label htmlFor="customAmount" className="form-label">Enter Amount ($)</label>
+                      {selectedAmount === 'custom' && (
+                        <div className="custom-amount mt-3">
+                          <label htmlFor="customAmount" className="form-label">
+                            {t('donate.customAmount.label')}
+                          </label>
+                          <div className="input-group">
+                            <span className="input-group-text">$</span>
                             <input
                               type="number"
                               className="form-control"
                               id="customAmount"
                               value={customAmount}
                               onChange={(e) => setCustomAmount(e.target.value)}
-                              placeholder="Enter amount"
+                              placeholder={t('donate.customAmount.placeholder')}
                               min="1"
-                              required={selectedAmount === 'custom'}
-                            />
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="col-md-6">
-                      <div className="payment-options">
-                        <h5 className="mb-3">Payment Method</h5>
-
-                        <div 
-                          className={`payment-method ${paymentMethod === 'creditCard' ? 'selected' : ''}`}
-                          onClick={() => handlePaymentMethodSelect('creditCard')}
-                        >
-                          <div className="form-check">
-                            <input
-                              className="form-check-input"
-                              type="radio"
-                              name="paymentMethod"
-                              id="creditCard"
-                              checked={paymentMethod === 'creditCard'}
-                              onChange={() => handlePaymentMethodSelect('creditCard')}
                               required
                             />
-                            <label
-                              className="form-check-label w-100"
-                              htmlFor="creditCard"
-                            >
-                              <i className="fab fa-cc-visa fa-2x me-2"></i>
-                              <i className="fab fa-cc-mastercard fa-2x me-2"></i>
-                              <i className="fab fa-cc-amex fa-2x"></i>
-                              <p className="mt-2 mb-0">Credit/Debit Card</p>
-                            </label>
                           </div>
                         </div>
+                      )}
+                    </div>
 
-                        <div 
-                          className={`payment-method ${paymentMethod === 'paypal' ? 'selected' : ''}`}
-                          onClick={() => handlePaymentMethodSelect('paypal')}
+                    {/* Spending Breakdown */}
+                    <div className="spending-breakdown">
+                      <div className="d-flex justify-content-between align-items-center mb-3">
+                        <h5 className="mb-0">{t('donate.spendingBreakdown.title')}</h5>
+                        <button
+                          type="button"
+                          className="btn btn-link p-0"
+                          onClick={() => setShowSpendingBreakdown(!showSpendingBreakdown)}
                         >
-                          <div className="form-check">
-                            <input
-                              className="form-check-input"
-                              type="radio"
-                              name="paymentMethod"
-                              id="paypal"
-                              checked={paymentMethod === 'paypal'}
-                              onChange={() => handlePaymentMethodSelect('paypal')}
-                            />
-                            <label className="form-check-label w-100" htmlFor="paypal">
-                              <i className="fab fa-cc-paypal fa-2x"></i>
-                              <p className="mt-2 mb-0">PayPal</p>
-                            </label>
+                          {showSpendingBreakdown ? 
+                            t('donate.spendingBreakdown.hideDetails') : 
+                            t('donate.spendingBreakdown.showDetails')
+                          }
+                        </button>
+                      </div>
+                      
+                      {showSpendingBreakdown && (
+                        <div className="breakdown-content">
+                          {spendingCategories.map((item, index) => (
+                            <div key={index} className="breakdown-item mb-3">
+                              <div className="d-flex justify-content-between mb-1">
+                                <span className="breakdown-category">{item.category}</span>
+                                <span className="breakdown-percentage">{item.percentage}%</span>
+                              </div>
+                              <div className="progress mb-2" style={{ height: '8px' }}>
+                                <div 
+                                  className="progress-bar" 
+                                  style={{ 
+                                    width: `${item.percentage}%`,
+                                    backgroundColor: spendingColors[index]
+                                  }}
+                                ></div>
+                              </div>
+                              <small className="text-muted">{item.description}</small>
+                            </div>
+                          ))}
+                          <div className="transparency-note">
+                            <i className="fas fa-shield-alt me-2"></i>
+                            {t('donate.spendingBreakdown.transparency')}
                           </div>
                         </div>
+                      )}
+                    </div>
+                  </div>
 
-                        <div 
-                          className={`payment-method ${paymentMethod === 'bankTransfer' ? 'selected' : ''}`}
-                          onClick={() => handlePaymentMethodSelect('bankTransfer')}
-                        >
-                          <div className="form-check">
-                            <input
-                              className="form-check-input"
-                              type="radio"
-                              name="paymentMethod"
-                              id="bankTransfer"
-                              checked={paymentMethod === 'bankTransfer'}
-                              onChange={() => handlePaymentMethodSelect('bankTransfer')}
-                            />
-                            <label
-                              className="form-check-label w-100"
-                              htmlFor="bankTransfer"
-                            >
-                              <i className="fas fa-university fa-2x"></i>
-                              <p className="mt-2 mb-0">Bank Transfer</p>
+                  {/* Payment Information */}
+                  <div className="col-lg-6">
+                    <form onSubmit={handleDonateSubmit}>
+                      <h5 className="mb-4">{t('donate.completeDonation')}</h5>
+
+                      {/* Donor Information */}
+                      <div className="mb-4">
+                        <div className="row g-3">
+                          <div className="col-12">
+                            <label htmlFor="name" className="form-label">
+                              {t('donate.donorInfo.name')}
                             </label>
-                          </div>
-                        </div>
-
-                        <div className="mt-4">
-                          <h5 className="mb-3">Donor Information</h5>
-                          <div className="mb-3">
-                            <label htmlFor="name" className="form-label">Full Name *</label>
                             <input
                               type="text"
                               className="form-control"
                               id="name"
                               value={donorName}
                               onChange={(e) => setDonorName(e.target.value)}
-                              placeholder="Enter your name"
+                              placeholder={t('donate.donorInfo.namePlaceholder')}
                               required
                             />
                           </div>
-                          <div className="mb-3">
-                            <label htmlFor="email" className="form-label">Email Address *</label>
+                          <div className="col-12">
+                            <label htmlFor="email" className="form-label">
+                              {t('donate.donorInfo.email')}
+                            </label>
                             <input
                               type="email"
                               className="form-control"
                               id="email"
                               value={donorEmail}
                               onChange={(e) => setDonorEmail(e.target.value)}
-                              placeholder="Enter your email"
+                              placeholder={t('donate.donorInfo.emailPlaceholder')}
                               required
                             />
                           </div>
                         </div>
+                      </div>
 
-                        <div className="text-center mt-4">
-                          <button type="submit" className="btn btn-primary btn-lg w-100">
-                            Donate Now
-                          </button>
-                          <p className="small mt-2">
-                            Your donation is secure and tax-deductible
-                          </p>
+                      {/* Payment Method */}
+                      <div className="payment-options mb-4">
+                        <label className="form-label mb-3">{t('donate.paymentMethod')}</label>
+                        <div className="row g-3">
+                          {paymentOptions.map((method) => (
+                            <div className="col-12" key={method.id}>
+                              <div 
+                                className={`payment-method ${paymentMethod === method.id ? 'selected' : ''}`}
+                                onClick={() => handlePaymentMethodSelect(method.id)}
+                              >
+                                <div className="form-check mb-0">
+                                  <input
+                                    className="form-check-input"
+                                    type="radio"
+                                    name="paymentMethod"
+                                    id={method.id}
+                                    checked={paymentMethod === method.id}
+                                    onChange={() => {}}
+                                    required
+                                  />
+                                  <label className="form-check-label w-100" htmlFor={method.id}>
+                                    <div className="d-flex align-items-center">
+                                      <i className={`fas ${method.icon} fa-2x me-3`}></i>
+                                      <div>
+                                        <h6 className="mb-1">{method.label}</h6>
+                                        {method.methods && (
+                                          <div className="payment-icons">
+                                            {method.methods.map((card, idx) => (
+                                              <i key={idx} className={`fab fa-cc-${card} me-1`}></i>
+                                            ))}
+                                          </div>
+                                        )}
+                                      </div>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          ))}
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
 
-            <div className="impact-stats mt-5">
-              <div className="row">
-                <div className="col-md-4">
-                  <div className="impact-stat">
-                    <h3>500+</h3>
-                    <p>Women supported through our programs</p>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="impact-stat">
-                    <h3>42</h3>
-                    <p>Advocacy campaigns launched</p>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="impact-stat">
-                    <h3>18</h3>
-                    <p>Countries where we have presence</p>
+                      {/* Donation Summary */}
+                      <div className="donation-summary mb-4">
+                        <div className="summary-item d-flex justify-content-between">
+                          <span>{t('donate.donationSummary.amount')}</span>
+                          <strong>${selectedAmount === 'custom' ? customAmount : selectedAmount}</strong>
+                        </div>
+                        <div className="summary-item d-flex justify-content-between">
+                          <span>{t('donate.donationSummary.fee')}</span>
+                          <span>{t('donate.donationSummary.free')}</span>
+                        </div>
+                        <hr />
+                        <div className="summary-total d-flex justify-content-between">
+                          <span>{t('donate.donationSummary.total')}</span>
+                          <strong>${selectedAmount === 'custom' ? customAmount : selectedAmount}</strong>
+                        </div>
+                      </div>
+
+                      {/* Submit Button */}
+                      <button type="submit" className="btn btn-primary btn-lg w-100 donate-btn-2">
+                        <i className="fas fa-heart me-2"></i>
+                        {t('donate.donateButton')}
+                      </button>
+
+                      <div className="text-center mt-3">
+                        <small className="text-muted">
+                          <i className="fas fa-lock me-1"></i>
+                          {t('donate.securityNote')}
+                        </small>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="text-center mt-4">
-              <p className="text-white">
-                For alternative donation methods or to learn about recurring
-                donations,{" "}
-                <a href="#contact" className="text-warning">contact us</a>
-              </p>
+            {/* Additional Info */}
+            <div className="row mt-4">
+              {additionalInfo.map((info, index) => (
+                <div key={index} className="col-md-6">
+                  <div className="info-card">
+                    <i className={info.icon}></i>
+                    <h5>{info.title}</h5>
+                    <p>{info.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

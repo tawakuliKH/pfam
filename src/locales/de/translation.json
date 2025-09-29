@@ -1,0 +1,313 @@
+{
+  "navbar": {
+    "title": "Progressive Kräfte Afghanistans",
+    "subtitle": "PFA Movement",
+    "home": "Startseite",
+    "values": "Werte",
+    "story": "Geschichte",
+    "news": "Nachrichten|Geschichten",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "donate": "Spenden"
+  },
+  "hero": {
+    "title": "Progressive Kräfte Afghanistans",
+    "subtitle": "Verteidigung der Frauenrechte, Förderung der Gleichstellung und Kampf für Gerechtigkeit",
+    "supportButton": "Unterstützen Sie unsere Sache"
+  },
+  "about": {
+    "leadershipTeam": {
+      "title": "Unser Führungsteam",
+      "subtitle": "Lernen Sie die engagierten Personen kennen, die unsere Bewegung für Geschlechtergleichstellung und Frauenrechte leiten",
+      "readMore": "Vollständige Biografie lesen",
+      "backToTeam": "Zurück zum Team"
+    },
+    "whoWeAre": {
+      "title": "Wer wir sind",
+      "lead": "Die Bewegung Progressive Kräfte Afghanistans ist eine spontane und gemeinnützige Initiative, die nach dem Zusammenbruch der Republik im Jahr 2022 gegründet wurde.",
+      "description1": "Unsere Bewegung setzt sich für die Verteidigung der Frauenrechte, die Förderung ihrer systematischen Teilhabe am sozialen und politischen Leben sowie die Förderung von Geschlechtergleichstellung, Gerechtigkeit und Freiheit ein. Wir sind bestrebt, Gewalt zu beseitigen, gleiche Chancen zu gewährleisten und den Zugang zu Bildung, Beschäftigung und öffentlicher Beteiligung für Mädchen und Frauen im ganzen Land zu sichern.",
+      "description2": "Wir lehnen entschieden alle Formen der Entrechtung und Einschränkungen ab, die Frauen weltweit auferlegt werden, und setzen uns insbesondere für afghanische Frauen ein, denen ihre grundlegenden Menschenrechte durch das repressive Taliban-Regime entzogen wurden.",
+      "stats": {
+        "countries": "Länder mit aktiven Mitgliedern",
+        "women": "Unterstützte Frauen"
+      },
+      "imageAlt": "Protest für Frauenrechte",
+      "imageCaption": "Einsatz für Frauenrechte und Geschlechtergleichstellung"
+    },
+    "mission": {
+      "title": "Mission & Zweck",
+      "equality": {
+        "title": "Engagement für Gleichstellung",
+        "description": "Wir setzen uns für die Beseitigung aller Formen geschlechtsspezifischer Diskriminierung ein und fördern die Gleichstellung von Frauen und Männern in allen Lebensbereichen. Unsere Initiativen konzentrieren sich auf Rechtsreformen, Aufklärungskampagnen und Gemeinschaftsengagement, um eine gerechtere Gesellschaft aufzubauen."
+      },
+      "violence": {
+        "title": "Bekämpfung von Gewalt",
+        "description": "Wir sind bestrebt, alle Formen geschlechtsspezifischer Gewalt gegen Frauen und Mädchen durch Advocacy- und Rechenschaftspflichtinitiativen zu verhindern, zu bekämpfen und auszurotten. Wir bieten sichere Räume, rechtliche Unterstützung und psychologische Hilfe für Überlebende."
+      },
+      "opportunities": {
+        "title": "Gleiche Chancen",
+        "description": "Wir streben danach, Frauen und Mädchen gleichen Zugang zu hochwertiger Bildung, Beschäftigungsmöglichkeiten, politischer Teilhabe und öffentlicher Entscheidungsfindung zu gewährleisten. Unsere Stipendienprogramme und Berufsausbildungsinitiativen befähigen Frauen, eigenständige Führungspersönlichkeiten zu werden."
+      }
+    },
+    "vision": {
+      "title": "Unsere Zukunftsvision",
+      "society": {
+        "title": "Eine gleichberechtigte Gesellschaft",
+        "description": "Wir stellen uns ein Afghanistan frei von Diskriminierung vor, in dem Frauen und Männer gleiche Rechte und Chancen in allen Lebensbereichen genießen. Eine Gesellschaft, in der das Geschlecht nicht länger das Schicksal bestimmt oder das Potenzial einschränkt."
+      },
+      "education": {
+        "title": "Bildung für alle",
+        "description": "Wir träumen von einer Zukunft, in der jedes Mädchen Zugang zu hochwertiger Bildung hat und die Möglichkeit, seine Träume ohne Einschränkungen zu verfolgen. Bildung ist die Grundlage für Empowerment und sozialen Wandel."
+      },
+      "leadership": {
+        "title": "Frauen in Führungspositionen",
+        "description": "Wir arbeiten auf eine Zukunft hin, in der Frauen aktiv an Entscheidungsprozessen teilnehmen und Führungspositionen auf allen Ebenen innehaben. Die Perspektiven von Frauen sind entscheidend für die Schaffung inklusiver Politiken und nachhaltiger Entwicklung."
+      },
+      "peace": {
+        "title": "Friedliches Afghanistan",
+        "description": "Wir stellen uns ein friedliches Afghanistan vor, in dem alle Bürger in Würde, Sicherheit und mit Hoffnung auf eine bessere Zukunft leben können. Eine Nation, in der Vielfalt gefeiert und die Menschenrechte für alle geschützt werden."
+      }
+    },
+    "employees": {
+      "tawana": {
+        "position": "Präsidentin und Gründerin",
+        "bio": "Mawloda Tawana ist eine bedeutende Frauenrechtsaktivistin und politische Führungspersönlichkeit mit über 15 Jahren engagiertem Einsatz für Geschlechtergleichstellung und Menschenrechtsarbeit. Ihr umfangreicher Hintergrund in Politikwissenschaft und internationalen Beziehungen hat sie zu einer bedeutenden Stimme für die Rechte afghanischer Frauen auf nationaler und internationaler Ebene gemacht.",
+        "fullBio": "Mawloda Tawana ist eine prominente Frauenrechtsaktivistin und politische Führungspersönlichkeit mit einer herausragenden Karriere von über 15 Jahren. Sie hat einen Bachelor-Abschluss in Politikwissenschaft und Internationalen Beziehungen, der die akademische Grundlage für ihre lebenslange Hingabe an soziale Gerechtigkeit bildete. Ihre berufliche Laufbahn begann beim Afghanistan Human Rights Defenders Committee im Jahr 2013, wo sie Menschenrechtsverletzungen dokumentierte und sich für Rechtsreformen einsetzte.\n\nMawlodas Expertise in Geschlechterfragen führte zu ihrer Ernennung als Gender-Beraterin im Innenministerium Afghanistans im Jahr 2018, wo sie Gender-Mainstreaming-Strategien in Sicherheitsinstitutionen entwickelte und umsetzte. Anschließend diente sie als Sekretärin im Bildungsministerium und später als Gender-Direktorin bei der National Public Protection Force, wo sie Initiativen zur Erhöhung der Frauenbeteiligung in öffentlichen Sicherheitsrollen vorantrieb und geschlechtsspezifische Gewalt in institutionellen Rahmenwerken thematisierte.\n\nIhre Führungsrolle erstreckt sich über nationale Grenzen hinaus, da sie afghanische Frauen bei zahlreichen internationalen Foren vertreten hat, einschließlich der Vereinten Nationen. Kürzlich nahm sie am Women Empowerment Summit in Albanien (September 2024) und der WFA-Konferenz zu Geschlechtergerechtigkeit und Rechenschaftspflicht (November 2024) teil, wo sie zu strategischen Diskussionen über Rechenschaftsmechanismen für geschlechtsspezifische Verbrechen beitrug. Unter ihrer visionären Führung ist die Bewegung Progressive Kräfte Afghanistans zu einem robusten Netzwerk von Aktivisten in mehreren Ländern gewachsen, die sich der Geschlechtergleichstellung, Gerechtigkeit und demokratischen Werten verpflichtet fühlen."
+      },
+      "rad": {
+        "position": "Führungsmitglied",
+        "bio": "Zohal Rad ist eine erfahrene Pädagogin, Medienexpertin und Menschenrechtsverteidigerin mit mehr als 14 Jahren Erfahrung in Bildungsentwicklung und Frauenförderungsinitiativen. Ihr vielseitiger Ansatz verbindet traditionelle Bildung mit modernen Medienstrategien zur Förderung der Geschlechtergleichstellung.",
+        "fullBio": "Zohal Rad bringt einen reichen Erfahrungsschatz in Bildung, Medien und Menschenrechtsarbeit in unsere Bewegung ein. Mit einem Bachelor-Abschluss in persischer Dari-Sprache und Literatur von der Mawlana Jalaluddin Mohammad Balkhi Universität begann sie ihre Karriere als Lehrerin an öffentlichen Schulen und widmete über 13 Jahre der Ausbildung der nächsten Generation afghanischer Jugendlicher. Ihr Engagement für Menschenrechte führte sie zur Arbeit mit der Afghanistan Independent Human Rights Commission in Mazar-e-Sharif, wo sie Verstöße dokumentierte und Opfer unterstützte.\n\nSeit 2016 dient Zohal als Direktorin der Gahwara Organization, wo sie innovative Bildungsprogramme für marginalisierte Gemeinschaften entwickelt hat, mit besonderem Fokus auf Mädchenbildung und Alphabetisierung von Frauen. Ihre Medienaktivitäten seit 2018 umfassen die Produktion von Bildungsinhalten und Aufklärungskampagnen, die Geschlechterstereotypen herausfordern und Frauenrechte fördern. Zohals einzigartige Fähigkeit, traditionelle Bildungsmethoden mit modernen Kommunikationstechnologien zu verbinden, hat ihre Programme besonders effektiv für den Zugang zu abgelegenen und konservativen Gemeinschaften gemacht.\n\nIhre Arbeit wurde von mehreren Bildungs- und Menschenrechtsorganisationen anerkannt, und sie entwickelt weiterhin Lehrplanmaterialien, die Menschenrechtserziehung mit traditionellen Fächern integrieren und einen ganzheitlichen Ansatz zur Empowerment durch Wissen schaffen."
+      },
+      "farahmand": {
+        "position": "Führungsmitglied",
+        "bio": "Fatima Farahmand ist eine Technologieexpertin und Menschenrechtsverteidigerin, die ihr technisches Fachwissen mit leidenschaftlichem Einsatz für Geschlechtergleichstellung verbindet. Ihre innovativen Ansätze zur Gemeinschaftsmobilisierung und digitalen Sicherheit haben die Wirksamkeit unserer Bewegung erheblich gesteigert.",
+        "fullBio": "Fatima Farahmand repräsentiert die neue Generation afghanischer Frauenführerinnen, die Technologie für sozialen Wandel nutzen. Mit einem Bachelor-Abschluss in Informatik begann sie ihre Karriere im Marketing bei Moore Afghanistan, wo sie digitale Strategien für Sozialunternehmen entwickelte. Ihr Engagement für Menschenrechte führte sie zur Arbeit als Menschenrechtsverteidigerin bei der Central Highlands Civil Societies Coordination Assembly, wo sie Rechtsverletzungen dokumentierte und Gemeinschaftsaufklärungsprogramme organisierte.\n\nFatimas technische Fähigkeiten waren entscheidend für die Entwicklung sicherer Kommunikationssysteme für Frauenaktivistinnen, die in restriktiven Umgebungen arbeiten. Als Interview Facilitator und Forscherin für Albany International Associates führte sie sensible Forschung zum Zugang von Frauen zu Bildung und Beschäftigungsmöglichkeiten durch. Derzeit dient sie als Afghan Community Mobilizer bei Community World Service Asia, wo Fatima erfolgreich zahlreiche Workshops zu digitaler Kompetenz, wirtschaftlicher Stärkung von Frauen und Führungsentwicklung organisiert hat.\n\nIhre Vorstandsmitgliedschaft beim People Council of Hemat zeigt ihr Engagement für basisorientierte Gemeinschaftsentwicklung. Fatimas einzigartiger Beitrag liegt in ihrer Fähigkeit, technologiebasierte Lösungen zu entwerfen, die traditionelle Barrieren für die Teilhabe von Frauen angehen und innovative Plattformen für Advocacy und Mobilisierung schaffen, die geografische Grenzen überschreiten."
+      },
+      "ibrahim": {
+        "position": "Führungsmitglied",
+        "bio": "Humaira Ibrahim ist eine vielseitige Aktivistin, die künstlerischen Ausdruck mit Menschenrechtsarbeit verbindet. Ihr innovativer Ansatz integriert traditionelles Handwerk mit zeitgenössischem Aktivismus und schafft einzigartige Wege zur wirtschaftlichen und sozialen Stärkung von Frauen.",
+        "fullBio": "Humaira Ibrahim bringt einen kreativen und multidimensionalen Ansatz zur Frauenrechtsarbeit. Mit einem Diplom der Sayeed Jamaludin Afghan University hat sie eine einzigartige Methodik entwickelt, die Berufsausbildung mit Rechtsbewusstsein kombiniert. Als Schneiderin und Malerin mit über 14 Jahren Erfahrung hat Humaira gemeindebasierte Workshops eingerichtet, in denen Frauen marktfähige Fähigkeiten erlernen, während sie über ihre Rechte diskutieren und kollektives Bewusstsein aufbauen.\n\nIhre Arbeit mit der Dornika Social Organization als Menschenrechtsverteidigerin konzentrierte sich auf die Bereitstellung von Rechtskenntnissen und wirtschaftlichen Chancen für marginalisierte Frauen. Humairas künstlerische Talente sind zu einem mächtigen Werkzeug für Advocacy geworden; ihre Gemälde, die die Kämpfe und Widerstandsfähigkeit afghanischer Frauen darstellen, wurden bei mehreren kulturellen Veranstaltungen ausgestellt und lenken durch visuelles Storytelling Aufmerksamkeit auf Geschlechterungleichheit.\n\nWas Humairas Ansatz auszeichnet, ist ihr Glaube an die transformative Kraft wirtschaftlicher Unabhängigkeit in Kombination mit gesteigertem Bewusstsein. Sie hat einen umfassenden Lehrplan entwickelt, der Kompetenzentwicklung mit Menschenrechtserziehung integriert und nachhaltige Wege zur Stärkung von Frauen schafft. Ihr gemeindebasiertes Modell wurde an mehreren Standorten repliziert und zeigt, wie traditionelle Fähigkeiten für zeitgenössischen sozialen Wandel genutzt werden können, während kulturelles Erbe bewahrt wird."
+      },
+      "safi": {
+        "position": "Führungsmitglied",
+        "bio": "Qandi Safi ist eine erfahrene Frauenrechtsaktivistin, Pädagogin und Medienexpertin, deren mutiger Einsatz die Stimmen afghanischer Frauen durch verschiedene Plattformen verstärkt hat. Ihre vielseitige Karriere umfasst Bildung, Medien und basisorientierte Mobilisierung.",
+        "fullBio": "Qandi Safis Engagement für Frauenrechte erstreckt sich über zwei Jahrzehnte und begann mit ihrer Arbeit als Schullehrerin, wo sie Generationen afghanischer Mädchen unterrichtete. Ihr Einsatz für Geschlechtergleichstellung führte sie zur Gründungsmitgliedschaft der 'Wak' Afghan Women's Movement im Jahr 2018, durch die sie zahlreiche Kampagnen zu Bildungszugang, wirtschaftlicher Stärkung und politischer Teilhabe von Frauen organisiert hat.\n\nAls TV-Moderatorin beim Khyber TV Channel nutzte Qandi Medienplattformen, um sensible soziale Themen zu diskutieren, die Frauen betreffen, und forderte oft konservative Narrative heraus und bot alternative Perspektiven. Ihre Programme, die sich auf kulturelle und soziale Themen konzentrierten, erreichten ein breites Publikum und schufen wichtige Räume für öffentliche Diskussionen über Geschlechtergleichstellung. Qandis Ansatz kombiniert traditionellen Aktivismus mit modernen Kommunikationsstrategien und macht ihre Botschaften für diverse Zielgruppen zugänglich.\n\nIhre umfangreiche Erfahrung in Gemeinschaftsorganisation umfasst die Einrichtung von Frauenzirkeln für Diskussion und Unterstützung, die Entwicklung von Frühwarnsystemen für geschlechtsspezifische Gewalt und die Schaffung wirtschaftlicher Genossenschaften, die Frauen ermöglichen, finanzielle Unabhängigkeit zu erreichen. Qandis Arbeit zeigt, wie anhaltendes Gemeinschaftsengagement in Kombination mit strategischer Medienpräsenz bedeutungsvollen Wandel auf individueller und gesellschaftlicher Ebene schaffen kann."
+      },
+      "hamza": {
+        "position": "Führungsmitglied",
+        "bio": "Mohammad Nasim Hamza bringt über drei Jahrzehnte herausragende Erfahrung im öffentlichen Dienst in unsere Bewegung. Sein umfangreicher Hintergrund in Sicherheitssektorgouvernance und administrativer Führung bietet entscheidende strategische Perspektive für unsere Advocacy-Bemühungen.",
+        "fullBio": "Mohammad Nasim Hamza bietet unschätzbares Fachwissen, das durch eine bemerkenswerte 30-jährige Karriere im öffentlichen Dienst erworben wurde, hauptsächlich als Generaldirektor für Bildung und Ausbildung im Innenministerium Afghanistans. Sein militärischer Hintergrund und administrative Erfahrung haben ihm tiefe Einblicke in institutionelle Governance und strategische Planung verschafft. Während seiner Karriere arbeitete Mohammad unermüdlich an der Reform von Sicherheitsinstitutionen und betonte die Bedeutung von Geschlechtssensibilität und der Einbeziehung von Frauen in öffentliche Sicherheitsrollen.\n\nSeine Beiträge zur Entwicklung von Ausbildungscurricula, die Menschenrechtsprinzipien und Geschlechtergleichstellungsüberlegungen integrierten, hatten bleibende Auswirkungen auf die Sicherheitssektorreformbemühungen. Mohammads Verständnis von Regierungssystemen und bürokratischen Prozessen macht ihn besonders effektiv bei der Navigation komplexer institutioneller Landschaften und der Entwicklung nachhaltiger Advocacy-Strategien. Sein Engagement für Frauenrechte wurzelt in seinem Glauben, dass echte nationale Entwicklung die volle Teilhabe aller Bürger erfordert, unabhängig vom Geschlecht.\n\nSeit seinem Beitritt zur Bewegung war Mohammad maßgeblich an der Entwicklung unseres strategischen Planungsrahmens, der Organisationsstruktur und der Engagement-Strategien mit internationalen Institutionen beteiligt. Seine Fähigkeit, traditionelle Regierungssysteme mit progressiven Werten zu verbinden, macht ihn zu einem einzigartigen Vermögen in unserem kollektiven Streben nach Geschlechtergleichstellung und sozialer Gerechtigkeit."
+      }
+    }
+  
+  },
+  
+  "values": {
+    "title": "Unsere Werte",
+    "cards": {
+      "choice": {
+        "title": "Recht auf Wahl",
+        "description": "Unterstützung der Freiheit von Frauen und Mädchen in persönlichen, beruflichen und sozialen Entscheidungsprozessen. Wir glauben, dass jede Frau Autonomie über ihr Leben, ihren Körper und ihre Zukunft ohne Zwang oder Einschränkung haben sollte."
+      },
+      "equality": {
+        "title": "Gleichheit & Nichtdiskriminierung",
+        "description": "Unterstützung der vollständigen Gleichstellung von Frauen und Männern und Beseitigung aller Formen geschlechtsspezifischer Diskriminierung. Wir fordern patriarchale Normen heraus und arbeiten daran, Systeme zu schaffen, die alle mit gleicher Würde und Respekt behandeln."
+      },
+      "collaboration": {
+        "title": "Zusammenarbeit & Solidarität",
+        "description": "Aufbau nationaler und internationaler Zusammenarbeit zur Förderung der Frauenrechte und Stärkung der sozialen Solidarität. Wir glauben an die Kraft kollektiven Handelns und vielfältiger Partnerschaften, um nachhaltigen Wandel zu schaffen."
+      }
+    }
+  },
+  
+  "story": {
+    "title": "Wie wir begannen",
+    "imageAlt": "Unsere Anfänge",
+    "imageCaption": "Der Beginn unserer Bewegung im Jahr 2022",
+    "lead": "Die Bewegung Progressive Kräfte Afghanistans entstand als spontane, gemeinnützige Bewegung nach dem Zusammenbruch der Republik.",
+    "paragraph1": "Anfang 2022 kam eine Gruppe engagierter Aktivisten zusammen – darunter Exil-Kämpfer, Menschenrechtsverteidiger, Frauenrechtsaktivisten, Journalisten, Mitarbeiter internationaler Organisationen und ehemaliges Militärpersonal, sowohl Frauen als auch Männer – um die Progressiven Kräfte Afghanistans offiziell zu gründen.",
+    "paragraph2": "Unter der Führung von Mawloda Tawana und geleitet von einer gemeinsamen Vision menschlichen Engagements gründeten wir diese Bewegung, um Frauenrechte zu verteidigen, Geschlechtergleichstellung zu fördern, Gerechtigkeit zu erreichen, Gewalt auszurotten und sicherzustellen, dass Mädchen und Frauen Zugang zu Bildung, Beschäftigung und sinnvoller Teilhabe am sozialen und politischen Leben haben."
+  },
+  
+  "issues": {
+    "title": "Themen, die wir angehen",
+    "items": {
+      "violence": {
+        "icon": "🛡️",
+        "title": "Geschlechtsspezifische Gewalt",
+        "description": "Wir kämpfen gegen alle Formen geschlechtsspezifischer Gewalt und Diskriminierung von Frauen und Mädchen, die unter der Taliban-Herrschaft in Afghanistan weiterhin weit verbreitet sind. Unsere Initiativen umfassen Notunterkünfte, Rechtshilfe und Aufklärungskampagnen, um den Kreislauf der Gewalt zu durchbrechen."
+      },
+      "education": {
+        "icon": "📚",
+        "title": "Verweigerung von Bildung",
+        "description": "Wir arbeiten daran, den Zugang zu Bildung für Frauen und Mädchen wiederherzustellen, die vom Taliban-Regime systematisch von Schulen und Universitäten ausgeschlossen wurden. Durch Untergrundschulen und Online-Bildungsplattformen stellen wir sicher, dass das Lernen weitergeht."
+      },
+      "political": {
+        "icon": "🗳️",
+        "title": "Politische Unterdrückung",
+        "description": "Wir lehnen die Unterdrückung ziviler und politischer Freiheiten ab, einschließlich der Meinungsfreiheit und politischen Teilhabe von Frauen in Afghanistan. Wir setzen uns für die Einbeziehung von Frauen in Friedensprozesse und zukünftige Regierungsstrukturen ein."
+      },
+      "extremism": {
+        "icon": "⚖️",
+        "title": "Religiöser Extremismus",
+        "description": "Wir bekämpfen religiösen und ideologischen Extremismus, der die Rechte und Freiheiten von Frauen einschränkt, und arbeiten daran, gemäßigte und inklusive Glaubensinterpretationen zu fördern. Unsere theologischen Dialoge heben die Vereinbarkeit des Islam mit Geschlechtergleichstellung hervor."
+      }
+    }
+  },
+  
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "subtitle": "Nehmen Sie Kontakt mit uns auf für Zusammenarbeit, Informationen oder Unterstützung",
+    "description": "Wir begrüßen Partnerschaften, Medienanfragen und Unterstützung von Einzelpersonen und Organisationen, die unsere Vision für ein gerechteres Afghanistan teilen.",
+    "details": {
+      "director": {
+        "title": "Direktorin",
+        "value": "Mawloda Tawana"
+      },
+      "email": {
+        "title": "E-Mail",
+        "value": "pfoam.afghanistan@gmail.com"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+49 1573 1629920"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "linkText": "Mit uns verbinden",
+        "url": "https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
+      },
+      "address": {
+        "title": "Adresse",
+        "value": "Haupstraße 126, 26810 Westoverledingen, Niedersachsen Deutschland"
+      }
+    }
+  },
+  
+  "donate": {
+    "title": "Stärken Sie Frauen durch Ihre Unterstützung",
+    "subtitle": "Jede Spende schafft nachhaltige Veränderung im Leben von Frauen und Mädchen weltweit",
+    "impact": {
+      "women": "Unterstützte Frauen",
+      "programs": "Gestartete Programme",
+      "countries": "Erreichte Länder"
+    },
+    "chooseImpact": "Wählen Sie Ihre Wirkung",
+    "donationOptions": [
+      {
+        "amount": 25,
+        "impact": "Bildungsmaterialien für 5 Frauen",
+        "icon": "📚",
+        "display": "25$"
+      },
+      {
+        "amount": 50,
+        "impact": "Wöchentliche Advocacy-Unterstützung",
+        "icon": "📢", 
+        "display": "50$"
+      },
+      {
+        "amount": 100,
+        "impact": "Rechtshilfe für einen Fall",
+        "icon": "⚖️",
+        "display": "100$"
+      },
+      {
+        "amount": "custom",
+        "impact": "Benutzerdefinierter Betrag",
+        "icon": "💝",
+        "display": "Benutzerdefiniert"
+      }
+    ],
+    "customAmount": {
+      "label": "Geben Sie Ihren Betrag ein",
+      "placeholder": "Betrag eingeben"
+    },
+    "spendingBreakdown": {
+      "title": "Wie Ihre Spende hilft",
+      "showDetails": "Details anzeigen",
+      "hideDetails": "Details ausblenden",
+      "categories": [
+        {
+          "category": "Bildungsprogramme",
+          "percentage": 35,
+          "description": "Workshops, Schulungsmaterialien und Bildungsressourcen für Frauen"
+        },
+        {
+          "category": "Rechtliche Unterstützung",
+          "percentage": 25,
+          "description": "Rechtshilfe, Beratung und Vertretung für bedürftige Frauen"
+        },
+        {
+          "category": "Nothilfe",
+          "percentage": 20,
+          "description": "Soforthilfe für Frauen in Krisensituationen"
+        },
+        {
+          "category": "Advocacy-Kampagnen",
+          "percentage": 15,
+          "description": "Aufklärungskampagnen und politische Veränderungsinitiativen"
+        },
+        {
+          "category": "Betriebskosten",
+          "percentage": 5,
+          "description": "Wesentliche administrative und organisatorische Ausgaben"
+        }
+      ],
+      "transparency": "Wir verpflichten uns zu vollständiger finanzieller Transparenz. Jahresberichte auf Anfrage erhältlich."
+    },
+    "completeDonation": "Vervollständigen Sie Ihre Spende",
+    "donorInfo": {
+      "name": "Vollständiger Name *",
+      "namePlaceholder": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail-Adresse *",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein"
+    },
+    "paymentMethod": "Zahlungsmethode",
+    "paymentOptions": [
+      {
+        "id": "creditCard",
+        "label": "Kreditkarte",
+        "icon": "fa-credit-card"
+      },
+      {
+        "id": "paypal",
+        "label": "PayPal",
+        "icon": "fa-paypal"
+      },
+      {
+        "id": "bankTransfer",
+        "label": "Banküberweisung",
+        "icon": "fa-university"
+      }
+    ],
+    "donationSummary": {
+      "amount": "Spendenbetrag:",
+      "fee": "Bearbeitungsgebühr:",
+      "free": "Kostenlos",
+      "total": "Gesamtbetrag:"
+    },
+    "donateButton": "Jetzt spenden",
+    "securityNote": "Ihre Spende ist sicher und steuerlich absetzbar",
+    "additionalInfo": [
+      {
+        "icon": "fas fa-hand-holding-heart",
+        "title": "Wiederkehrende Spenden",
+        "description": "Richten Sie monatliche Spenden ein, um kontinuierliche Unterstützung für unsere laufenden Programme zu bieten."
+      },
+      {
+        "icon": "fas fa-building",
+        "title": "Firmenspenden-Matching",
+        "description": "Viele Arbeitgeber verdoppeln wohltätige Beiträge. Verdoppeln Sie noch heute Ihre Wirkung."
+      }
+    ],
+    "alerts": {
+      "requiredFields": "Bitte füllen Sie alle erforderlichen Felder aus",
+      "validAmount": "Bitte geben Sie einen gültigen Spendenbetrag ein",
+      "thankYou": "Vielen Dank für Ihre Spende von ${{amount}}! Wir werden Ihre Zahlung in Kürze bearbeiten."
+    }
+  }
+
+}
+

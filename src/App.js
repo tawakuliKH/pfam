@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // ← Change this line
 import Home from './components/Home';
 import NewsDetail from './components/NewsDetail';
 import Gallery from './components/Gallery';
@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'animate.css/animate.min.css';
 import './App.css';
+import './i18n';
 
 function App() {
   return (

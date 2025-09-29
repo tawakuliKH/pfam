@@ -1,33 +1,32 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Issues = () => {
+  const { t } = useTranslation();
+
   const issues = [
     {
-      icon: '🛡️',
-      title: 'Gender-based Violence',
-      description: 'We fight against all forms of gender-based violence and discrimination against women and girls, which remains pervasive in Afghanistan under Taliban rule. Our initiatives include emergency shelters, legal aid, and awareness campaigns to break the cycle of violence.'
+      key: 'violence',
+      icon: t('issues.items.violence.icon')
     },
     {
-      icon: '📚',
-      title: 'Denial of Education',
-      description: 'We work to restore access to education for women and girls who have been systematically excluded from schools and universities by the Taliban regime. Through underground schools and online education platforms, we\'re ensuring learning continues.'
+      key: 'education', 
+      icon: t('issues.items.education.icon')
     },
     {
-      icon: '🗳️',
-      title: 'Political Suppression',
-      description: 'We oppose the suppression of civil and political freedoms, including freedom of expression and political participation for women in Afghanistan. We advocate for women\'s inclusion in peace processes and future governance structures.'
+      key: 'political',
+      icon: t('issues.items.political.icon')
     },
     {
-      icon: '⚖️',
-      title: 'Religious Extremism',
-      description: 'We combat religious and ideological extremism that limits women\'s rights and freedoms, working to promote moderate and inclusive interpretations of faith. Our theological dialogues highlight the compatibility of Islam with gender equality.'
+      key: 'extremism',
+      icon: t('issues.items.extremism.icon')
     }
   ];
 
   return (
     <section id="issues" className="py-5 issues-section">
       <div className="container">
-        <h2 className="section-title text-center mb-5">Issues We Address</h2>
+        <h2 className="section-title text-center mb-5">{t('issues.title')}</h2>
         <div className="row">
           {issues.map((issue, index) => (
             <div key={index} className="col-lg-6 mb-4">
@@ -36,8 +35,12 @@ const Issues = () => {
                   <span className="issue-icon">{issue.icon}</span>
                 </div>
                 <div className="issue-content">
-                  <h4 className="issue-title mb-3">{issue.title}</h4>
-                  <p className="issue-description mb-0">{issue.description}</p>
+                  <h4 className="issue-title mb-3">
+                    {t(`issues.items.${issue.key}.title`)}
+                  </h4>
+                  <p className="issue-description mb-0">
+                    {t(`issues.items.${issue.key}.description`)}
+                  </p>
                 </div>
               </div>
             </div>

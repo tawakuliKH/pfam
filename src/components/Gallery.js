@@ -38,6 +38,7 @@ const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalCurrentSlide, setModalCurrentSlide] = useState(0);
   const navigate = useNavigate();
+  
 
   // Sample photo data with descriptions (same as before)
    // Sample photo data with descriptions
