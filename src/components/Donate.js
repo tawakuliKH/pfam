@@ -114,7 +114,6 @@ const Donate = () => {
                             >
                               <div className="option-icon">{item.icon}</div>
                               <h5>{item.display}</h5>
-                              <small>{item.impact}</small>
                             </div>
                           </div>
                         ))}
