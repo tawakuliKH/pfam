@@ -27,19 +27,31 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'en', // Force English as default language
     fallbackLng: 'en',
     debug: false,
+    
+    // Language detection configuration
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      caches: ['localStorage'],
+      
+      // Override language detection to always start with English
+      checkWhitelist: true
+    },
+    
+    // Only allow these languages
+    whitelist: ['en', 'de', 'fa'],
+    
     interpolation: {
       escapeValue: false,
     }
   });
 
-// Function to handle RTL
+// Function to handle RTL and language change
 export const changeLanguage = (lng) => {
-  i18n.changeLanguage(lng);
-  
-  // Set direction and font family
   const isRTL = rtlLanguages.includes(lng);
+  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
   document.documentElement.lang = lng;
   
   // Add language-specific font class
@@ -51,6 +63,24 @@ export const changeLanguage = (lng) => {
   } else {
     document.documentElement.classList.add('font-english');
   }
+  
+  return i18n.changeLanguage(lng);
 };
+
+// Initialize with English on first load
+export const initializeLanguage = () => {
+  const savedLanguage = localStorage.getItem('i18nextLng');
+  
+  // If no language is saved, force English
+  if (!savedLanguage || !['en', 'de', 'fa'].includes(savedLanguage)) {
+    localStorage.setItem('i18nextLng', 'en');
+    changeLanguage('en');
+  } else {
+    changeLanguage(savedLanguage);
+  }
+};
+
+// Call initialization when the module loads
+initializeLanguage();
 
 export default i18n;

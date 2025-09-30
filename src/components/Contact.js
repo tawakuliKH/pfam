@@ -2,105 +2,156 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'fa'; // Check if current language is Persian
 
   const contactDetails = [
     {
       key: 'director',
-      icon: 'fas fa-user'
+      icon: 'fas fa-user',
+      type: 'text'
     },
     {
       key: 'email', 
-      icon: 'fas fa-envelope'
+      icon: 'fas fa-envelope',
+      type: 'email'
     },
     {
       key: 'phone',
-      icon: 'fas fa-phone'
+      icon: 'fas fa-phone',
+      type: 'phone'
     },
     {
       key: 'linkedin',
-      icon: 'fab fa-linkedin'
+      icon: 'fab fa-linkedin',
+      type: 'link'
     },
     {
       key: 'address',
-      icon: 'fas fa-map-marker-alt'
+      icon: 'fas fa-map-marker-alt',
+      type: 'text'
     }
   ];
 
+  const handleContactClick = (type, value) => {
+    switch (type) {
+      case 'phone':
+        // Clean the phone number for tel: protocol (remove any formatting)
+        const cleanPhone = value.replace(/[^\d+]/g, '');
+        window.open(`tel:${cleanPhone}`);
+        break;
+      case 'email':
+        window.open(`mailto:${value}`);
+        break;
+      case 'link':
+        window.open(value, '_blank', 'noopener noreferrer');
+        break;
+      default:
+        break;
+    }
+  };
+
+  const formatPhoneNumber = (phone, isRTL) => {
+    if (!isRTL) return phone;
+    
+    // For Persian/RTL, reverse the numbers for proper display
+    // But keep the actual tel: link in international format
+    return phone.split('').reverse().join('');
+  };
+
+  const renderContactValue = (detail) => {
+    const value = t(`contact.details.${detail.key}.value`);
+    const url = t(`contact.details.${detail.key}.url`);
+    const linkText = t(`contact.details.${detail.key}.linkText`);
+
+    if (detail.type === 'link') {
+      return (
+        <button
+          className="contact-link-btn"
+          onClick={() => handleContactClick('link', url)}
+          dir={isRTL ? 'rtl' : 'ltr'}
+        >
+          <span className="link-text">{linkText}</span>
+          <i className="fas fa-external-link-alt link-icon"></i>
+        </button>
+      );
+    }
+
+    if (detail.type === 'phone') {
+      const displayNumber = formatPhoneNumber(value, isRTL);
+      return (
+        <button
+          className={`contact-action-btn ${detail.type}`}
+          onClick={() => handleContactClick(detail.type, value)}
+          dir={isRTL ? 'rtl' : 'ltr'}
+        >
+          <span className="action-text">{displayNumber}</span>
+          <i className={`fas fa-phone action-icon ${isRTL ? 'rtl-icon' : ''}`}></i>
+        </button>
+      );
+    }
+
+    if (detail.type === 'email') {
+      return (
+        <button
+          className={`contact-action-btn ${detail.type}`}
+          onClick={() => handleContactClick(detail.type, value)}
+          dir="ltr" // Email should always be LTR
+        >
+          <span className="action-text">{value}</span>
+          <i className="fas fa-envelope action-icon"></i>
+        </button>
+      );
+    }
+
+    return (
+      <span 
+        className="contact-text" 
+        dir={isRTL && detail.key === 'address' ? 'rtl' : 'ltr'}
+      >
+        {value}
+      </span>
+    );
+  };
+
   return (
-    <section id="contact" className="py-5 contact-section">
+    <section 
+      id="contact" 
+      className="contact-section"
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className="container">
-        <h2 className="section-title">{t('contact.title')}</h2>
-        <p className="text-center mb-5 lead">{t('contact.subtitle')}</p>
-        <div className="row justify-content-center">
-          <div className="col-lg-10">
-            <div className="card shadow contact-card">
-              <div className="card-body p-5">
-                <div className="row">
-                  <div className="col-md-12">
-                    <div className="contact-info text-center">
-                      <p>{t('contact.description')}</p>
-                      
-                      <div className="row mt-5">
-                        {contactDetails.slice(0, 3).map((detail) => (
-                          <div key={detail.key} className="col-md-4">
-                            <div className="contact-detail">
-                              <div className="icon-box">
-                                <i className={detail.icon}></i>
-                              </div>
-                              <div className="detail-content">
-                                <h5>{t(`contact.details.${detail.key}.title`)}</h5>
-                                <p>
-                                  {detail.key === 'linkedin' ? (
-                                    <a
-                                      href={t(`contact.details.${detail.key}.url`)}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      {t(`contact.details.${detail.key}.linkText`)}
-                                    </a>
-                                  ) : (
-                                    t(`contact.details.${detail.key}.value`)
-                                  )}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                      
-                      <div className="row mt-4">
-                        {contactDetails.slice(3).map((detail) => (
-                          <div key={detail.key} className="col-md-6">
-                            <div className="contact-detail">
-                              <div className="icon-box">
-                                <i className={detail.icon}></i>
-                              </div>
-                              <div className="detail-content">
-                                <h5>{t(`contact.details.${detail.key}.title`)}</h5>
-                                <p>
-                                  {detail.key === 'linkedin' ? (
-                                    <a
-                                      href={t(`contact.details.${detail.key}.url`)}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                    >
-                                      {t(`contact.details.${detail.key}.linkText`)}
-                                    </a>
-                                  ) : (
-                                    t(`contact.details.${detail.key}.value`)
-                                  )}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+        <div className="section-header">
+          <h2 className="section-title">{t('contact.title')}</h2>
+          <p className="section-subtitle">{t('contact.subtitle')}</p>
+        </div>
+        
+        <div className="contact-container">
+          <div className="contact-card">
+            <div className="contact-header">
+              <div className="contact-avatar">
+                <i className="fas fa-handshake"></i>
+              </div>
+              <h3 className="contact-greeting">{t('contact.description')}</h3>
+            </div>
+
+            <div className="contact-grid">
+              {contactDetails.map((detail, index) => (
+                <div key={detail.key} className="contact-item">
+                  <div className="contact-icon-wrapper">
+                    <i className={detail.icon}></i>
+                  </div>
+                  <div className="contact-content">
+                    <h4 className="contact-label">{t(`contact.details.${detail.key}.title`)}</h4>
+                    <div className="contact-value">
+                      {renderContactValue(detail)}
                     </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
+
+           
           </div>
         </div>
       </div>
