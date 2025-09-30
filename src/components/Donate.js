@@ -7,7 +7,7 @@ const Donate = () => {
   const [paymentMethod, setPaymentMethod] = useState('creditCard');
   const [donorName, setDonorName] = useState('');
   const [donorEmail, setDonorEmail] = useState('');
-  const [showSpendingBreakdown, setShowSpendingBreakdown] = useState(true);
+  const [showSpendingBreakdown, setShowSpendingBreakdown] = useState(false);
   
   const { t } = useTranslation();
 
