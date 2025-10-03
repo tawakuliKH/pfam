@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbbfdf58.css",
+    "main.css": "/static/css/main.2c1d5919.css",
     "main.js": "/static/js/main.b01b5b6f.js",
     "static/media/islm1.jpeg": "/static/media/islm1.32ff5445df12e6ff1d3b.jpeg",
     "static/media/islam1.jpeg": "/static/media/islam1.c52495ad82663dfbde22.jpeg",
@@ -72,11 +72,11 @@
     "static/media/rad.jpeg": "/static/media/rad.d80564f4d82d4c45b5d4.jpeg",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "index.html": "/index.html",
-    "main.cbbfdf58.css.map": "/static/css/main.cbbfdf58.css.map",
+    "main.2c1d5919.css.map": "/static/css/main.2c1d5919.css.map",
     "main.b01b5b6f.js.map": "/static/js/main.b01b5b6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbbfdf58.css",
+    "static/css/main.2c1d5919.css",
     "static/js/main.b01b5b6f.js"
   ]
 }
