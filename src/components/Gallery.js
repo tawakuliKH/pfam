@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Donate from './Donate';
 import Contact from './Contact';
 
+
 import ir1 from  '../assets/gallery/ir1.jpeg'
 import ir2 from  '../assets/gallery/ir2.jpeg'
 import kbl1 from  '../assets/gallery/kbl1.jpeg'
@@ -41,6 +42,9 @@ import adova1 from '../assets/gallery/adova1.jpeg'
 import prot2 from '../assets/gallery/prot2.jpeg'
 import prot3 from '../assets/gallery/prot3.jpeg'
 import prot4 from '../assets/gallery/prot4.jpeg'
+
+
+
 
 const Gallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

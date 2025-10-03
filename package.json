@@ -2,6 +2,7 @@
   "name": "pfam",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://progressiveforcesofafghanistan.org",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
     "@testing-library/dom": "^10.4.1",
@@ -48,6 +49,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-  "homepage": "."
+  }
 }

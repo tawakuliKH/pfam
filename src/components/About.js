@@ -4,7 +4,6 @@ import tawana from '../assets/employees/tawana.jpeg';
 import safi from '../assets/employees/safi.jpeg';
 import rad from '../assets/employees/rad.jpeg';
 import ibrahim from '../assets/employees/ibrahim.jpeg';
-import hamza from '../assets/employees/hamza.jpeg';
 import farahmand from '../assets/employees/farahmand.jpeg';
 import whoWeAre from '../assets/who_we_are.jpeg';
 import mission_1 from '../assets/mission_1.jpeg';
@@ -60,14 +59,6 @@ const About = () => {
       image: safi,
       bio: t('about.employees.safi.bio'),
       fullBio: t('about.employees.safi.fullBio')
-    },
-    {
-      id: 6,
-      name: "Mohammad Nasim Hamza",
-      position: t('about.employees.hamza.position'),
-      image: hamza,
-      bio: t('about.employees.hamza.bio'),
-      fullBio: t('about.employees.hamza.fullBio')
     }
   ];
 
