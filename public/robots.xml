@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://pfa-movement.org/sitemap.xml
+
+# Allow search engines to index all pages
+Disallow:
+
+# Crawl-delay if needed
+Crawl-delay: 1

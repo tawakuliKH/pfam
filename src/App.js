@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // ← Change this line
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // ← Changed HashRouter to BrowserRouter
 import Home from './components/Home';
 import NewsDetail from './components/NewsDetail';
 import Gallery from './components/Gallery';

@@ -12,9 +12,16 @@ const Contact = () => {
       type: 'text'
     },
     {
-      key: 'email', 
+      key: 'directorEmail', 
       icon: 'fas fa-envelope',
-      type: 'email'
+      type: 'email',
+      emailType: 'director'
+    },
+    {
+      key: 'contactEmail', 
+      icon: 'fas fa-envelope',
+      type: 'email',
+      emailType: 'team'
     },
     {
       key: 'phone',
@@ -94,7 +101,7 @@ const Contact = () => {
     if (detail.type === 'email') {
       return (
         <button
-          className={`contact-action-btn ${detail.type}`}
+          className={`contact-action-btn ${detail.type} ${detail.emailType}`}
           onClick={() => handleContactClick(detail.type, value)}
           dir="ltr" // Email should always be LTR
         >

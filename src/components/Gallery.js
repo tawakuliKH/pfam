@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Donate from './Donate';
 import Contact from './Contact';
-
+import { useSeo } from '../hooks/useSeo';
 
 import ir1 from  '../assets/gallery/ir1.jpeg'
 import ir2 from  '../assets/gallery/ir2.jpeg'
@@ -47,6 +47,10 @@ import prot4 from '../assets/gallery/prot4.jpeg'
 
 
 const Gallery = () => {
+   useSeo({
+    title: "Photo Gallery - PFA Movement", 
+    description: "Explore our gallery showcasing PFA Movement's events, activities, and community impact."
+  });
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);

@@ -4,6 +4,7 @@
     "subtitle": "PFA Movement",
     "home": "Home",
     "values": "Values",
+    "about": "About",
     "story": "History",
     "news": "News|Stories",
     "gallery": "Gallery",
@@ -146,6 +147,7 @@
       }
     }
   },
+ 
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us for collaboration, information, or support",
@@ -155,15 +157,19 @@
         "title": "Director",
         "value": "Mawloda Tawana"
       },
-      "email": {
-        "title": "Email",
-        "value": "pfoam.afghanistan@gmail.com"
+      "directorEmail": {
+        "title": "Director Email", 
+        "value": "mawloda.tawana@pfa-movement.org"
+      },
+      "contactEmail": {
+        "title": "Contact Team",
+        "value": "contact@pfa-movement.org"
       },
       "phone": {
         "title": "Phone",
         "value": "+49 1573 1629920"
       },
-      "linkedin": {
+     "linkedin": {
         "title": "LinkedIn",
         "linkText": "Connect with us",
         "url": "https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
@@ -173,7 +179,8 @@
         "value": "Haupstraße 126, 26810 Westoverledingen, Niedersachsen Germany"
       }
     }
-  },
+  
+},
   "donate": {
     "title": "Empower Women Through Your Support",
     "subtitle": "Every donation creates lasting change in the lives of women and girls worldwide",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useSeo } from '../hooks/useSeo';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Donate from './Donate';
@@ -23,6 +24,10 @@ import story1_2 from '../assets/story/story1_2.jpeg'
 import story2_1 from '../assets/story/story2_1.jpeg'
 
 const NewsDetail = () => {
+  useSeo({
+    title: "Latest News - Progressive Forces of Afghanistan Movement",
+    description: "Stay updated with the latest news, events, and announcements from PFA Movement."
+  });
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentNews, setCurrentNews] = useState(null);
   const navigate = useNavigate();

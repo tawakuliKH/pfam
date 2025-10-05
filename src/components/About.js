@@ -4,6 +4,7 @@ import tawana from '../assets/employees/tawana.jpeg';
 import safi from '../assets/employees/safi.jpeg';
 import rad from '../assets/employees/rad.jpeg';
 import ibrahim from '../assets/employees/ibrahim.jpeg';
+import hamza from '../assets/employees/hamza.jpeg';
 import farahmand from '../assets/employees/farahmand.jpeg';
 import whoWeAre from '../assets/who_we_are.jpeg';
 import mission_1 from '../assets/mission_1.jpeg';
