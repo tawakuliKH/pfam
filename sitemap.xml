@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage with multilingual alternates -->
   <url>
     <loc>https://pfa-movement.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.org/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.org/?lang=fa" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.org/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.org/" />
     <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- News page with multilingual alternates -->
   <url>
     <loc>https://pfa-movement.org/news</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.org/news?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.org/news?lang=fa" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.org/news?lang=de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.org/news" />
     <lastmod>2024-12-19</lastmod>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Gallery page with multilingual alternates -->
   <url>
     <loc>https://pfa-movement.org/gallery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.org/gallery?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.org/gallery?lang=fa" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.org/gallery?lang=de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.org/gallery" />
     <lastmod>2024-12-19</lastmod>
-    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+
 </urlset>
