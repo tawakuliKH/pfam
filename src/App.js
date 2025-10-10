@@ -8,6 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'animate.css/animate.min.css';
 import './App.css';
 import './i18n';
+import AdminLogin from './components/AdminLogin';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<NewsDetail />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/admin/*" element={<AdminLogin/> } />
         </Routes>
       </div>
     </Router>

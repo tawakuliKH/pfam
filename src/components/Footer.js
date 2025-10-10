@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h5>Progressive Forces of Afghanistan</h5>
+            <h5>Progressive Forces of Afghanistan Movement</h5>
             <p>
               Defending women's rights, promoting gender equality, and fighting
               for justice
@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className="col-md-6 text-md-end">
             <p>
-              &copy; 2023 Progressive Forces of Afghanistan. All rights
+              &copy; 2023 Progressive Forces of Afghanistan Movement. All rights
               reserved.
             </p>
             <p>
