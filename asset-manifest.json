@@ -1,7 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.f3236c98.css",
-    "main.js": "/static/js/main.48d5783e.js",
+    "main.js": "/static/js/main.4b225a2a.js",
+    "static/media/conf1.jpeg": "/static/media/conf1.7821181891c750aa0895.jpeg",
+    "static/media/conf4.jpeg": "/static/media/conf4.c90cd322f95b83e9d4d9.jpeg",
+    "static/media/conf2.jpeg": "/static/media/conf2.128703c3da4fde6b77b9.jpeg",
+    "static/media/conf3.jpeg": "/static/media/conf3.81ffbc1396c696975611.jpeg",
     "static/media/islm1.jpeg": "/static/media/islm1.32ff5445df12e6ff1d3b.jpeg",
     "static/media/islam1.jpeg": "/static/media/islam1.c52495ad82663dfbde22.jpeg",
     "static/media/news3_2.jpeg": "/static/media/news3_2.e0c31119533d9388b300.jpeg",
@@ -12,6 +16,7 @@
     "static/media/prt1.jpeg": "/static/media/prt1.b865bce1151fc5b9775a.jpeg",
     "static/media/prot2.jpeg": "/static/media/prot2.bb85944d1cee33cd98e6.jpeg",
     "static/media/background.jpeg": "/static/media/background.bcdb920516beb596799f.jpeg",
+    "static/media/conf5.jpeg": "/static/media/conf5.ed3511889eb465ee7ea7.jpeg",
     "static/media/mission_2.jpeg": "/static/media/mission_2.84889bc4437a9c1b7280.jpeg",
     "static/media/three1.jpeg": "/static/media/three1.84889bc4437a9c1b7280.jpeg",
     "static/media/mission_1.jpeg": "/static/media/mission_1.c7ca5ffe6b23d781ed91.jpeg",
@@ -67,6 +72,8 @@
     "static/media/off1.jpeg": "/static/media/off1.d0476ff756f0d69372ee.jpeg",
     "static/media/news1_4.jpeg": "/static/media/news1_4.abb7e5cd8acda6b2939c.jpeg",
     "static/media/news1_1.jpeg": "/static/media/news1_1.49b57b0ba9a8760c7557.jpeg",
+    "static/media/massoud1.jpeg": "/static/media/massoud1.d59c7e9dc74f7f5766d9.jpeg",
+    "static/media/massoud2.jpeg": "/static/media/massoud2.4288c9d97b7e4ddaf88b.jpeg",
     "static/media/ibrahim.jpeg": "/static/media/ibrahim.2fc16c0fe3ec9d65c64c.jpeg",
     "static/media/hamza.jpeg": "/static/media/hamza.f1a8cb19b9274151ff34.jpeg",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
@@ -74,10 +81,10 @@
     "index.html": "/index.html",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
     "main.f3236c98.css.map": "/static/css/main.f3236c98.css.map",
-    "main.48d5783e.js.map": "/static/js/main.48d5783e.js.map"
+    "main.4b225a2a.js.map": "/static/js/main.4b225a2a.js.map"
   },
   "entrypoints": [
     "static/css/main.f3236c98.css",
-    "static/js/main.48d5783e.js"
+    "static/js/main.4b225a2a.js"
   ]
 }
