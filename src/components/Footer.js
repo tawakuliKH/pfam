@@ -7,6 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-6">
             <h5>Progressive Forces of Afghanistan Movement</h5>
+            <h5>جنبش نیرو های مترقی افغانستان</h5>
             <p>
               Defending women's rights, promoting gender equality, and fighting
               for justice

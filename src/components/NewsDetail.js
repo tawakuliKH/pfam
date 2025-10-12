@@ -23,6 +23,15 @@ import story1_2 from '../assets/story/story1_2.jpeg'
 
 import story2_1 from '../assets/story/story2_1.jpeg'
 
+import story3_1 from '../assets/story/massoud1.jpeg'
+import story3_2 from '../assets/story/massoud2.jpeg'
+
+import story4_1 from '../assets/story/conf1.jpeg'
+import story4_2 from '../assets/story/conf2.jpeg'
+import story4_3 from '../assets/story/conf3.jpeg'
+import story4_4 from '../assets/story/conf4.jpeg'
+import story4_5 from '../assets/story/conf5.jpeg'
+
 const NewsDetail = () => {
   useSeo({
     title: "Latest News - Progressive Forces of Afghanistan Movement",
@@ -95,6 +104,34 @@ const NewsDetail = () => {
         story2_1,
       ],
       content: t('news.story2.content', { returnObjects: true }),
+      type: "story"
+    },
+     {
+      id: 7,
+      title: t('news.story3.title'),
+      date: t('news.story3.date'),
+      author: t('news.story3.author'),
+      images: [
+        story3_1,
+        story3_2,
+      ],
+      content: t('news.story3.content', { returnObjects: true }),
+      type: "story"
+    },
+     {
+      id: 8,
+      title: t('news.story4.title'),
+      date: t('news.story4.date'),
+      author: t('news.story4.author'),
+      images: [
+        story4_5,
+        story4_1,
+        story4_2,
+        story4_3,
+        story4_4,
+
+      ],
+      content: t('news.story4.content', { returnObjects: true }),
       type: "story"
     }
   ];

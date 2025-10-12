@@ -147,7 +147,6 @@
       }
     }
   },
- 
   "contact": {
     "title": "Contact Us",
     "subtitle": "Get in touch with us for collaboration, information, or support",
@@ -158,7 +157,7 @@
         "value": "Mawloda Tawana"
       },
       "directorEmail": {
-        "title": "Director Email", 
+        "title": "Director Email",
         "value": "mawloda.tawana@pfa-movement.org"
       },
       "contactEmail": {
@@ -169,7 +168,7 @@
         "title": "Phone",
         "value": "+49 1573 1629920"
       },
-     "linkedin": {
+      "linkedin": {
         "title": "LinkedIn",
         "linkText": "Connect with us",
         "url": "https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"
@@ -179,8 +178,7 @@
         "value": "Haupstraße 126, 26810 Westoverledingen, Niedersachsen Germany"
       }
     }
-  
-},
+  },
   "donate": {
     "title": "Empower Women Through Your Support",
     "subtitle": "Every donation creates lasting change in the lives of women and girls worldwide",
@@ -460,6 +458,14 @@
       "prot4": {
         "title": "The protest of Taliban opponents",
         "description": "Islamabad, 2024"
+      },
+       "conf1": {
+        "title": "Annual Conference of German Immigration Office, Church and Charity Organizations",
+        "description": "September 24, 2025"
+      },
+      "massoud1": {
+        "title": "Ahmad Shah Massoud and the Discourse of the National State",
+        "description": "Saturday, September 20, 2025"
       }
     },
     "videos": {
@@ -484,77 +490,116 @@
       "video4": {
         "title": "Celebrating March 8 and protesting against Taliban rule, Islamabad 2023",
         "description": ""
+      },
+      "video5": {
+        "title": "Ahmad Shah Massoud and the Discourse of a National Government | A Conference in Hamburg",
+        "description": "On Saturday, September 20, 2025, marking the 24th anniversary of the martyrdom of Ahmad Shah Massoud, the National Hero of Afghanistan, an academic and cultural conference titled 'Ahmad Shah Massoud and the Discourse of a National Government' was held in Hamburg, Germany. The event brought together university professors, researchers, and cultural and political activists. The conference featured sessions on resistance, governance, democracy, cultural diversity, women's rights, and Afghanistan's future. The cultural segment was enriched by a speech by Malwoda Tawana and poetry recital by Farangis Sowgand."
+      },
+      "video6": {
+        "title": "Annual Conference of German Immigration Office, Church and Charity Organizations",
+        "description": "Participation in the annual conference of German immigration authorities on September 24, 2025. The conference focused on Afghanistan, Syria and China, featuring discussions on migration policies, challenges faced by Afghan migrants in Pakistan, and the dire situation of Afghan women under Taliban rule. A powerful intervention was made to counter misleading reports about Afghanistan's stability."
       }
     }
   },
   "news": {
-  "loading": "Loading...",
-  "by": "By",
-  "moreNewsStories": "More News & Stories",
-  "latestNews": "Latest News",
-  "inspiringStories": "Inspiring Stories",
-  "news1": {
-    "title": "Protest by members of the movement in Tehran, Iran",
-    "date": "March 15, 2025",
-    "author": "PFA News Team",
-    "content": [
-      "In March 2025, members of the Progressive Forces of Afghanistan Movement (PFAM) in Tehran orchestrated a poignant, symbolic protest against the Taliban's increasingly draconian regime. The demonstration was a quiet but powerful visual statement, featuring participants holding carefully crafted placards that highlighted specific, recent injustices.",
-      "The slogans targeted new decrees such as the 'Code of Conduct,' which mandated the permanent closure of all women's bathhouses, arguing they were sites of potential moral corruption, and a directive that barred women from entering any shop selling male clothing or goods. Signs reading 'Bread, Dignity, Freedom,' 'Our Bodies Are Not Your Battlefield,' and 'You Ban, We Build' served as a direct rebuttal to the regime's attempts to systematically erase women from society.",
-      "This deliberate and focused display was not meant for loud chants but for the penetrating silence of photography, creating a stark visual record of resistance that was widely disseminated to counter the Taliban's narrative of total control and compliance.",
-      "The protest highlighted the Taliban's recent 'Code of Conduct' that mandated the permanent closure of women's bathhouses and barred women from shops selling male goods. These measures represent a systematic effort to erase women from public life and confine them to their homes.",
-      "Through this symbolic action, PFAM members demonstrated that resistance continues despite the regime's oppressive measures, and that the voice of Afghan women cannot be silenced even through the most severe restrictions."
-    ]
-  },
-  "news2": {
-    "title": "Appreciation from Afghan Civil Society for PFAM Founder's Activities in Pakistan",
-    "date": "May 28, 2023",
-    "author": "PFAM News Team",
-    "content": [
-      "In a moving testament to her unwavering dedication, the Afghan Civil Society Organization (ACSO) extends its profound gratitude and deepest appreciation to Ms. Mawloda Tawana, the esteemed founder of the Progressive Forces of Afghanistan Movement (PFAM), for her exceptional and courageous activities throughout Pakistan in May 2023.",
-      "During a period of escalating crisis, when hope was a scarce commodity for many displaced Afghans, Ms. Tawana embarked on a pivotal mission, tirelessly traveling between Islamabad, Peshawar, and Quetta to mobilize support and shine a light on the plight of those most vulnerable.",
-      "She orchestrated a series of critical coordination meetings with Afghan diaspora leaders, human rights defenders, and international aid agencies, successfully establishing a vital network for channeling humanitarian assistance to refugee families facing dire conditions.",
-      "Furthermore, her powerful advocacy at roundtable discussions with Pakistani civil society groups and foreign diplomats was instrumental in raising awareness about the systematic gender apartheid and human rights violations being perpetrated by the Taliban regime.",
-      "Perhaps most impactful was her personal engagement with Afghan women and youth in refugee settlements, where she listened to their harrowing stories, documented human rights abuses, and, with immense compassion, helped establish underground digital literacy programs to empower them with skills for the future.",
-      "The ACSO recognizes that Ms. Tawana's efforts have not only provided immediate solace and practical support to countless individuals but have also fortified the very foundations of our collective resistance, demonstrating that the spirit of Afghanistan remains unbroken."
-    ]
-  },
-  "news3": {
-    "title": "Protest on the occasion of the International Day for the Elimination of Violence against Women, Pakistan",
-    "date": "Nov, 2022",
-    "author": "PFAM News Team",
-    "content": [
-      "On November 25, 2022, marking the International Day for the Elimination of Violence against Women, members of the Progressive Forces of Afghanistan Movement (PFAM), led by founder Ms. Mawloda Tawana, joined hands with Pakistani human rights organizations in a powerful demonstration in Islamabad.",
-      "The protest served as a stark reminder of the escalating violence against Afghan women under Taliban rule, highlighting specific cases of forced disappearances, arbitrary detentions, and public floggings that have become increasingly common since the regime's takeover.",
-      "Ms. Tawana delivered an impassioned speech condemning the Taliban's systematic gender apartheid, drawing parallels between the struggles of women across the region and emphasizing the need for international accountability mechanisms.",
-      "Protesters carried banners featuring names of Afghan women activists currently imprisoned by the Taliban and displayed symbolic empty chairs representing the millions of girls barred from schools and universities.",
-      "The demonstration successfully garnered significant media attention, with Ms. Tawana giving interviews to international press outlets, ensuring that the plight of Afghan women remained visible on the global stage during this important international observance.",
-      "This solidarity event strengthened cross-border alliances between Afghan and Pakistani women's rights activists, creating a unified front against religious extremism and gender-based violence in the region."
-    ]
-  },
-  "story1": {
-    "title": "Day of the Elimination of Violence against Women, Kabul",
-    "date": "Nov 25, 2018",
-    "author": "Interview by Zohal Rad",
-    "content": [
-      "The participation of Ms. Mawloda Tawana, then a dedicated official within the Ministry of Education in Kabul, in the 2018 commemoration of the International Day for the Elimination of Violence against Women, was a pivotal moment that foreshadowed her future as the founder of the Progressive Forces of Afghanistan Movement (PFAM).",
-      "Her presence at this official event was a testament to her deep-seated commitment to addressing the systemic injustices faced by Afghan women, a commitment forged through her firsthand experiences within the government system. Having worked on initiatives aimed at increasing girls' enrollment, she witnessed the chasm between policy promises and the grim realities on the ground.",
-      "Ms. Tawana saw how cultural impediments, institutional corruption, and the rising threat of extremism consistently undermined efforts to protect women and girls. It was this profound frustration with the system's inability to enact meaningful change, coupled with her direct encounters with the stories of survivors, that crystallized her resolve.",
-      "The 2018 event, rather than being a celebration of progress, highlighted for her the escalating dangers and the insufficient official response. This realization, that true advocacy required operating beyond the constraints of a compromised bureaucracy, was the crucial catalyst.",
-      "The Taliban's subsequent takeover in 2021 confirmed her deepest fears and accelerated her determination, leading her to establish PFAM. The movement became the embodiment of the principle she had long advocated for: that the elimination of violence against women requires relentless, grassroots resistance."
-    ]
-  },
-  "story2": {
-    "title": "Ms. Mawloda Tawana Participates in Pakistani Cultural Celebration, Strengthening Cross-Border Ties",
-    "date": "March 23, 2022",
-    "author": "PFAM team",
-    "content": [
-      "In a significant gesture of cross-border solidarity and cultural diplomacy, Ms. Mawloda Tawana, founder of the Progressive Forces of Afghanistan Movement (PFAM), participated in a major event celebrating Pakistani culture and cultural programs held in Islamabad.",
-      "The event, which coincided with Pakistan Day celebrations, featured traditional music, dance performances, poetry recitals, and exhibitions showcasing the rich cultural heritage of various regions across Pakistan. Ms. Tawana's presence underscored PFAM's commitment to building bridges of understanding between the peoples of Afghanistan and Pakistan.",
-      "In her address to the gathering, Ms. Tawana emphasized the shared historical and cultural ties between the two neighboring nations, noting that 'culture and art have always been the most powerful tools against extremism and division.' She highlighted how the Taliban's regime has systematically targeted cultural diversity and artistic expression in Afghanistan as part of their oppressive agenda.",
-      "Ms. Tawana's participation was particularly meaningful given the current tensions between the two countries, serving as a reminder that the aspirations for peace, beauty, and creative expression transcend political boundaries and governmental policies.",
-      "The event provided an important platform for Ms. Tawana to engage with Pakistani intellectuals, artists, and civil society leaders, fostering relationships that would later prove crucial in PFAM's humanitarian efforts for Afghan refugees in Pakistan.",
-      "This cultural engagement demonstrated PFAM's holistic approach to activism, recognizing that the fight for women's rights and democracy must be accompanied by efforts to preserve and celebrate the diverse cultural tapestry that extremists seek to destroy."
-    ]
+    "loading": "Loading...",
+    "by": "By",
+    "moreNewsStories": "More News & Stories",
+    "latestNews": "Latest News",
+    "inspiringStories": "Inspiring Stories",
+    "news1": {
+      "title": "Protest by members of the movement in Tehran, Iran",
+      "date": "March 15, 2025",
+      "author": "PFA News Team",
+      "content": [
+        "In March 2025, members of the Progressive Forces of Afghanistan Movement (PFAM) in Tehran orchestrated a poignant, symbolic protest against the Taliban's increasingly draconian regime. The demonstration was a quiet but powerful visual statement, featuring participants holding carefully crafted placards that highlighted specific, recent injustices.",
+        "The slogans targeted new decrees such as the 'Code of Conduct,' which mandated the permanent closure of all women's bathhouses, arguing they were sites of potential moral corruption, and a directive that barred women from entering any shop selling male clothing or goods. Signs reading 'Bread, Dignity, Freedom,' 'Our Bodies Are Not Your Battlefield,' and 'You Ban, We Build' served as a direct rebuttal to the regime's attempts to systematically erase women from society.",
+        "This deliberate and focused display was not meant for loud chants but for the penetrating silence of photography, creating a stark visual record of resistance that was widely disseminated to counter the Taliban's narrative of total control and compliance.",
+        "The protest highlighted the Taliban's recent 'Code of Conduct' that mandated the permanent closure of women's bathhouses and barred women from shops selling male goods. These measures represent a systematic effort to erase women from public life and confine them to their homes.",
+        "Through this symbolic action, PFAM members demonstrated that resistance continues despite the regime's oppressive measures, and that the voice of Afghan women cannot be silenced even through the most severe restrictions."
+      ]
+    },
+    "news2": {
+      "title": "Appreciation from Afghan Civil Society for PFAM Founder's Activities in Pakistan",
+      "date": "May 28, 2023",
+      "author": "PFAM News Team",
+      "content": [
+        "In a moving testament to her unwavering dedication, the Afghan Civil Society Organization (ACSO) extends its profound gratitude and deepest appreciation to Ms. Mawloda Tawana, the esteemed founder of the Progressive Forces of Afghanistan Movement (PFAM), for her exceptional and courageous activities throughout Pakistan in May 2023.",
+        "During a period of escalating crisis, when hope was a scarce commodity for many displaced Afghans, Ms. Tawana embarked on a pivotal mission, tirelessly traveling between Islamabad, Peshawar, and Quetta to mobilize support and shine a light on the plight of those most vulnerable.",
+        "She orchestrated a series of critical coordination meetings with Afghan diaspora leaders, human rights defenders, and international aid agencies, successfully establishing a vital network for channeling humanitarian assistance to refugee families facing dire conditions.",
+        "Furthermore, her powerful advocacy at roundtable discussions with Pakistani civil society groups and foreign diplomats was instrumental in raising awareness about the systematic gender apartheid and human rights violations being perpetrated by the Taliban regime.",
+        "Perhaps most impactful was her personal engagement with Afghan women and youth in refugee settlements, where she listened to their harrowing stories, documented human rights abuses, and, with immense compassion, helped establish underground digital literacy programs to empower them with skills for the future.",
+        "The ACSO recognizes that Ms. Tawana's efforts have not only provided immediate solace and practical support to countless individuals but have also fortified the very foundations of our collective resistance, demonstrating that the spirit of Afghanistan remains unbroken."
+      ]
+    },
+    "news3": {
+      "title": "Protest on the occasion of the International Day for the Elimination of Violence against Women, Pakistan",
+      "date": "November 25, 2022",
+      "author": "PFAM News Team",
+      "content": [
+        "This event was also organized by a coalition of protest movements, human rights activists, journalists, and Afghan residents, with Ms. Mawloda Tawana playing an active role in it.",
+        "On November 25, 2022, marking the International Day for the Elimination of Violence against Women, members of the Progressive Forces of Afghanistan Movement (PFAM), led by founder Ms. Mawloda Tawana, joined hands with Pakistani human rights organizations in a powerful demonstration in Islamabad.",
+        "The protest served as a stark reminder of the escalating violence against Afghan women under Taliban rule, highlighting specific cases of forced disappearances, arbitrary detentions, and public floggings that have become increasingly common since the regime's takeover.",
+        "Ms. Tawana delivered an impassioned speech condemning the Taliban's systematic gender apartheid, drawing parallels between the struggles of women across the region and emphasizing the need for international accountability mechanisms.",
+        "Protesters carried banners featuring names of Afghan women activists currently imprisoned by the Taliban and displayed symbolic empty chairs representing the millions of girls barred from schools and universities.",
+        "The demonstration successfully garnered significant media attention, with Ms. Tawana giving interviews to international press outlets, ensuring that the plight of Afghan women remained visible on the global stage during this important international observance.",
+        "This solidarity event strengthened cross-border alliances between Afghan and Pakistani women's rights activists, creating a unified front against religious extremism and gender-based violence in the region."
+      ]
+    },
+    "story1": {
+      "title": "Day of the Elimination of Violence against Women, Kabul",
+      "date": "Nov 25, 2018",
+      "author": "Interview by Zohal Rad",
+      "content": [
+        "The participation of Ms. Mawloda Tawana, then a dedicated official within the Ministry of Education in Kabul, in the 2018 commemoration of the International Day for the Elimination of Violence against Women, was a pivotal moment that foreshadowed her future as the founder of the Progressive Forces of Afghanistan Movement (PFAM).",
+        "Her presence at this official event was a testament to her deep-seated commitment to addressing the systemic injustices faced by Afghan women, a commitment forged through her firsthand experiences within the government system. Having worked on initiatives aimed at increasing girls' enrollment, she witnessed the chasm between policy promises and the grim realities on the ground.",
+        "Ms. Tawana saw how cultural impediments, institutional corruption, and the rising threat of extremism consistently undermined efforts to protect women and girls. It was this profound frustration with the system's inability to enact meaningful change, coupled with her direct encounters with the stories of survivors, that crystallized her resolve.",
+        "The 2018 event, rather than being a celebration of progress, highlighted for her the escalating dangers and the insufficient official response. This realization, that true advocacy required operating beyond the constraints of a compromised bureaucracy, was the crucial catalyst.",
+        "The Taliban's subsequent takeover in 2021 confirmed her deepest fears and accelerated her determination, leading her to establish PFAM. The movement became the embodiment of the principle she had long advocated for: that the elimination of violence against women requires relentless, grassroots resistance."
+      ]
+    },
+    "story2": {
+      "title": "Ms. Mawloda Tawana Participates in Afghan Cultural Festival in Pakistan",
+      "date": "December 22, 2021 (Coinciding with Yalda Night)",
+      "author": "PFAM team",
+      "content": [
+        "In a demonstration of cultural solidarity, Ms. Mawloda Tawana, founder of the Progressive Forces of Afghanistan Movement (PFAM), participated in a large event organized by a broad assembly of Afghan protesters and human rights activists in Pakistan.",
+        "The event was held to celebrate Shab-e Yalda (Yalda Night) and Afghan culture, featuring traditional Afghan music, poetry recitals, and cultural exhibitions that showcased the rich heritage of Afghanistan.",
+        "Ms. Tawana was one of the active participants in the program, which served as an important platform to highlight Afghanistan's cultural traditions and the current struggles of its people under Taliban rule.",
+        "In her address, Ms. Tawana emphasized how cultural celebrations like Yalda represent resistance against extremism and the preservation of Afghan identity, noting that 'our cultural heritage is our strongest weapon against oppression and division.'",
+        "The gathering provided a significant opportunity for Afghan activists and human rights defenders to strengthen networks and coordinate efforts in supporting Afghan refugees and promoting democratic values.",
+        "This cultural engagement demonstrated PFAM's commitment to preserving Afghan cultural identity while advocating for women's rights and democracy, recognizing that cultural preservation is integral to the struggle against extremism."
+      ]
+    },
+    "story3": {
+      "title": "Ahmad Shah Massoud and the Discourse of the National State",
+      "date": "Saturday, September 20, 2025",
+      "author": "Conference Organizers",
+      "content": [
+        "On Saturday, September 20, 2025, marking the twenty-fourth anniversary of the martyrdom of Ahmad Shah Massoud, the national hero of Afghanistan, a scientific-cultural conference titled 'Ahmad Shah Massoud and the Discourse of the National State' was held in Hamburg, Germany.",
+        "The conference brought together university professors, researchers, and cultural and political activists to discuss Massoud's legacy and its relevance to contemporary Afghanistan.",
+        "The first session focused on 'Ahmad Shah Massoud; Resistance, Governance, and Democracy,' featuring discussions by General Hilaluddin Hilal, Dr. Mujib-ur-Rahman Rahimi, and Dr. Hossein Yasa on resistance, democracy, and ethnic unity.",
+        "The second session continued with the theme 'Afghanistan, Cultural Diversity, Women's Rights, Moderation, and Peace,' where Dr. Mujib-ur-Rahman Atal discussed lessons from history, and Dr. Masoud Trastwal shared his perspectives on reinterpreting Massoud's thoughts for sustainable peace.",
+        "The third session, titled 'The Taliban; The Necessity of Political Solidarity and the Future of Afghanistan,' featured speeches by Noor Rahman Akhlaqi, Maryam Mitra, and Dr. Ruhullah Amin on the importance of national unity and future prospects for the country.",
+        "The cultural segment of the gathering was enriched by a speech by Mawloda Tawana and poetry recitations by Farangis Sowgand, adding a profound artistic dimension to the event.",
+        "This marked the first time such a high-level academic conference, involving prominent national figures including both women and men, has been organized in Hamburg in connection with Ahmad Shah Massoud's legacy.",
+        "Participants emphasized the necessity of continuing such scientific-cultural programs and revisiting the enduring legacy of Ahmad Shah Massoud for Afghanistan's future."
+      ]
+    },
+    "story4": {
+      "title": "Annual Conference of German Immigration Office, Church and Charity Organizations",
+      "date": "September 24, 2025",
+      "author": "Conference Participant",
+      "content": [
+        "The annual conference of the German Immigration Office, Church and charitable organizations was held on September 24, 2025 at the Catholic Academy in Wolfsburg.",
+        "The conference was attended by representatives of the government, immigration authorities, international human rights organizations, churches and migration activists. This year's program focused on Afghanistan, Syria and China.",
+        "The German government's view on migration combines legal control, humanitarian support and social integration. On one hand, Germany seeks to repatriate migrants whose asylum claims have been rejected or who have committed crimes; while on the other hand, it provides legal pathways for protection and integration opportunities for those at risk. The government's main focus is on managing legal entry, ensuring security, and respecting human rights.",
+        "During a brief opportunity, I expressed the problems and pressures faced by Afghan migrants in Pakistan. I thanked the German government and people for their generous support, and finally, as a message and suggestion, I conveyed the unspoken words and sufferings of the Afghan people, especially women.",
+        "Representatives of the German immigration office presented a visual report on the situation in Afghanistan, primarily based on social media and YouTube information, insisting that conditions in Afghanistan are normal and there's no risk for deporting criminals and those whose asylum has been rejected.",
+        "It was deeply painful for me that they summarized the situation of the Afghan people with a few images and YouTuber reports, as if everything is well in Afghanistan. This compelled me to make a meaningful intervention and convey what was important about the situation, especially regarding Afghan women, to their attention!",
+        "Another part of the conference examined the situation of asylum seekers waiting for German visas in third countries like Iran and Pakistan, emphasizing the need to address their dire conditions.",
+        "In conclusion, while thanking the German government and people, I requested that they continue to stand with the Afghan people and women as always to change the current situation, and not forget the oppressed women of Afghanistan in such difficult circumstances!"
+      ]
+    }
   }
-}
 }
