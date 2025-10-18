@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://pfa-movement.com/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <!-- Primary: Square logo for Google -->
+    
+    <!-- Language alternatives -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.com/" />
+    
+    <!-- Logo images -->
     <image:image>
       <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
       <image:title>Progressive Forces of Afghanistan Movement Logo</image:title>
-      <image:caption>Official square logo - Defending women's rights and promoting gender equality in Afghanistan. جنبش نیروهای مترقی افغانستان از حقوق زنان دفاع می‌کند</image:caption>
+      <image:caption>Defending women's rights in Afghanistan - دفاع از حقوق زنان در افغانستان - Verteidigung der Frauenrechte in Afghanistan</image:caption>
       <image:geo_location>Afghanistan</image:geo_location>
-      <image:license>https://pfa-movement.com</image:license>
     </image:image>
-    <!-- Secondary: Small square logo -->
     <image:image>
       <image:loc>https://pfa-movement.com/logo-192.png</image:loc>
       <image:title>PFA Movement Icon</image:title>
-      <image:caption>Small logo icon for Progressive Forces of Afghanistan Movement</image:caption>
     </image:image>
-    <!-- Tertiary: Original logo -->
     <image:image>
       <image:loc>https://pfa-movement.com/logo.png</image:loc>
       <image:title>PFA Movement Original Logo</image:title>
-      <image:caption>Original rectangular logo of Progressive Forces of Afghanistan Movement</image:caption>
     </image:image>
   </url>
 
@@ -34,6 +37,9 @@
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/news?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/news?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/news?lang=fa" />
   </url>
 
   <url>
@@ -41,6 +47,9 @@
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/gallery?lang=en" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/gallery?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/gallery?lang=fa" />
   </url>
 
 </urlset>
