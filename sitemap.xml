@@ -5,7 +5,7 @@
   <!-- Persian Version - HIGHEST PRIORITY -->
   <url>
     <loc>https://pfa-movement.com/?lang=fa</loc>
-    <lastmod>2024-01-19</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
@@ -16,7 +16,7 @@
   <!-- Primary English Version -->
   <url>
     <loc>https://pfa-movement.com/</loc>
-    <lastmod>2024-01-19</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/" />
@@ -28,7 +28,7 @@
   <!-- German Version -->
   <url>
     <loc>https://pfa-movement.com/?lang=de</loc>
-    <lastmod>2024-01-19</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
