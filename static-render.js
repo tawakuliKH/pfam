@@ -1,102 +1,77 @@
-// Enhanced static-render.js for better SEO
+// Enhanced static-render.js for all languages
 window.seoBoost = {
   init: function() {
-    // Add critical content immediately for crawlers
-    this.addSEOContent();
-    this.enhanceMetaTags();
-    this.fixRTLLayout();
-  },
-  
-  addSEOContent: function() {
+    // Only add content for crawlers when root is empty
     const root = document.getElementById('root');
-    if (root && !this.hasVisibleContent()) {
-      root.innerHTML = this.getFallbackContent();
+    if (root && root.innerHTML === '' && this.isLikelyCrawler()) {
+      this.addCrawlerContent();
     }
   },
   
-  hasVisibleContent: function() {
-    return document.body.textContent.trim().length > 200;
+  isLikelyCrawler: function() {
+    const ua = navigator.userAgent;
+    return /bot|crawler|spider|googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|sogou|exabot|facebot|ia_archiver/i.test(ua);
   },
   
-  getFallbackContent: function() {
+  addCrawlerContent: function() {
+    const root = document.getElementById('root');
     const lang = document.documentElement.lang || 'en';
+    
     const content = {
       en: `
-        <div class="seo-fallback">
-          <h1>Progressive Forces of Afghanistan Movement</h1>
-          <p>Defending women's rights and promoting gender equality in Afghanistan. 
-             PFA Movement stands against Taliban oppression and fights for human rights, 
-             education access, and democratic values.</p>
-          <nav>
-            <a href="/">Home</a> | <a href="/?lang=de">German</a> | <a href="/?lang=fa">Persian</a>
-          </nav>
+        <div style="padding: 40px 20px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+          <h1>Progressive Forces of Afghanistan Movement (PFA)</h1>
+          <p><strong>Defending women's rights and promoting gender equality in Afghanistan against Taliban oppression.</strong></p>
+          <p>The PFA Movement works tirelessly to protect human rights, ensure education access, and promote democratic values in Afghanistan.</p>
+          <h2>Our Mission</h2>
+          <ul>
+            <li>Protect women's rights and safety</li>
+            <li>Promote gender equality and education</li>
+            <li>Oppose Taliban oppression</li>
+            <li>Support democratic values</li>
+          </ul>
+          <p>Contact: contact@pfa-movement.com | +49-1573-1629920</p>
         </div>
       `,
       fa: `
-        <div class="seo-fallback" dir="rtl">
-          <h1>جنبش نیروهای مترقی افغانستان</h1>
-          <p>دفاع از حقوق زنان و ترویج برابری جنسیتی در افغانستان. 
-             جنبش پی اف ای در برابر ستم طالبان ایستاده و برای حقوق بشر، 
-             دسترسی به آموزش و ارزش‌های دموکراتیک مبارزه می‌کند.</p>
-          <nav>
-            <a href="/?lang=fa">خانه</a> | <a href="/?lang=en">English</a> | <a href="/?lang=de">آلمانی</a>
-          </nav>
+        <div style="padding: 40px 20px; max-width: 800px; margin: 0 auto; font-family: Vazirmatn, Tahoma, sans-serif; direction: rtl; text-align: right;">
+          <h1>جنبش نیروهای مترقی افغانستان (پی اف ای)</h1>
+          <p><strong>دفاع از حقوق زنان و ترویج برابری جنسیتی در افغانستان در برابر ظلم طالبان.</strong></p>
+          <p>جنبش پی اف ای برای حفاظت از حقوق بشر، تضمین دسترسی به آموزش و ترویج ارزش‌های دموکراتیک در افغانستان تلاش می‌کند.</p>
+          <h2>ماموریت ما</h2>
+          <ul>
+            <li>حفاظت از حقوق و امنیت زنان</li>
+            <li>ترویج برابری جنسیتی و آموزش</li>
+            <li>مقابله با ظلم طالبان</li>
+            <li>حمایت از ارزش‌های دموکراتیک</li>
+          </ul>
+          <p>تماس: contact@pfa-movement.com | ۴۹-۱۵۷۳-۱۶۲۹۹۲۰+</p>
         </div>
       `,
       de: `
-        <div class="seo-fallback">
-          <h1>Progressiven Kräfte der Afghanistan-Bewegung</h1>
-          <p>Verteidigung der Frauenrechte und Förderung der Gleichstellung in Afghanistan. 
-             Die PFA-Bewegung steht gegen die Taliban-Unterdrückung und kämpft für Menschenrechte, 
-             Bildungszugang und demokratische Werte.</p>
-          <nav>
-            <a href="/?lang=de">Startseite</a> | <a href="/?lang=en">Englisch</a> | <a href="/?lang=fa">Persisch</a>
-          </nav>
+        <div style="padding: 40px 20px; max-width: 800px; margin: 0 auto; font-family: Arial, sans-serif;">
+          <h1>Progressiven Kräfte der Afghanistan-Bewegung (PFA)</h1>
+          <p><strong>Verteidigung der Frauenrechte und Förderung der Gleichstellung in Afghanistan gegen die Taliban-Unterdrückung.</strong></p>
+          <p>Die PFA-Bewegung setzt sich unermüdlich für den Schutz der Menschenrechte, den Bildungszugang und die Förderung demokratischer Werte in Afghanistan ein.</p>
+          <h2>Unsere Mission</h2>
+          <ul>
+            <li>Schutz der Frauenrechte und Sicherheit</li>
+            <li>Förderung der Geschlechtergleichheit und Bildung</li>
+            <li>Opposition gegen Taliban-Unterdrückung</li>
+            <li>Unterstützung demokratischer Werte</li>
+          </ul>
+          <p>Kontakt: contact@pfa-movement.com | +49-1573-1629920</p>
         </div>
       `
     };
-    return content[lang] || content.en;
-  },
-  
-  enhanceMetaTags: function() {
-    // Ensure meta tags are properly set
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription && !metaDescription.content) {
-      metaDescription.content = "Defending women's rights and promoting gender equality in Afghanistan. PFA Movement against Taliban oppression.";
-    }
-  },
-  
-  fixRTLLayout: function() {
-    const lang = document.documentElement.lang;
-    if (lang === 'fa') {
-      // Ensure RTL is properly set
-      document.documentElement.dir = 'rtl';
-      document.documentElement.style.direction = 'rtl';
-      document.documentElement.style.textAlign = 'right';
-      
-      // Add RTL-specific styles
-      const rtlStyles = `
-        .seo-fallback[dir="rtl"] {
-          text-align: right;
-          font-family: 'Vazirmatn', Tahoma, sans-serif;
-        }
-        .seo-fallback[dir="rtl"] nav {
-          direction: rtl;
-        }
-      `;
-      const styleSheet = document.createElement("style");
-      styleSheet.textContent = rtlStyles;
-      document.head.appendChild(styleSheet);
-    }
+    
+    root.innerHTML = content[lang] || content.en;
   }
 };
 
-// Initialize immediately
-document.addEventListener('DOMContentLoaded', function() {
-  window.seoBoost.init();
-});
-
-// Also initialize if DOM is already loaded
-if (document.readyState === 'interactive' || document.readyState === 'complete') {
+// Initialize for crawlers
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => window.seoBoost.init());
+} else {
   window.seoBoost.init();
 }
