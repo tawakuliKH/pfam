@@ -4,7 +4,7 @@ window.seoBoost = {
     // Add critical content immediately for crawlers
     this.addSEOContent();
     this.enhanceMetaTags();
-    this.setCanonicalURL();
+    this.fixRTLLayout();
   },
   
   addSEOContent: function() {
@@ -66,26 +66,28 @@ window.seoBoost = {
     }
   },
   
-  setCanonicalURL: function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const langParam = urlParams.get('lang');
-    let canonicalUrl = 'https://pfa-movement.com/';
-    
-    if (langParam && langParam !== 'en') {
-      canonicalUrl = `https://pfa-movement.com/?lang=${langParam}`;
+  fixRTLLayout: function() {
+    const lang = document.documentElement.lang;
+    if (lang === 'fa') {
+      // Ensure RTL is properly set
+      document.documentElement.dir = 'rtl';
+      document.documentElement.style.direction = 'rtl';
+      document.documentElement.style.textAlign = 'right';
+      
+      // Add RTL-specific styles
+      const rtlStyles = `
+        .seo-fallback[dir="rtl"] {
+          text-align: right;
+          font-family: 'Vazirmatn', Tahoma, sans-serif;
+        }
+        .seo-fallback[dir="rtl"] nav {
+          direction: rtl;
+        }
+      `;
+      const styleSheet = document.createElement("style");
+      styleSheet.textContent = rtlStyles;
+      document.head.appendChild(styleSheet);
     }
-    
-    // Remove existing canonical
-    const existingCanonical = document.querySelector('link[rel="canonical"]');
-    if (existingCanonical) {
-      existingCanonical.remove();
-    }
-    
-    // Add new canonical
-    const link = document.createElement('link');
-    link.rel = 'canonical';
-    link.href = canonicalUrl;
-    document.head.appendChild(link);
   }
 };
 
