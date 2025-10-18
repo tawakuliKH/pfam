@@ -1,14 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /?lang=
-Allow: /news
-Allow: /gallery
-Disallow: /admin
-Disallow: /static/
+Crawl-delay: 2
 
 Sitemap: https://pfa-movement.com/sitemap.xml
-
-# Googlebot specific
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
