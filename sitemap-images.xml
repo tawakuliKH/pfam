@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Logo Images -->
+  <url>
+    <loc>https://pfa-movement.com/</loc>
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo.png</image:loc>
+      <image:title>Progressive Forces of Afghanistan Movement Logo</image:title>
+      <image:caption>Official logo - Progressive Forces of Afghanistan Movement defending women's rights and gender equality</image:caption>
+      <image:geo_location>Afghanistan</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
+      <image:title>PFA Movement Large Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pfa-movement.com/social-preview.jpg</image:loc>
+      <image:title>Progressive Forces of Afghanistan Social Preview</image:title>
+    </image:image>
+  </url>
+
+  <!-- Additional logo variations if they exist -->
+  <url>
+    <loc>https://pfa-movement.com/about</loc>
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo-white.png</image:loc>
+      <image:title>PFA Movement White Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo-black.png</image:loc>
+      <image:title>PFA Movement Black Logo</image:title>
+    </image:image>
+  </url>
+
+</urlset>

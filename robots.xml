@@ -3,5 +3,6 @@ Allow: /images/
 
 # Sitemaps
 Sitemap: https://pfa-movement.com/sitemap.xml
+Sitemap: https://pfa-movement.com/sitemap-images.xml
 
 

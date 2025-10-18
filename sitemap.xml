@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   
   <url>
     <loc>https://pfa-movement.com/</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <!-- Primary: Square logo for Google -->
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
+      <image:title>Progressive Forces of Afghanistan Movement Logo</image:title>
+      <image:caption>Official square logo - Defending women's rights and promoting gender equality in Afghanistan. جنبش نیروهای مترقی افغانستان از حقوق زنان دفاع می‌کند</image:caption>
+      <image:geo_location>Afghanistan</image:geo_location>
+      <image:license>https://pfa-movement.com</image:license>
+    </image:image>
+    <!-- Secondary: Small square logo -->
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo-192.png</image:loc>
+      <image:title>PFA Movement Icon</image:title>
+      <image:caption>Small logo icon for Progressive Forces of Afghanistan Movement</image:caption>
+    </image:image>
+    <!-- Tertiary: Original logo -->
+    <image:image>
+      <image:loc>https://pfa-movement.com/logo.png</image:loc>
+      <image:title>PFA Movement Original Logo</image:title>
+      <image:caption>Original rectangular logo of Progressive Forces of Afghanistan Movement</image:caption>
+    </image:image>
   </url>
 
   <url>
