@@ -1,8 +1,7 @@
 User-agent: *
-Allow: /images/
+Allow: /
+Allow: /?lang=
+Allow: /news?lang=
+Allow: /gallery?lang=
 
-# Sitemaps
 Sitemap: https://pfa-movement.com/sitemap.xml
-Sitemap: https://pfa-movement.com/sitemap-images.xml
-
-
