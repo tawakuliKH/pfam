@@ -3,91 +3,58 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <!-- English Version -->
+  <!-- Main Language Versions -->
   <url>
     <loc>https://pfa-movement.com/?lang=en</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    
-    <!-- Language alternatives -->
     <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.com/?lang=en" />
-    
-    <!-- Logo images -->
-    <image:image>
-      <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
-      <image:title>Progressive Forces of Afghanistan Movement Logo - English</image:title>
-      <image:caption>Defending women's rights in Afghanistan - PFA Movement</image:caption>
-      <image:geo_location>Afghanistan</image:geo_location>
-    </image:image>
   </url>
 
-  <!-- German Version -->
-  <url>
-    <loc>https://pfa-movement.com/?lang=de</loc>
-    <lastmod>2024-12-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    
-    <!-- Language alternatives -->
-    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.com/?lang=en" />
-    
-    <!-- Logo images -->
-    <image:image>
-      <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
-      <image:title>Progressiven Kräfte der Afghanistan-Bewegung Logo - Deutsch</image:title>
-      <image:caption>Verteidigung der Frauenrechte in Afghanistan - PFA Bewegung</image:caption>
-      <image:geo_location>Afghanistan</image:geo_location>
-    </image:image>
-  </url>
-
-  <!-- Persian Version -->
   <url>
     <loc>https://pfa-movement.com/?lang=fa</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    
-    <!-- Language alternatives -->
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
     <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/?lang=en" />
     <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://pfa-movement.com/?lang=en" />
-    
-    <!-- Logo images -->
-    <image:image>
-      <image:loc>https://pfa-movement.com/logo-512.png</image:loc>
-      <image:title>جنبش نیروهای مترقی افغانستان لوگو - فارسی</image:title>
-      <image:caption>دفاع از حقوق زنان در افغانستان - جنبش پی اف ای</image:caption>
-      <image:geo_location>Afghanistan</image:geo_location>
-    </image:image>
   </url>
 
-  <!-- Additional Pages with Language Support -->
+  <url>
+    <loc>https://pfa-movement.com/?lang=de</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
+  </url>
+
+  <!-- Additional Pages to Build Authority -->
   <url>
     <loc>https://pfa-movement.com/news?lang=en</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/news?lang=en" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/news?lang=de" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/news?lang=fa" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/news?lang=fa</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://pfa-movement.com/gallery?lang=en</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/gallery?lang=en" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/gallery?lang=de" />
-    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/gallery?lang=fa" />
+    <priority>0.6</priority>
   </url>
 
 </urlset>
