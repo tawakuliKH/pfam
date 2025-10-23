@@ -35,4 +35,77 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/" />
     <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/?lang=fa" />
   </url>
+
+  <!-- ADD THESE NEW ROUTES TO FIX 404 ERRORS -->
+  
+  <!-- News Routes -->
+  <url>
+    <loc>https://pfa-movement.com/news</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/news" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/news?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/news?lang=fa" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/news?lang=en</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/news?lang=en" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/news?lang=de</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/news?lang=de" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/news?lang=fa</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/news?lang=fa" />
+  </url>
+
+  <!-- Gallery Routes -->
+  <url>
+    <loc>https://pfa-movement.com/gallery</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/gallery" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/gallery?lang=de" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/gallery?lang=fa" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/gallery?lang=en</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://pfa-movement.com/gallery?lang=en" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/gallery?lang=de</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://pfa-movement.com/gallery?lang=de" />
+  </url>
+
+  <url>
+    <loc>https://pfa-movement.com/gallery?lang=fa</loc>
+    <lastmod>2025-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://pfa-movement.com/gallery?lang=fa" />
+  </url>
+
 </urlset>
