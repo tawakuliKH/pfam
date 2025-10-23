@@ -22,26 +22,39 @@ const resources = {
 // RTL languages configuration
 const rtlLanguages = ['fa', 'ar', 'he'];
 
+// Custom query string detector
+const queryStringDetector = {
+  name: 'queryString',
+  lookup(options) {
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    return langParam && ['en', 'de', 'fa'].includes(langParam) ? langParam : undefined;
+  }
+};
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    lng: 'en', // Force English as default language
+    lng: 'en', // Default fallback
     fallbackLng: 'en',
-    debug: false,
+    debug: process.env.NODE_ENV === 'development',
     
-    // Language detection configuration
+    // Language detection configuration - QUERY STRING FIRST
     detection: {
-      order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
+      order: ['queryString', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
       
-      // Override language detection to always start with English
+      // Query string detector
+      lookupQuerystring: 'lang',
+      
+      // Check only whitelisted languages
       checkWhitelist: true
     },
     
     // Only allow these languages
-    whitelist: ['en', 'de', 'fa'],
+    supportedLngs: ['en', 'de', 'fa'],
     
     interpolation: {
       escapeValue: false,
@@ -49,34 +62,51 @@ i18n
   });
 
 // Function to handle RTL and language change
-export const changeLanguage = (lng) => {
-  const isRTL = rtlLanguages.includes(lng);
-  document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
-  document.documentElement.lang = lng;
-  
-  // Add language-specific font class
-  document.documentElement.classList.remove('font-english', 'font-persian', 'font-german');
-  if (lng === 'fa') {
-    document.documentElement.classList.add('font-persian');
-  } else if (lng === 'de') {
-    document.documentElement.classList.add('font-german');
-  } else {
-    document.documentElement.classList.add('font-english');
+export const changeLanguage = async (lng) => {
+  try {
+    const isRTL = rtlLanguages.includes(lng);
+    document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
+    document.documentElement.lang = lng;
+    
+    // Add language-specific font class
+    document.documentElement.classList.remove('font-english', 'font-persian', 'font-german');
+    if (lng === 'fa') {
+      document.documentElement.classList.add('font-persian');
+    } else if (lng === 'de') {
+      document.documentElement.classList.add('font-german');
+    } else {
+      document.documentElement.classList.add('font-english');
+    }
+    
+    // Update URL parameter without page reload
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lng);
+    window.history.replaceState(null, '', url.toString());
+    
+    // Change the language
+    await i18n.changeLanguage(lng);
+    
+    return true;
+  } catch (error) {
+    console.error('Error changing language:', error);
+    return false;
   }
-  
-  return i18n.changeLanguage(lng);
 };
 
-// Initialize with English on first load
+// Initialize language based on URL parameter
 export const initializeLanguage = () => {
-  const savedLanguage = localStorage.getItem('i18nextLng');
+  const urlParams = new URLSearchParams(window.location.search);
+  const langParam = urlParams.get('lang');
   
-  // If no language is saved, force English
-  if (!savedLanguage || !['en', 'de', 'fa'].includes(savedLanguage)) {
-    localStorage.setItem('i18nextLng', 'en');
-    changeLanguage('en');
+  // If URL has a valid language parameter, use it
+  if (langParam && ['en', 'de', 'fa'].includes(langParam)) {
+    changeLanguage(langParam);
   } else {
-    changeLanguage(savedLanguage);
+    // Otherwise use the detected language or default to English
+    const detectedLang = i18n.language;
+    if (detectedLang && detectedLang !== 'en') {
+      changeLanguage(detectedLang);
+    }
   }
 };
 

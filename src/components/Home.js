@@ -51,9 +51,9 @@ const Home = () => {
       "@type": "Organization",
       "name": "Progressive Forces of Afghanistan Movement",
       "alternateName": ["PFA Movement", "جنبش نیروهای مترقی افغانستان", "Progressive Kräfte Afghanistans"],
-      "url": "https://pfa-movement.org",
-      "logo": "https://pfa-movement.org/logo.png",
-      "image": "https://pfa-movement.org/logo.png",
+      "url": "https://pfa-movement.com",
+      "logo": "https://pfa-movement.com/logo.png",
+      "image": "https://pfa-movement.com/logo.png",
       "description": "Progressive Forces of Afghanistan Movement - Leading progressive change and social justice in Afghanistan",
       "foundingDate": "2022",
       "address": {
@@ -63,7 +63,7 @@ const Home = () => {
         "postalCode": "26810",
         "addressCountry": "DE"
       },
-      "email": "mawloda.tawana@pfa-movement.org",
+      "email": "mawloda.tawana@pfa-movement.com",
       "telephone": "+49-1573-1629920",
       "sameAs": [
         "https://www.linkedin.com/in/progressive-forces-of-afghanistan-movement"

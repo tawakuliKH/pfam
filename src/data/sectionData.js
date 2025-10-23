@@ -188,11 +188,11 @@
           },
           directorEmail: {
             title: "Director Email",
-            value: "mawloda.tawana@pfa-movement.org",
+            value: "mawloda.tawana@pfa-movement.com",
           },
           contactEmail: {
             title: "Contact Team",
-            value: "contact@pfa-movement.org",
+            value: "contact@pfa-movement.com",
           },
           phone: {
             title: "Phone",

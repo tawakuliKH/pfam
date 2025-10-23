@@ -32,7 +32,19 @@ import story4_3 from '../assets/story/conf3.jpeg'
 import story4_4 from '../assets/story/conf4.jpeg'
 import story4_5 from '../assets/story/conf5.jpeg'
 
+import { useLocation } from 'react-router-dom';
+import { changeLanguage } from '../i18n'; // Adjust path as needed
+
 const NewsDetail = () => {
+   useEffect(() => {
+    const urlParams = new URLSearchParams(location.search);
+    const langParam = urlParams.get('lang');
+    
+    if (langParam && ['en', 'de', 'fa'].includes(langParam)) {
+      changeLanguage(langParam);
+    }
+  }, [location.search]);
+
   useSeo({
     title: "Latest News - Progressive Forces of Afghanistan Movement",
     description: "Stay updated with the latest news, events, and announcements from PFA Movement."

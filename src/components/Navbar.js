@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { changeLanguage } from '../i18n';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -12,6 +13,16 @@ const Navbar = () => {
   const { t, i18n } = useTranslation();
   const languageRef = useRef(null);
   const menuRef = useRef(null);
+
+  // Update language when URL changes
+  useEffect(() => {
+    const urlParams = new URLSearchParams(location.search);
+    const langParam = urlParams.get('lang');
+    
+    if (langParam && ['en', 'de', 'fa'].includes(langParam) && langParam !== i18n.language) {
+      changeLanguage(langParam);
+    }
+  }, [location.search, i18n]);
 
   // Close language dropdown when clicking outside
   useEffect(() => {
@@ -41,10 +52,8 @@ const Navbar = () => {
     };
   }, []);
 
- const handleLanguageChange = (lng) => {
-    import('../i18n').then(module => {
-      module.changeLanguage(lng);
-    });
+  const handleLanguageChange = async (lng) => {
+    await changeLanguage(lng);
     setIsDesktopLanguageOpen(false);
     setIsMobileLanguageOpen(false);
     closeMobileMenu();
@@ -71,9 +80,14 @@ const Navbar = () => {
   const handleNavClick = (e, targetId) => {
     e.preventDefault();
     
+    // Get current language parameter
+    const searchParams = new URLSearchParams(location.search);
+    const langParam = searchParams.get('lang');
+    const langSuffix = langParam ? `?lang=${langParam}` : '';
+    
     // Handle page navigation with scroll to top
     if (targetId === 'news-stories') {
-      navigate('/news');
+      navigate(`/news${langSuffix}`);
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 100);
@@ -82,7 +96,7 @@ const Navbar = () => {
     }
 
     if (targetId === 'gallery') {
-      navigate('/gallery');
+      navigate(`/gallery${langSuffix}`);
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 100);
@@ -95,7 +109,7 @@ const Navbar = () => {
       if (location.pathname === '/') {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
-        navigate('/');
+        navigate(`/${langSuffix}`);
         setTimeout(() => {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }, 100);
@@ -106,7 +120,7 @@ const Navbar = () => {
     
     // Handle section navigation (Values, Story, Contact, Donate)
     if (location.pathname !== '/') {
-      navigate('/');
+      navigate(`/${langSuffix}`);
       setTimeout(() => {
         const element = document.getElementById(targetId);
         if (element) {
@@ -131,10 +145,14 @@ const Navbar = () => {
 
   const handleHomeClick = (e) => {
     e.preventDefault();
+    const searchParams = new URLSearchParams(location.search);
+    const langParam = searchParams.get('lang');
+    const langSuffix = langParam ? `?lang=${langParam}` : '';
+    
     if (location.pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      navigate('/');
+      navigate(`/${langSuffix}`);
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }, 100);
@@ -149,6 +167,16 @@ const Navbar = () => {
       case 'de': return 'DE';
       case 'fa': return 'FA';
       default: return 'EN';
+    }
+  };
+
+  // Get full language name for dropdown
+  const getLanguageFullName = (lng) => {
+    switch(lng) {
+      case 'en': return 'English';
+      case 'de': return 'Deutsch';
+      case 'fa': return 'فارسی';
+      default: return 'English';
     }
   };
 
@@ -191,7 +219,7 @@ const Navbar = () => {
             aria-label="Close menu"
           >
             <i className="fas fa-chevron-left"></i>
-            <span>Close</span>
+            <span>{t('navbar.close')}</span>
           </button>
 
           {/* Menu Items */}
@@ -257,25 +285,28 @@ const Navbar = () => {
                   {isMobileLanguageOpen && (
                     <div className="language-dropdown-mobile">
                       <button 
-                        className="language-option"
+                        className={`language-option ${i18n.language === 'en' ? 'active' : ''}`}
                         onClick={() => handleLanguageChange('en')}
                       >
                         <i className="fas fa-language me-2"></i>
-                        English
+                        {getLanguageFullName('en')}
+                        {i18n.language === 'en' && <i className="fas fa-check ms-2"></i>}
                       </button>
                       <button 
-                        className="language-option"
+                        className={`language-option ${i18n.language === 'de' ? 'active' : ''}`}
                         onClick={() => handleLanguageChange('de')}
                       >
                         <i className="fas fa-language me-2"></i>
-                        Deutsch
+                        {getLanguageFullName('de')}
+                        {i18n.language === 'de' && <i className="fas fa-check ms-2"></i>}
                       </button>
                       <button 
-                        className="language-option"
+                        className={`language-option ${i18n.language === 'fa' ? 'active' : ''}`}
                         onClick={() => handleLanguageChange('fa')}
                       >
                         <i className="fas fa-language me-2"></i>
-                        فارسی
+                        {getLanguageFullName('fa')}
+                        {i18n.language === 'fa' && <i className="fas fa-check ms-2"></i>}
                       </button>
                     </div>
                   )}
@@ -344,33 +375,87 @@ const Navbar = () => {
                     color: 'white',
                     cursor: 'pointer',
                     display: 'flex',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    minWidth: '80px',
+                    justifyContent: 'space-between'
                   }}
                 >
-                  <i className="fas fa-globe me-1"></i>
-                  {getCurrentLanguageName()}
+                  <span style={{ display: 'flex', alignItems: 'center' }}>
+                    <i className="fas fa-globe me-2"></i>
+                    {getCurrentLanguageName()}
+                  </span>
                   <i className={`fas fa-chevron-${isDesktopLanguageOpen ? 'up' : 'down'} ms-1`} style={{ fontSize: '0.7rem' }}></i>
                 </button>
                 
                 {isDesktopLanguageOpen && (
-                  <div className="language-dropdown">
+                  <div 
+                    className="language-dropdown"
+                    style={{
+                      position: 'absolute',
+                      top: '100%',
+                      right: 0,
+                      background: 'white',
+                      border: '1px solid #ddd',
+                      borderRadius: '5px',
+                      boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+                      zIndex: 1000,
+                      minWidth: '120px'
+                    }}
+                  >
                     <button 
-                      className="language-option"
+                      className={`language-option ${i18n.language === 'en' ? 'active' : ''}`}
                       onClick={() => handleLanguageChange('en')}
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '0.5rem 1rem',
+                        background: 'none',
+                        border: 'none',
+                        textAlign: 'left',
+                        color: i18n.language === 'en' ? '#007bff' : '#333',
+                        fontWeight: i18n.language === 'en' ? 'bold' : 'normal',
+                        cursor: 'pointer'
+                      }}
                     >
-                       English
+                      English
+                      {i18n.language === 'en' && <i className="fas fa-check ms-2"></i>}
                     </button>
                     <button 
-                      className="language-option"
+                      className={`language-option ${i18n.language === 'de' ? 'active' : ''}`}
                       onClick={() => handleLanguageChange('de')}
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '0.5rem 1rem',
+                        background: 'none',
+                        border: 'none',
+                        textAlign: 'left',
+                        color: i18n.language === 'de' ? '#007bff' : '#333',
+                        fontWeight: i18n.language === 'de' ? 'bold' : 'normal',
+                        cursor: 'pointer'
+                      }}
                     >
-                       Deutsch
+                      Deutsch
+                      {i18n.language === 'de' && <i className="fas fa-check ms-2"></i>}
                     </button>
                     <button 
-                      className="language-option"
+                      className={`language-option ${i18n.language === 'fa' ? 'active' : ''}`}
                       onClick={() => handleLanguageChange('fa')}
+                      style={{
+                        display: 'block',
+                        width: '100%',
+                        padding: '0.5rem 1rem',
+                        background: 'none',
+                        border: 'none',
+                        textAlign: 'right',
+                        direction: 'rtl',
+                        color: i18n.language === 'fa' ? '#007bff' : '#333',
+                        fontWeight: i18n.language === 'fa' ? 'bold' : 'normal',
+                        cursor: 'pointer'
+                      }}
                     >
-                       فارسی
+                      {i18n.language === 'fa' && <i className="fas fa-check me-2"></i>}
+                      فارسی
                     </button>
                   </div>
                 )}

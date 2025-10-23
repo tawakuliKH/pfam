@@ -28,7 +28,7 @@ export function useSeo({ title, description, lang = 'en' }) {
 }
 
 function updateHreflangTags(currentLang) {
-  const baseUrl = 'https://pfa-movement.org';
+  const baseUrl = 'https://pfa-movement.com';
   const languages = [
     { code: 'en', name: 'English' },
     { code: 'fa', name: 'Persian' },

@@ -3360,3 +3360,38 @@ footer a:hover {
     text-align: right;
   }
 }
+
+
+/* SEO Fallback Content - Only show when no React content */
+#root:empty .seo-fallback,
+#root:not(:empty) .seo-fallback {
+  display: none;
+}
+
+#root:empty {
+  min-height: 100vh;
+}
+
+#root:empty::before {
+  content: '';
+  display: block;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hidden SEO content for crawlers */
+.seo-hidden {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
