@@ -9,6 +9,7 @@ import 'animate.css/animate.min.css';
 import './App.css';
 import './i18n';
 import AdminLogin from './components/AdminLogin';
+import Announcements from './components/Announcements';
 
 // Component to handle redirects from 404.html
 function RedirectHandler() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/news" element={<NewsDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/admin/*" element={<AdminLogin />} />
+          <Route path="/announcements" element={<Announcements />} />
         </Routes>
       </div>
     </Router>

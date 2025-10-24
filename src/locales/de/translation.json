@@ -6,9 +6,11 @@
     "values": "Werte",
     "story": "Geschichte",
     "news": "Nachrichten|Geschichten",
+    "announcements": "Ankündigungen",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "donate": "Spenden"
+    "donate": "Spenden",
+    "close": "Schließen"
   },
   "hero": {
     "title": "Progressive Kräfte der Afghanistan-Bewegung",

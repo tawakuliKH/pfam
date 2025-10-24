@@ -4,12 +4,13 @@
     "subtitle": "PFA Movement",
     "home": "Home",
     "values": "Values",
-    "about": "About",
     "story": "History",
     "news": "News|Stories",
+    "announcements": "Announcements",
     "gallery": "Gallery",
     "contact": "Contact",
-    "donate": "Donate"
+    "donate": "Donate",
+    "close": "Close"
   },
   "hero": {
     "title": "Progressive Forces of Afghanistan Movement",

@@ -30,7 +30,14 @@ const Hero = () => {
   const isRTL = ['fa'].includes(i18n.language);
 
   return (
-    <section className="hero">
+    <section className="hero" style={{
+    background: `linear-gradient(180deg, rgba(11, 107, 107, 0.5), rgba(11, 107, 107, 0.4)), url(/images/background.jpeg) center/cover no-repeat`,
+    color: 'white',
+    textAlign: 'center',
+    padding: '150px 0',
+    position: 'relative',
+    overflow: 'hidden'
+  }}>
       <div className="container">
         <h1 
           className="animate__animated animate__fadeInDown"

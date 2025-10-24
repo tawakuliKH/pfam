@@ -6,49 +6,13 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Donate from './Donate';
 import Contact from './Contact';
-import news1_1 from '../assets/news/news1_1.jpeg'
-import news1_2 from '../assets/news/news1_2.jpeg'
-import news1_3 from '../assets/news/news1_3.jpeg'
-import news1_4 from '../assets/news/news1_4.jpeg'
-import news1_5 from '../assets/news/news1_5.jpeg'
-
-import news2_1 from '../assets/news/news2_1.jpeg';
-import news2_2 from '../assets/news/news2_2.jpeg';
-
-import news3_1 from '../assets/news/news3_1.jpeg'
-import news3_2 from '../assets/news/news3_2.jpeg'
-
-import story1_1 from '../assets/story/story1_1.jpeg'
-import story1_2 from '../assets/story/story1_2.jpeg'
-
-import story2_1 from '../assets/story/story2_1.jpeg'
-
-import story3_1 from '../assets/story/massoud1.jpeg'
-import story3_2 from '../assets/story/massoud2.jpeg'
-
-import story4_1 from '../assets/story/conf1.jpeg'
-import story4_2 from '../assets/story/conf2.jpeg'
-import story4_3 from '../assets/story/conf3.jpeg'
-import story4_4 from '../assets/story/conf4.jpeg'
-import story4_5 from '../assets/story/conf5.jpeg'
-
-import { useLocation } from 'react-router-dom';
-import { changeLanguage } from '../i18n'; // Adjust path as needed
 
 const NewsDetail = () => {
-   useEffect(() => {
-    const urlParams = new URLSearchParams(location.search);
-    const langParam = urlParams.get('lang');
-    
-    if (langParam && ['en', 'de', 'fa'].includes(langParam)) {
-      changeLanguage(langParam);
-    }
-  }, [location.search]);
-
   useSeo({
     title: "Latest News - Progressive Forces of Afghanistan Movement",
     description: "Stay updated with the latest news, events, and announcements from PFA Movement."
   });
+  
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentNews, setCurrentNews] = useState(null);
   const navigate = useNavigate();
@@ -62,11 +26,11 @@ const NewsDetail = () => {
       date: t('news.news1.date'),
       author: t('news.news1.author'),
       images: [
-        news1_1,
-        news1_2,
-        news1_3,
-        news1_4,
-        news1_5,
+        "/images/news/news1_1.jpeg",
+        "/images/news/news1_2.jpeg",
+        "/images/news/news1_3.jpeg",
+        "/images/news/news1_4.jpeg",
+        "/images/news/news1_5.jpeg",
       ],
       content: t('news.news1.content', { returnObjects: true }),
       type: "news"
@@ -77,8 +41,8 @@ const NewsDetail = () => {
       date: t('news.news2.date'),
       author: t('news.news2.author'),
       images: [
-        news2_1,
-        news2_2,
+        "/images/news/news2_1.jpeg",
+        "/images/news/news2_2.jpeg",
       ],
       content: t('news.news2.content', { returnObjects: true }),
       type: "news"
@@ -89,8 +53,8 @@ const NewsDetail = () => {
       date: t('news.news3.date'),
       author: t('news.news3.author'),
       images: [
-        news3_1,
-        news3_2
+        "/images/news/news3_1.jpeg",
+        "/images/news/news3_2.jpeg"
       ],
       content: t('news.news3.content', { returnObjects: true }),
       type: "news"
@@ -101,8 +65,8 @@ const NewsDetail = () => {
       date: t('news.story1.date'),
       author: t('news.story1.author'),
       images: [
-        story1_1,
-        story1_2
+        "/images/story/story1_1.jpeg",
+        "/images/story/story1_2.jpeg"
       ],
       content: t('news.story1.content', { returnObjects: true }),
       type: "story"
@@ -113,35 +77,34 @@ const NewsDetail = () => {
       date: t('news.story2.date'),
       author: t('news.story2.author'),
       images: [
-        story2_1,
+        "/images/story/story2_1.jpeg",
       ],
       content: t('news.story2.content', { returnObjects: true }),
       type: "story"
     },
-     {
+    {
       id: 7,
       title: t('news.story3.title'),
       date: t('news.story3.date'),
       author: t('news.story3.author'),
       images: [
-        story3_1,
-        story3_2,
+        "/images/story/massoud1.jpeg",
+        "/images/story/massoud2.jpeg",
       ],
       content: t('news.story3.content', { returnObjects: true }),
       type: "story"
     },
-     {
+    {
       id: 8,
       title: t('news.story4.title'),
       date: t('news.story4.date'),
       author: t('news.story4.author'),
       images: [
-        story4_5,
-        story4_1,
-        story4_2,
-        story4_3,
-        story4_4,
-
+        "/images/story/conf5.jpeg",
+        "/images/story/conf1.jpeg",
+        "/images/story/conf2.jpeg",
+        "/images/story/conf3.jpeg",
+        "/images/story/conf4.jpeg",
       ],
       content: t('news.story4.content', { returnObjects: true }),
       type: "story"

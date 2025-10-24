@@ -2,7 +2,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { changeLanguage } from '../i18n';
-import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -104,6 +103,15 @@ const Navbar = () => {
       return;
     }
 
+    if (targetId === 'announcements') {
+      navigate(`/announcements${langSuffix}`);
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 100);
+      closeMobileMenu();
+      return;
+    }
+
     // Handle Home navigation
     if (targetId === 'home') {
       if (location.pathname === '/') {
@@ -185,7 +193,7 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <a className="navbar-brand" href="/" onClick={handleHomeClick}>
-            <img src={logo} alt="Logo" />
+            <img src="/logo.png" alt="Logo" />
             <span className="brand-text">{t('navbar.title')}</span>
             <span className="brand-text-sm">{t('navbar.subtitle')}</span>
           </a>
@@ -248,6 +256,12 @@ const Navbar = () => {
                 <a className="nav-link" href="#news-stories" onClick={(e) => handleNavClick(e, 'news-stories')}>
                   <i className="fas fa-newspaper me-2"></i>
                   {t('navbar.news')}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#announcements" onClick={(e) => handleNavClick(e, 'announcements')}>
+                  <i className="fas fa-bullhorn me-2"></i>
+                  {t('navbar.announcements')}
                 </a>
               </li>
               <li className="nav-item">
@@ -341,6 +355,11 @@ const Navbar = () => {
             <li className="nav-item">
               <a className="nav-link" href="#news-stories" onClick={(e) => handleNavClick(e, 'news-stories')}>
                 {t('navbar.news')}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#announcements" onClick={(e) => handleNavClick(e, 'announcements')}>
+                {t('navbar.announcements')}
               </a>
             </li>
             <li className="nav-item">

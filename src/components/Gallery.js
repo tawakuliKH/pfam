@@ -7,48 +7,7 @@ import Donate from "./Donate";
 import Contact from "./Contact";
 import { useSeo } from "../hooks/useSeo";
 
-import ir1 from "../assets/gallery/ir1.jpeg";
-import ir2 from "../assets/gallery/ir2.jpeg";
-import kbl1 from "../assets/gallery/kbl1.jpeg";
-import pkl from "../assets/gallery/pkl1.jpeg";
-import pkl2 from "../assets/gallery/pkl2.jpeg";
-import alb from "../assets/gallery/alb1.jpeg";
-import cnf from "../assets/gallery/cnf1.jpeg";
-import pkl4 from "../assets/gallery/pkl4.jpeg";
-import pklkh1 from "../assets/gallery/pkl-kh1.jpeg";
-import pklkh2 from "../assets/gallery/pkl-kh2.jpeg";
-import pklkh3 from "../assets/gallery/pkl-kh3.jpeg";
-import mrf1 from "../assets/gallery/mrf1.jpeg";
-import mrf2 from "../assets/gallery/mrf2.jpeg";
-import islm1 from "../assets/gallery/islm1.jpeg";
-import islm2 from "../assets/gallery/islm2.jpeg";
-import prot from "../assets/gallery/prot1.jpeg";
-import glb1 from "../assets/gallery/glb1.jpeg";
-import glb2 from "../assets/gallery/glb2.jpeg";
-import irr1 from "../assets/gallery/irr1.jpeg";
-import irr2 from "../assets/gallery/irr2.jpeg";
-import irr3 from "../assets/gallery/irr3.jpeg";
-import hmb1 from "../assets/gallery/hmb1.jpeg";
-import geneva from "../assets/gallery/geneva.jpeg";
-import prt1 from "../assets/gallery/prt1.jpeg";
-import off1 from "../assets/gallery/off1.jpeg";
-import adv1 from "../assets/gallery/adv1.jpeg";
-import adv2 from "../assets/gallery/adv2.jpeg";
-import three1 from "../assets/gallery/three1.jpeg";
-import islam1 from "../assets/gallery/islam1.jpeg";
-import apa1 from "../assets/gallery/apa1.jpeg";
-import dakh1 from "../assets/gallery/dakh1.jpeg";
-import adova1 from "../assets/gallery/adova1.jpeg";
-import prot2 from "../assets/gallery/prot2.jpeg";
-import prot3 from "../assets/gallery/prot3.jpeg";
-import prot4 from "../assets/gallery/prot4.jpeg";
-import conf1 from "../assets/story/conf1.jpeg";
-import conf2 from "../assets/story/conf2.jpeg";
-import conf3 from "../assets/story/conf3.jpeg";
-import conf4 from "../assets/story/conf4.jpeg";
-import conf5 from "../assets/story/conf5.jpeg";
-import massoud1 from "../assets/story/massoud1.jpeg";
-import massoud2 from "../assets/story/massoud2.jpeg";
+
 
 const Gallery = () => {
   useSeo({
@@ -67,302 +26,301 @@ const Gallery = () => {
 
   // Photo data with translations
   const photoData = [
-    {
-      id: 1,
-      title: t("gallery.photos.ir1.title"),
-      description: t("gallery.photos.ir1.description"),
-      image: ir1,
-      category: "Activity",
-    },
-    {
-      id: 2,
-      title: t("gallery.photos.ir2.title"),
-      description: t("gallery.photos.ir2.description"),
-      image: ir2,
-      category: "Activity",
-    },
-    {
-      id: 3,
-      title: t("gallery.photos.kbl1.title"),
-      description: t("gallery.photos.kbl1.description"),
-      image: kbl1,
-      category: "Activity",
-    },
-    {
-      id: 4,
-      title: t("gallery.photos.pkl.title"),
-      description: t("gallery.photos.pkl.description"),
-      image: pkl,
-      category: "Activity",
-    },
-    {
-      id: 5,
-      title: t("gallery.photos.pkl2.title"),
-      description: t("gallery.photos.pkl2.description"),
-      image: pkl2,
-      category: "Activity",
-    },
-    {
-      id: 6,
-      title: t("gallery.photos.alb.title"),
-      description: t("gallery.photos.alb.description"),
-      image: alb,
-      category: "Activity",
-    },
-    {
-      id: 7,
-      title: t("gallery.photos.cnf.title"),
-      description: t("gallery.photos.cnf.description"),
-      image: cnf,
-      category: "Activity",
-    },
-    {
-      id: 8,
-      title: t("gallery.photos.pkl4.title"),
-      description: t("gallery.photos.pkl4.description"),
-      image: pkl4,
-      category: "Activity",
-    },
-    {
-      id: 9,
-      title: t("gallery.photos.pklkh1.title"),
-      description: t("gallery.photos.pklkh1.description"),
-      image: pklkh1,
-      category: "Activity",
-    },
-    {
-      id: 10,
-      title: t("gallery.photos.pklkh2.title"),
-      description: t("gallery.photos.pklkh2.description"),
-      image: pklkh2,
-      category: "Activity",
-    },
-    {
-      id: 11,
-      title: t("gallery.photos.pklkh3.title"),
-      description: t("gallery.photos.pklkh3.description"),
-      image: pklkh3,
-      category: "Activity",
-    },
-    {
-      id: 12,
-      title: t("gallery.photos.mrf1.title"),
-      description: t("gallery.photos.mrf1.description"),
-      image: mrf1,
-      category: "Activity",
-    },
-    {
-      id: 13,
-      title: t("gallery.photos.mrf2.title"),
-      description: t("gallery.photos.mrf2.description"),
-      image: mrf2,
-      category: "Activity",
-    },
-    {
-      id: 14,
-      title: t("gallery.photos.islm1.title"),
-      description: t("gallery.photos.islm1.description"),
-      image: islm1,
-      category: "Activity",
-    },
-    {
-      id: 15,
-      title: t("gallery.photos.islm2.title"),
-      description: t("gallery.photos.islm2.description"),
-      image: islm2,
-      category: "Activity",
-    },
-    {
-      id: 16,
-      title: t("gallery.photos.prot.title"),
-      description: t("gallery.photos.prot.description"),
-      image: prot,
-      category: "Activity",
-    },
-    {
-      id: 17,
-      title: t("gallery.photos.glb1.title"),
-      description: t("gallery.photos.glb1.description"),
-      image: glb1,
-      category: "Activity",
-    },
-    {
-      id: 18,
-      title: t("gallery.photos.glb2.title"),
-      description: t("gallery.photos.glb2.description"),
-      image: glb2,
-      category: "Activity",
-    },
-    {
-      id: 19,
-      title: t("gallery.photos.irr1.title"),
-      description: t("gallery.photos.irr1.description"),
-      image: irr1,
-      category: "Activity",
-    },
-    {
-      id: 20,
-      title: t("gallery.photos.irr2.title"),
-      description: t("gallery.photos.irr2.description"),
-      image: irr2,
-      category: "Activity",
-    },
-    {
-      id: 21,
-      title: t("gallery.photos.irr3.title"),
-      description: t("gallery.photos.irr3.description"),
-      image: irr3,
-      category: "Activity",
-    },
-    {
-      id: 22,
-      title: t("gallery.photos.hmb1.title"),
-      description: t("gallery.photos.hmb1.description"),
-      image: hmb1,
-      category: "Activity",
-    },
-    {
-      id: 23,
-      title: t("gallery.photos.geneva.title"),
-      description: t("gallery.photos.geneva.description"),
-      image: geneva,
-      category: "Activity",
-    },
-    {
-      id: 24,
-      title: t("gallery.photos.prt1.title"),
-      description: t("gallery.photos.prt1.description"),
-      image: prt1,
-      category: "Activity",
-    },
-    {
-      id: 25,
-      title: t("gallery.photos.off1.title"),
-      description: t("gallery.photos.off1.description"),
-      image: off1,
-      category: "Activity",
-    },
-    {
-      id: 26,
-      title: t("gallery.photos.adv1.title"),
-      description: t("gallery.photos.adv1.description"),
-      image: adv1,
-      category: "Activity",
-    },
-    {
-      id: 27,
-      title: t("gallery.photos.adv2.title"),
-      description: t("gallery.photos.adv2.description"),
-      image: adv2,
-      category: "Activity",
-    },
-    {
-      id: 28,
-      title: t("gallery.photos.three1.title"),
-      description: t("gallery.photos.three1.description"),
-      image: three1,
-      category: "Activity",
-    },
-    {
-      id: 29,
-      title: t("gallery.photos.islam1.title"),
-      description: t("gallery.photos.islam1.description"),
-      image: islam1,
-      category: "Activity",
-    },
-    {
-      id: 30,
-      title: t("gallery.photos.dakh1.title"),
-      description: t("gallery.photos.dakh1.description"),
-      image: dakh1,
-      category: "Activity",
-    },
-    {
-      id: 31,
-      title: t("gallery.photos.adova1.title"),
-      description: t("gallery.photos.adova1.description"),
-      image: adova1,
-      category: "Activity",
-    },
-    {
-      id: 32,
-      title: t("gallery.photos.prot2.title"),
-      description: t("gallery.photos.prot2.description"),
-      image: prot2,
-      category: "Activity",
-    },
-    {
-      id: 33,
-      title: t("gallery.photos.prot3.title"),
-      description: t("gallery.photos.prot3.description"),
-      image: prot3,
-      category: "Activity",
-    },
-    {
-      id: 34,
-      title: t("gallery.photos.apa1.title"),
-      description: t("gallery.photos.apa1.description"),
-      image: apa1,
-      category: "Activity",
-    },
-    {
-      id: 35,
-      title: t("gallery.photos.prot4.title"),
-      description: t("gallery.photos.prot4.description"),
-      image: prot4,
-      category: "Activity",
-    },
-    {
-      id: 36,
-      title: t("gallery.photos.conf1.title"),
-      description: t("gallery.photos.conf1.description"),
-      image: conf1,
-      category: "Activity",
-    },
-    {
-      id: 37,
-      title: t("gallery.photos.conf1.title"),
-      description: t("gallery.photos.conf1.description"),
-      image: conf2,
-      category: "Activity",
-    },
-    {
-      id: 38,
-      title: t("gallery.photos.conf1.title"),
-      description: t("gallery.photos.conf1.description"),
-      image: conf3,
-      category: "Activity",
-    },
-    {
-      id: 39,
-      title: t("gallery.photos.conf1.title"),
-      description: t("gallery.photos.conf1.description"),
-      image: conf4,
-      category: "Activity",
-    },
-    {
-      id: 40,
-      title: t("gallery.photos.conf1.title"),
-      description: t("gallery.photos.conf1.description"),
-      image: conf5,
-      category: "Activity",
-    },
-    {
-      id: 41,
-      title: t("gallery.photos.massoud1.title"),
-      description: t("gallery.photos.massoud1.description"),
-      image: massoud1,
-      category: "Activity",
-    },
-    {
-      id: 42,
-      title: t("gallery.photos.massoud1.title"),
-      description: t("gallery.photos.massoud1.description"),
-      image: massoud2,
-      category: "Activity",
-    },
-  ];
-
+  {
+    id: 1,
+    title: t("gallery.photos.ir1.title"),
+    description: t("gallery.photos.ir1.description"),
+    image: "/images/gallery/ir1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 2,
+    title: t("gallery.photos.ir2.title"),
+    description: t("gallery.photos.ir2.description"),
+    image: "/images/gallery/ir2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 3,
+    title: t("gallery.photos.kbl1.title"),
+    description: t("gallery.photos.kbl1.description"),
+    image: "/images/gallery/kbl1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 4,
+    title: t("gallery.photos.pkl.title"),
+    description: t("gallery.photos.pkl.description"),
+    image: "/images/gallery/pkl1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 5,
+    title: t("gallery.photos.pkl2.title"),
+    description: t("gallery.photos.pkl2.description"),
+    image: "/images/gallery/pkl2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 6,
+    title: t("gallery.photos.alb.title"),
+    description: t("gallery.photos.alb.description"),
+    image: "/images/gallery/alb1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 7,
+    title: t("gallery.photos.cnf.title"),
+    description: t("gallery.photos.cnf.description"),
+    image: "/images/gallery/cnf1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 8,
+    title: t("gallery.photos.pkl4.title"),
+    description: t("gallery.photos.pkl4.description"),
+    image: "/images/gallery/pkl4.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 9,
+    title: t("gallery.photos.pklkh1.title"),
+    description: t("gallery.photos.pklkh1.description"),
+    image: "/images/gallery/pkl-kh1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 10,
+    title: t("gallery.photos.pklkh2.title"),
+    description: t("gallery.photos.pklkh2.description"),
+    image: "/images/gallery/pkl-kh2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 11,
+    title: t("gallery.photos.pklkh3.title"),
+    description: t("gallery.photos.pklkh3.description"),
+    image: "/images/gallery/pkl-kh3.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 12,
+    title: t("gallery.photos.mrf1.title"),
+    description: t("gallery.photos.mrf1.description"),
+    image: "/images/gallery/mrf1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 13,
+    title: t("gallery.photos.mrf2.title"),
+    description: t("gallery.photos.mrf2.description"),
+    image: "/images/gallery/mrf2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 14,
+    title: t("gallery.photos.islm1.title"),
+    description: t("gallery.photos.islm1.description"),
+    image: "/images/gallery/islm1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 15,
+    title: t("gallery.photos.islm2.title"),
+    description: t("gallery.photos.islm2.description"),
+    image: "/images/gallery/islm2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 16,
+    title: t("gallery.photos.prot.title"),
+    description: t("gallery.photos.prot.description"),
+    image: "/images/gallery/prot1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 17,
+    title: t("gallery.photos.glb1.title"),
+    description: t("gallery.photos.glb1.description"),
+    image: "/images/gallery/glb1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 18,
+    title: t("gallery.photos.glb2.title"),
+    description: t("gallery.photos.glb2.description"),
+    image: "/images/gallery/glb2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 19,
+    title: t("gallery.photos.irr1.title"),
+    description: t("gallery.photos.irr1.description"),
+    image: "/images/gallery/irr1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 20,
+    title: t("gallery.photos.irr2.title"),
+    description: t("gallery.photos.irr2.description"),
+    image: "/images/gallery/irr2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 21,
+    title: t("gallery.photos.irr3.title"),
+    description: t("gallery.photos.irr3.description"),
+    image: "/images/gallery/irr3.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 22,
+    title: t("gallery.photos.hmb1.title"),
+    description: t("gallery.photos.hmb1.description"),
+    image: "/images/gallery/hmb1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 23,
+    title: t("gallery.photos.geneva.title"),
+    description: t("gallery.photos.geneva.description"),
+    image: "/images/gallery/geneva.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 24,
+    title: t("gallery.photos.prt1.title"),
+    description: t("gallery.photos.prt1.description"),
+    image: "/images/gallery/prt1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 25,
+    title: t("gallery.photos.off1.title"),
+    description: t("gallery.photos.off1.description"),
+    image: "/images/gallery/off1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 26,
+    title: t("gallery.photos.adv1.title"),
+    description: t("gallery.photos.adv1.description"),
+    image: "/images/gallery/adv1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 27,
+    title: t("gallery.photos.adv2.title"),
+    description: t("gallery.photos.adv2.description"),
+    image: "/images/gallery/adv2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 28,
+    title: t("gallery.photos.three1.title"),
+    description: t("gallery.photos.three1.description"),
+    image: "/images/gallery/three1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 29,
+    title: t("gallery.photos.islam1.title"),
+    description: t("gallery.photos.islam1.description"),
+    image: "/images/gallery/islam1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 30,
+    title: t("gallery.photos.dakh1.title"),
+    description: t("gallery.photos.dakh1.description"),
+    image: "/images/gallery/dakh1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 31,
+    title: t("gallery.photos.adova1.title"),
+    description: t("gallery.photos.adova1.description"),
+    image: "/images/gallery/adova1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 32,
+    title: t("gallery.photos.prot2.title"),
+    description: t("gallery.photos.prot2.description"),
+    image: "/images/gallery/prot2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 33,
+    title: t("gallery.photos.prot3.title"),
+    description: t("gallery.photos.prot3.description"),
+    image: "/images/gallery/prot3.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 34,
+    title: t("gallery.photos.apa1.title"),
+    description: t("gallery.photos.apa1.description"),
+    image: "/images/gallery/apa1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 35,
+    title: t("gallery.photos.prot4.title"),
+    description: t("gallery.photos.prot4.description"),
+    image: "/images/gallery/prot4.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 36,
+    title: t("gallery.photos.conf1.title"),
+    description: t("gallery.photos.conf1.description"),
+    image: "/images/gallery/conf1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 37,
+    title: t("gallery.photos.conf1.title"),
+    description: t("gallery.photos.conf1.description"),
+    image: "/images/gallery/conf2.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 38,
+    title: t("gallery.photos.conf1.title"),
+    description: t("gallery.photos.conf1.description"),
+    image: "/images/gallery/conf3.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 39,
+    title: t("gallery.photos.conf1.title"),
+    description: t("gallery.photos.conf1.description"),
+    image: "/images/gallery/conf4.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 40,
+    title: t("gallery.photos.conf1.title"),
+    description: t("gallery.photos.conf1.description"),
+    image: "/images/gallery/conf5.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 41,
+    title: t("gallery.photos.massoud1.title"),
+    description: t("gallery.photos.massoud1.description"),
+    image: "/images/gallery/massoud1.jpeg",
+    category: "Activity",
+  },
+  {
+    id: 42,
+    title: t("gallery.photos.massoud1.title"),
+    description: t("gallery.photos.massoud1.description"),
+    image: "/images/gallery/massoud2.jpeg",
+    category: "Activity",
+  },
+];
   // Video data with translations
   const videoData = [
     {

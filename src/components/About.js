@@ -1,19 +1,5 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import tawana from '../assets/employees/tawana.jpeg';
-import safi from '../assets/employees/safi.jpeg';
-import rad from '../assets/employees/rad.jpeg';
-import ibrahim from '../assets/employees/ibrahim.jpeg';
-import hamza from '../assets/employees/hamza.jpeg';
-import farahmand from '../assets/employees/farahmand.jpeg';
-import whoWeAre from '../assets/who_we_are.jpeg';
-import mission_1 from '../assets/mission_1.jpeg';
-import mission_2 from '../assets/mission_2.jpeg';
-import mission_3 from '../assets/mission_3.jpeg';
-import future_1 from '../assets/future_1.jpeg';
-import future_2 from '../assets/future_2.jpeg';
-import future_3 from '../assets/future_3.jpeg';
-import future_4 from '../assets/future_4.jpeg';
 
 const About = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
@@ -25,7 +11,7 @@ const About = () => {
       id: 1,
       name: "Mawloda Tawana",
       position: t('about.employees.tawana.position'),
-      image: tawana,
+      image: "/images/employees/tawana.jpeg",
       bio: t('about.employees.tawana.bio'),
       fullBio: t('about.employees.tawana.fullBio')
     },
@@ -33,7 +19,7 @@ const About = () => {
       id: 2,
       name: "Zohal Rad",
       position: t('about.employees.rad.position'),
-      image: rad,
+      image: "/images/employees/rad.jpeg",
       bio: t('about.employees.rad.bio'),
       fullBio: t('about.employees.rad.fullBio')
     },
@@ -41,7 +27,7 @@ const About = () => {
       id: 3,
       name: "Fatima Farahmand",
       position: t('about.employees.farahmand.position'),
-      image: farahmand,
+      image: "/images/employees/farahmand.jpeg",
       bio: t('about.employees.farahmand.bio'),
       fullBio: t('about.employees.farahmand.fullBio')
     },
@@ -49,7 +35,7 @@ const About = () => {
       id: 4,
       name: "Humaira Ibrahim",
       position: t('about.employees.ibrahim.position'),
-      image: ibrahim,
+      image: "/images/employees/ibrahim.jpeg",
       bio: t('about.employees.ibrahim.bio'),
       fullBio: t('about.employees.ibrahim.fullBio')
     },
@@ -57,7 +43,7 @@ const About = () => {
       id: 5,
       name: "Qandi Safi",
       position: t('about.employees.safi.position'),
-      image: safi,
+      image: "/images/employees/safi.jpeg",
       bio: t('about.employees.safi.bio'),
       fullBio: t('about.employees.safi.fullBio')
     }
@@ -186,7 +172,7 @@ const About = () => {
             <div className="col-md-6">
               <div className="card border-0 shadow-lg">
                 <img
-                  src={whoWeAre}
+                  src="/images/who_we_are.jpeg"
                   className="card-img-top"
                   alt={t('about.whoWeAre.imageAlt')}
                 />
@@ -210,7 +196,7 @@ const About = () => {
               <div className="mission-card bg-white shadow-sm animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={mission_1}
+                    src="/images/mission_1.jpeg"
                     alt={t('about.mission.equality.title')}
                   />
                 </div>
@@ -225,7 +211,7 @@ const About = () => {
               <div className="mission-card bg-white shadow-sm animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={mission_2}
+                    src="/images/mission_2.jpeg"
                     alt={t('about.mission.violence.title')}
                   />
                 </div>
@@ -240,7 +226,7 @@ const About = () => {
               <div className="mission-card bg-white shadow-sm animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={mission_3}
+                    src="/images/mission_3.jpeg"
                     alt={t('about.mission.opportunities.title')}
                   />
                 </div>
@@ -263,7 +249,7 @@ const About = () => {
               <div className="vision-item animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={future_1}
+                    src="/images/future_1.jpeg"
                     alt={t('about.vision.society.title')}
                   />
                 </div>
@@ -278,7 +264,7 @@ const About = () => {
               <div className="vision-item animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={future_2}
+                    src="/images/future_2.jpeg"
                     alt={t('about.vision.education.title')}
                   />
                 </div>
@@ -293,7 +279,7 @@ const About = () => {
               <div className="vision-item animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={future_3}
+                    src="/images/future_3.jpeg"
                     alt={t('about.vision.leadership.title')}
                   />
                 </div>
@@ -308,7 +294,7 @@ const About = () => {
               <div className="vision-item animate__animated">
                 <div className="card-img-container">
                   <img
-                    src={future_4}
+                    src="/images/future_4.jpeg"
                     alt={t('about.vision.peace.title')}
                   />
                 </div>

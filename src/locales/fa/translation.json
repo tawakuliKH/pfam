@@ -1,14 +1,16 @@
 {
-  "navbar": {
+ "navbar": {
     "title": "جنبش نیروهای مترقی افغانستان",
-    "subtitle": "جنبش نیروهای مترقی افغانستان",
+    "subtitle": "PFA Movement",
     "home": "خانه",
     "values": "ارزش‌ها",
     "story": "تاریخچه",
     "news": "اخبار|داستان‌ها",
+    "announcements": "اعلامیه‌ها",
     "gallery": "گالری",
     "contact": "تماس",
-    "donate": "حمایت مالی"
+    "donate": "کمک مالی",
+    "close": "بستن"
   },
   "hero": {
     "title": "جنبش نیروهای مترقی افغانستان",
